@@ -23,7 +23,7 @@ const NavBar = () => {
           REGISTRARSE
         </NavLink>
         <NavLink to="/login" className={style.btn}>
-          <button>INICIAR SESION</button>
+          <button className={style.shape}>INICIAR SESION</button>
         </NavLink>
       </div>
     </div>
