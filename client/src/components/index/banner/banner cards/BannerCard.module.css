@@ -1,0 +1,10 @@
+.bannerCard{
+    
+    width: 225px;
+    height: 180px;
+
+    
+    background: #181818;
+    border: 1px solid #FCBD3C;
+    border-radius: 12px;
+}
