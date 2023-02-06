@@ -1,0 +1,44 @@
+body {
+  background: #0D0D0E;
+}
+
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  color: white;
+ 
+}
+
+.btn {
+  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:500;
+  color: var(--color-text);
+}
+
+.btn:hover {
+  
+  color: #FEAE0C;
+  text-decoration: underline;
+}
+
+.shape{
+  
+background: #FCBD3C;
+border-radius: 25px;
+padding: 8px 12px;
+
+}
+
+.shape:hover {
+  cursor: pointer ;
+  color: white;
+  text-decoration: underline;
+}

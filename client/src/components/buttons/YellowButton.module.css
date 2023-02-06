@@ -1,0 +1,12 @@
+  .yellowButton{
+    
+  background: #FCBD3C;
+  border-radius: 25px;
+  margin-top: 3%;
+  padding: 8px 12px;
+  width: 150px;
+  color: black;
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  }
