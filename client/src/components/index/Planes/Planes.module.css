@@ -1,0 +1,21 @@
+.planesContainer{
+    height: 60vh;
+    background-color: var(--color-black);
+    margin-bottom: 10%;
+
+}
+
+.planesHeader{
+    color: var(--color-text);
+    padding-left: 5%;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.planesCardContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    padding-left: 10%;
+
+}
