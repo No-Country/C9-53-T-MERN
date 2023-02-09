@@ -4,9 +4,11 @@ const service = new serviceUsers();
 
 const controllerUsers = {
   saveUser: async (req, res) => {
-    const isSaved = await service.saveUser();
+    const {name, email, password} = req.body;
 
-    res.json({message: isSaved});
+    const isSaved = await service.saveUser({name, email, password});
+
+    res.json(isSaved);
   },
 };
 
