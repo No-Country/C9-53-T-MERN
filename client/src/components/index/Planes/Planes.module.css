@@ -1,14 +1,14 @@
 .planesContainer{
     height: 100vh;
     background-color: var(--color-black);
-    margin-bottom: 10%;
+
     margin-top: 7.5%;
     background: black;
 
 }
 
 .planesHeader{
-    padding-top: 7.5rem;
+    padding-top: 5.5rem;
     color: var(--color-text);
     padding-left: 5%;
     font-weight: 900;

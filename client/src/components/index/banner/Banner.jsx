@@ -2,11 +2,9 @@ import React from 'react'
 import style from './Banner.module.css'
 // import BannerCard from './banner cards/BannerCard'
 import YellowButton from '../../buttons/YellowButton'
-import foto from './banner cards img/img_pesa.jpg'
+import foto from './img_pesa.jpg'
 
 const Banner = () => {
-
-  
 
   return (
     <div className={style.img}>

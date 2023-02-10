@@ -1,5 +1,5 @@
 .footerBody{
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     background-image: url(./footer-image.png);
     background-size: 100% 100%;
@@ -7,10 +7,15 @@
     background-position: center;
     display: flex;
     justify-content: center;
+    background-color: black;
+    padding-top: 20%;
 }
 
 .footerContainer{
+    position: relative;
     color: black;
-    font-size: 400%;
+    font-size: 300%;
+    height: 10vh;
+
     
 }
