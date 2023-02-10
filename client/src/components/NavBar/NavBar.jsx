@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import YellowButton from "../buttons/YellowButton";
 import style from "./NavBar.module.css";
 
 const NavBar = () => {
@@ -23,7 +24,7 @@ const NavBar = () => {
           REGISTRARSE
         </NavLink>
         <NavLink to="/login" className={style.btn}>
-          <button className={style.shape}>INICIAR SESION</button>
+          <YellowButton/>
         </NavLink>
       </div>
     </div>

@@ -4,6 +4,9 @@ import BannerCard from './banner cards/BannerCard'
 import YellowButton from '../../buttons/YellowButton'
 
 const Banner = () => {
+
+  
+
   return (
     <div className={style.img}>
         <div className={style.container}/>
