@@ -31,9 +31,13 @@ body {
 
 .shape{
   
-background: #FCBD3C;
-border-radius: 25px;
-padding: 8px 12px;
+  background: #FCBD3C;
+  border-radius: 25px;
+  margin-top: 3%;
+  padding: 8px 12px;
+  width: 150px;
+  color: black;
+  cursor:pointer;
 
 }
 
