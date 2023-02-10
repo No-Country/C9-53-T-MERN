@@ -7,12 +7,17 @@ import useForm from "../../custom hooks/useForm";
 
 
 const LoginForm = () => {
+
+    
+
   return (     
     <div className={style.loginContainer}>
 
         <div className={style.loginForm}>
 
-            <form onSubmit={handleSubmit}>
+            <form 
+            // onSubmit={handleSubmit}
+            >
 
                 <div className={style.logCategory}>
                     <div className={style.logCategoryType}>Usuario:</div>
@@ -22,8 +27,8 @@ const LoginForm = () => {
                     type="text"
                     name="email"
                     className={style.login_input}
-                    value={userForm.username}
-                    onChange={handleChange}
+                    // value={userForm.username}
+                    // onChange={handleChange}
                     />
 
                 </div>
@@ -35,8 +40,8 @@ const LoginForm = () => {
                     type="password"
                     name="password"
                     className={style.login_input}
-                    onChange={handleChange}
-                    value={userForm.password}
+                    // onChange={handleChange}
+                    // value={userForm.password}
                     />
 
                 </div>
