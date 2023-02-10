@@ -19,14 +19,17 @@ const NavBar = () => {
           PROGRAMAS
         </NavLink>
       </div>
-      <div>
+      <div 
+      className={style.logDiv}
+      >
         <NavLink to="/signup" className={style.btn}>
           REGISTRARSE
         </NavLink>
-        <NavLink to="/login" className={style.btn}>
-          <YellowButton/>
-        </NavLink>
+
+        
+      <YellowButton />
       </div>
+
     </div>
   );
 };

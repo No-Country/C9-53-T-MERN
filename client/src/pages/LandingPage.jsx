@@ -1,6 +1,7 @@
 import React from 'react'
+import Footer from '../components/footer/Footer';
 import Banner from '../components/index/banner/Banner';
-import GiftSection from '../components/index/GiftSection/GiftSection';
+import GifSection from '../components/index/GifSection/GifSection';
 import Planes from '../components/index/Planes/Planes';
 import NavBar from "../components/NavBar/NavBar";
 
@@ -10,8 +11,9 @@ const LandingPage = () => {
     <div>
       <NavBar />
       <Banner/>
-      <GiftSection/>
+      <GifSection/>
       <Planes/>
+      <Footer/>
     </div>
   );
 }

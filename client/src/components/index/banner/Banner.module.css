@@ -50,3 +50,33 @@
     gap:4.5rem
 
 }
+
+.bannerCard{
+    
+    width: 225px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 21px 5px;
+    gap: 10px;
+    padding-top: 1rem;
+    background: #181818;
+    border: 1px solid #FCBD3C;
+    border-radius: 12px;
+
+}
+
+.bannerCardTitle{
+    font-weight: 800;
+    color: white
+}
+
+.bannerCardBody{
+    font-weight: 100;
+    width: 90%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    color: var(--color-text);
+}

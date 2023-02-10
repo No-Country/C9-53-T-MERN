@@ -1,0 +1,93 @@
+body {
+  background: #181818;
+}
+
+.title {
+
+  text-align: center;
+  color: var(--color-text);
+  font-size: 200%;
+  height: 20vh;
+}
+
+.spanText{
+  width: 75%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 100%;
+  font-weight: bold;
+  color: var(--color-text)
+}
+
+
+h3 {
+  font-weight: bold;
+}
+
+
+.distribution {
+  display: flex;
+  justify-content: center;
+  margin: 56px 0 71px 0;
+  justify-content: space-around;
+}
+
+.gifCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 364px;
+  height: 495px;
+  background: rgba(252, 250, 247, 0.13);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: var(--color-text);
+}
+
+
+.cardButton {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 100px;
+  margin-bottom:0.5rem ;
+
+  background: #FEAE0C;
+  border-radius: 20px;
+  height: 25%;
+  color: #0d0d0e;
+
+}
+
+.gifContainer {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 6rem; */
+  position: relative;
+  height: 100%;
+}
+
+.cardDifficultyType{
+  height: 55%;
+  padding-top: 1rem;
+  padding-right: 14rem;
+  font-size: larger;
+
+}
+
+.cardDifficultyInfo{
+  height: 65%;
+  font-weight: 100;
+  padding-left: 0.5rem;
+
+
+}
+
+
+
+img {
+  width: 334px;
+  height: 236px;
+}
