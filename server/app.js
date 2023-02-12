@@ -41,7 +41,7 @@ app.use(
       },
     }),
     cookie: {
-      maxAge: 5 * 1000,
+      maxAge: 60 * 60 * 1000, //1 hora en milisegundos
     },
     resave: false,
     saveUninitialized: false,
