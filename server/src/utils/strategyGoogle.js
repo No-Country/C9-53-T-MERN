@@ -10,11 +10,15 @@ const strategyGoogle = () => {
         clientSecret: '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',
         callbackURL: 'http://localhost:3030/auth/google/callback',
       },
-      (accessToken, refreshToken, profile, cb) => {
+      (accessToken, refreshToken, profile, email, cb) => {
         // Aquí puedes acceder a la información del perfil de usuario y guardarla en una base de datos.
         // Por ejemplo, puedes buscar el usuario en tu base de datos y si no existe, puedes crear un nuevo registro.
         const user = {
           id: profile.id,
+          name: profile.name,
+          profile,
+          email,
+          accessToken,
         };
         return cb(null, user);
       }
