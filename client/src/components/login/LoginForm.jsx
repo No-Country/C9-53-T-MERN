@@ -2,13 +2,14 @@ import React from 'react'
 import LoginBlackButton from './buttons/LoginBlackButton';
 import style from './loginForm.module.css';
 import { useContext, useState } from "react";
-import { TYPES } from "../../reducers/AuthReducer";
+import { TYPES } from "../../reducer/authReducer";
 import useForm from "../../custom hooks/useForm";
+import { AuthContext } from '../../context/AuthContext';
 
 
 const LoginForm = () => {
 
-    
+    const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
 
   return (     
     <div className={style.loginContainer}>
@@ -16,7 +17,7 @@ const LoginForm = () => {
         <div className={style.loginForm}>
 
             <form 
-            // onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
             >
 
                 <div className={style.logCategory}>
@@ -27,8 +28,8 @@ const LoginForm = () => {
                     type="text"
                     name="email"
                     className={style.login_input}
-                    // value={userForm.username}
-                    // onChange={handleChange}
+                    value={userForm.email}
+                    onChange={handleChange}
                     />
 
                 </div>
@@ -40,11 +41,14 @@ const LoginForm = () => {
                     type="password"
                     name="password"
                     className={style.login_input}
-                    // onChange={handleChange}
-                    // value={userForm.password}
+                    onChange={handleChange}
+                    value={userForm.password}
                     />
 
-                </div>
+                </div>    
+            <button type="submit">
+              Iniciar sesión
+            </button>
 
             </form>
 
@@ -52,9 +56,11 @@ const LoginForm = () => {
                 <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
             </div>
 
+
+{/* 
             <div className={style.logCategory}>
                 <LoginBlackButton/>
-            </div>
+            </div> */}
 
 
             

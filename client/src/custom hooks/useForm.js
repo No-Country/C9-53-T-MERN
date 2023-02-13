@@ -14,13 +14,15 @@ const useForm = (context) => {
     const handleSubmit = (e) => {
       e.preventDefault();
       const userData = {
-        user: userForm.username,
+        user: userForm.email,
         token: Date.now(),
         isAuth: true
       }
 
+
+
       login(userData)      
-      navigate("/browse", {replace: true}); 
+      navigate("/landingPage", {replace: true}); 
     };
 
     return {userForm, handleChange, handleSubmit}

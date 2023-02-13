@@ -1,25 +1,64 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import '../App.css';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import '../App.css';
+// import LandingPage from "../pages/LandingPage";
+// import Login from "../pages/Login";
+// import Programas from "../pages/Programas";
+// import SignUp from "../pages/SignUp";
+
+
+// export const AppRoutes = () => {
+    
+//   return (
+//     <div className="App">
+     
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<LandingPage />} />
+//           {/* <Route path="/inicio" element={<Inicio />} /> */}
+//           <Route path="/programas" element={<Programas />} />
+//           <Route path="/login" element={<Login />} />
+//           <Route path="/signup" element={<SignUp />} />
+//         </Routes>
+//       </BrowserRouter>
+//     </div>
+//   );
+// }
+
+
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import PublicRoute from "./PublicRoute";
+import ProtectedRoutes from "./ProtectedRoutes";
 import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
-import Programas from "../pages/Programas";
-import SignUp from "../pages/SignUp";
 
 
 export const AppRoutes = () => {
-    
   return (
-    <div className="App">
-     
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          {/* <Route path="/inicio" element={<Inicio />} /> */}
-          <Route path="/programas" element={<Programas />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="*"
+          element={
+            <ProtectedRoutes url={"/"}>
+              <Routes>
+                <Route exact path="/landingPage" element={<LandingPage />} />
+              </Routes>
+            </ProtectedRoutes>
+          }
+        />
+
+        <Route
+          exact
+          path="/"
+          element={
+            <PublicRoute url={"/landingPage"}>
+              <Login />
+            </PublicRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
