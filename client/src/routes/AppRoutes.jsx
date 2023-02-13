@@ -27,37 +27,68 @@
 
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import PublicRoute from "./PublicRoute";
 import ProtectedRoutes from "./ProtectedRoutes";
 import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
+import User from "../pages/User";
+import UserRoutines from "../pages/UserRoutines";
 
 
 export const AppRoutes = () => {
   return (
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route
+    //       path="*"
+    //       element={
+    //         <ProtectedRoutes url={"/"}>
+    //           <Routes>
+    //             <Route exact path="/landingPage" element={<LandingPage />} />
+    //           </Routes>
+    //         </ProtectedRoutes>
+    //       }
+    //     />
+// {/* 
+//         <Route
+//           exact
+//           path="/"
+//           element={
+//             <PublicRoute url={"/landingPage"}>
+//               <Routes>
+//                 <Route exact path="/" element={<LandingPage />} />
+//                 <Route exact path="/login" element={<Login />}  />
+//               </Routes>
+//             </PublicRoute>
+//           }
+//         /> */}
+    //     <Route
+    //       path="/"
+    //       element={
+    //         <PublicRoute url={"/"}>
+    //           <Routes>
+    //             <Route exact path="/" element={<LandingPage />} />
+    //             <Route exact path='/login' element={<Login />} />
+    //           </Routes>
+    //         </PublicRoute>
+    //       }
+    //     />
+
+
+
+    //   </Routes>
+    // </BrowserRouter>
     <BrowserRouter>
       <Routes>
-        <Route
-          path="*"
-          element={
-            <ProtectedRoutes url={"/"}>
-              <Routes>
-                <Route exact path="/landingPage" element={<LandingPage />} />
-              </Routes>
-            </ProtectedRoutes>
-          }
-        />
+        
+        <Route element={<ProtectedRoutes/>}>
+          <Route element={<User/>} path='user'/>
+          <Route element={<UserRoutines/>} path='userRoutines'/>
+        </Route>
 
-        <Route
-          exact
-          path="/"
-          element={
-            <PublicRoute url={"/landingPage"}>
-              <Login />
-            </PublicRoute>
-          }
-        />
+        <Route path='landingPage' element={<LandingPage/>}/>
+        <Route path='login' element={<Login/>}/>
+        {/* <Route path='user' element={<User/>}/> */}
       </Routes>
     </BrowserRouter>
   );

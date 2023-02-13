@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import YellowButton from "../buttons/YellowButton";
+import LogNavBar from "./conditionalNav/LogNavBar";
 import style from "./NavBar.module.css";
 
 const NavBar = () => {
@@ -19,15 +20,12 @@ const NavBar = () => {
           PROGRAMAS
         </NavLink>
       </div>
+      
       <div 
       className={style.logDiv}
       >
-        <NavLink to="/signup" className={style.btn}>
-          REGISTRARSE
-        </NavLink>
+        <LogNavBar/>
 
-        
-      <YellowButton />
       </div>
 
     </div>
