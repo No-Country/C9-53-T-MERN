@@ -7,7 +7,11 @@ import { initialState } from '../reducer/authReducer'
 
 const AuthProvider = ({children}) => {
 
-  const [userForm, setUserForm] = useState({email: '', password:''})
+  const [userForm, setUserForm] = useState({email: '',
+   password:'',
+   profileMoto:'',
+   profilePhoto: '',
+  })
   
   const [state, dispatch] = useReducer(authReducer, initialState, initialAuthReducer)
 

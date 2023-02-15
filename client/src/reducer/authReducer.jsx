@@ -3,9 +3,12 @@ export const initialAuthReducer = () => {
   }
   
   export const initialState = {
-    username: null,
+    email: null,
     token: null,
     isAuth: false,
+    profileMoto: null,
+    profilePhoto: null,
+
   };
   
   export const TYPES = {
@@ -18,15 +21,19 @@ export const initialAuthReducer = () => {
       case TYPES.LOGIN:
         return {
           ...state,
-          username: action.payload.user,
+          email: action.payload.email,
           token: action.payload.token,
           isAuth: true,
+          profileMoto: action.payload.profileMoto,
+          profilePhoto: action.payload.profilePhoto
         };
       case TYPES.LOGOUT:
         return {
-          username: null,
+          email: null,
           token: null,
           isAuth: false,
+          profileMoto: null,
+          profilePhoto: null
         };
       default:
         return state;

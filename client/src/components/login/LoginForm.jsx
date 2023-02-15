@@ -46,6 +46,42 @@ const LoginForm = () => {
                     />
 
                 </div>    
+
+                <div className={style.logCategory}>
+                    <div className={style.logCategoryType}>Usuario:</div>
+
+                    <input
+                    placeholder="Prophile Moto"
+                    type="text"
+                    name="profileMoto"
+                    className={style.login_input}
+                    value={userForm.profileMoto}
+                    onChange={handleChange}
+                    />
+
+                </div>
+
+                <div className={style.logCategory}>
+                    <div className={style.logCategoryType}>profilePhoto:</div>
+
+                    <input
+                    placeholder="First monkey"
+                    type="text"
+                    name="profilePhoto"
+                    className={style.login_input}
+                    value={userForm.profilePhoto}
+                    onChange={handleChange}
+                    />
+                    {/* <input 
+                        type="file"
+                        id="profilePhoto" 
+                        name="profilePhoto"
+                        accept="image/png, image/jpeg">
+                    </input> */}
+
+                </div>
+
+
             <button type="submit">
               Iniciar sesión
             </button>

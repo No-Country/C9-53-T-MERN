@@ -33,6 +33,7 @@ import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
 import User from "../pages/User";
 import UserRoutines from "../pages/UserRoutines";
+import Programas from "../pages/Programas";
 
 
 export const AppRoutes = () => {
@@ -86,9 +87,10 @@ export const AppRoutes = () => {
           <Route element={<UserRoutines/>} path='userRoutines'/>
         </Route>
 
-        <Route path='landingPage' element={<LandingPage/>}/>
+        <Route path='/' element={<LandingPage/>}/>
         <Route path='login' element={<Login/>}/>
-        {/* <Route path='user' element={<User/>}/> */}
+        <Route path='programas' element={<Programas/>}/>
+
       </Routes>
     </BrowserRouter>
   );
