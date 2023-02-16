@@ -8,6 +8,7 @@ export const initialAuthReducer = () => {
     isAuth: false,
     profileMoto: null,
     profilePhoto: null,
+    username: null
 
   };
   
@@ -25,7 +26,8 @@ export const initialAuthReducer = () => {
           token: action.payload.token,
           isAuth: true,
           profileMoto: action.payload.profileMoto,
-          profilePhoto: action.payload.profilePhoto
+          profilePhoto: action.payload.profilePhoto,
+          username: action.payload.username
         };
       case TYPES.LOGOUT:
         return {
@@ -33,7 +35,8 @@ export const initialAuthReducer = () => {
           token: null,
           isAuth: false,
           profileMoto: null,
-          profilePhoto: null
+          profilePhoto: null,
+          username: null
         };
       default:
         return state;

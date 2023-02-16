@@ -10,7 +10,8 @@ const AuthProvider = ({children}) => {
   const [userForm, setUserForm] = useState({email: '',
    password:'',
    profileMoto:'',
-   profilePhoto: '',
+   profilePhoto: null,
+   username: ''
   })
   
   const [state, dispatch] = useReducer(authReducer, initialState, initialAuthReducer)

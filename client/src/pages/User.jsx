@@ -1,6 +1,7 @@
 import React from 'react'
 import { useContext } from 'react';
 import NavBar from '../components/NavBar/NavBar'
+import UserProfile from '../components/user profile/UserProfile';
 import { AuthContext } from '../context/AuthContext';
 
 const User = () => {
@@ -10,16 +11,18 @@ const User = () => {
 
   return (<>
   <NavBar/>
-    <div
+    {/* <div
     style={{color:'white'}}
     >
-      {/* <img  src={}></img> */}
+      <img  src={}></img>
       Hola!!!
-      Yo siempre digo 
+      Yo siempre digo {state.username}
     </div>
     <img src={state.profilePhoto} style={{display:'flex', justifyContent:'center',
       borderRadius:'50%'
-  }}/>
+  }}/> */}
+  <UserProfile/>
+
     </>
   )
 }

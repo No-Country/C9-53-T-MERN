@@ -33,7 +33,8 @@ import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
 import User from "../pages/User";
 import UserRoutines from "../pages/UserRoutines";
-import Programas from "../pages/Programas";
+import SignUp from "../pages/SignUp";
+import Ejercicios from "../pages/Ejercicios";
 
 
 export const AppRoutes = () => {
@@ -89,7 +90,8 @@ export const AppRoutes = () => {
 
         <Route path='/' element={<LandingPage/>}/>
         <Route path='login' element={<Login/>}/>
-        <Route path='programas' element={<Programas/>}/>
+        <Route path='register' element={<SignUp/>}/>
+        <Route path='ejercicios' element={<Ejercicios/>}/>
 
       </Routes>
     </BrowserRouter>

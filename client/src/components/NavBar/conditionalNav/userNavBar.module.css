@@ -1,0 +1,11 @@
+.userNavBarContainer{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.profilePic{
+    width: 2rem;
+    height: 3vh;
+    border-radius: 50%;
+}

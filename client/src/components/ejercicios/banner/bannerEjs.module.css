@@ -1,0 +1,33 @@
+.bannerEjs{
+    
+    width: 80%;
+    height: 20vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    /* flex-direction: column;
+    align-items: center;   */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+} 
+
+.bannerTitle{
+    color:white;
+    display: flex;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 200%;
+    font-weight: bolder;
+
+}
+
+.bannerImage{
+    width: 101%;
+    height: 20vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

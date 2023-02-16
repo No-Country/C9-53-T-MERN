@@ -5,9 +5,16 @@ import { useContext, useState } from "react";
 import { TYPES } from "../../reducer/authReducer";
 import useForm from "../../custom hooks/useForm";
 import { AuthContext } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const LoginForm = () => {
+
+    const navigate = useNavigate();
+  
+    const register = () => {
+      navigate('/register')}
 
     const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
 
@@ -21,7 +28,7 @@ const LoginForm = () => {
             >
 
                 <div className={style.logCategory}>
-                    <div className={style.logCategoryType}>Usuario:</div>
+                    <div className={style.logCategoryType}>Email:</div>
 
                     <input
                     placeholder="  Ingresa una dirección de email"
@@ -47,46 +54,16 @@ const LoginForm = () => {
 
                 </div>    
 
-                <div className={style.logCategory}>
-                    <div className={style.logCategoryType}>Usuario:</div>
-
-                    <input
-                    placeholder="Prophile Moto"
-                    type="text"
-                    name="profileMoto"
-                    className={style.login_input}
-                    value={userForm.profileMoto}
-                    onChange={handleChange}
-                    />
-
-                </div>
-
-                <div className={style.logCategory}>
-                    <div className={style.logCategoryType}>profilePhoto:</div>
-
-                    <input
-                    placeholder="First monkey"
-                    type="text"
-                    name="profilePhoto"
-                    className={style.login_input}
-                    value={userForm.profilePhoto}
-                    onChange={handleChange}
-                    />
-                    {/* <input 
-                        type="file"
-                        id="profilePhoto" 
-                        name="profilePhoto"
-                        accept="image/png, image/jpeg">
-                    </input> */}
-
-                </div>
-
-
-            <button type="submit">
+            <button type="submit" className={style.blackButton}>
               Iniciar sesión
             </button>
 
             </form>
+
+            <button className={style.blackButtonCrearCuenta} onClick={register}>
+              Crear cuenta
+            </button>
+            
 
             <div className={style.logCategory}>
                 <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>

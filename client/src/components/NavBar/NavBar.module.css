@@ -7,44 +7,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
   color: white;
+  height: 11vh;
  
 }
 
-.btn {
+.ejercicios {
   
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   font-weight:500;
   color: var(--color-text);
-}
-
-.btn:hover {
-  
-  color: #FEAE0C;
-  text-decoration: underline;
-}
-
-.shape{
-  
-  background: #FCBD3C;
-  border-radius: 25px;
-  margin-top: 3%;
-  padding: 8px 12px;
-  width: 150px;
-  color: black;
-  cursor:pointer;
-
-}
-
-.shape:hover {
-  cursor: pointer ;
-  color: white;
-  text-decoration: underline;
 }
 
 .logDiv{
@@ -52,9 +27,15 @@ body {
   justify-content: space-around;
 }
 
-@media only screen and (max-width:768px){
-.btn {
-  display: none;
+.logo{
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:500;
+  color: var(--color-text);
 }
+
+@media only screen and (max-width:768px){
 
 };

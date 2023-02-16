@@ -18,7 +18,8 @@ const useForm = (context) => {
         token: Date.now(),
         isAuth: true,
         profileMoto: userForm.profileMoto,
-        profilePhoto: userForm.profilePhoto
+        profilePhoto: userForm.profilePhoto,
+        username: userForm.username
       }
 
       console.log(userForm.profilePhoto)
