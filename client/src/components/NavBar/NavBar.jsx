@@ -21,7 +21,7 @@ const NavBar = () => {
         </NavLink>
       </div>
       <div>
-        <NavLink to="/ejercicios" className={style.ejercicios} onClick={logout}>
+        <NavLink to="/ejercicios" className={style.ejercicios}>
           Ejercicios
         </NavLink>
       </div>

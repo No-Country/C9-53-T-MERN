@@ -1,10 +1,14 @@
 import React from 'react'
+import { RutineContext } from '../../context/counter/RutineContext';
 import BannerEjs from './banner/BannerEjs'
 import EjsCard from './cards/EjsCard'
+import { useContext } from 'react';
 
 const EjerciciosAbdominales = ({info}) => {
 
   const newInfo = info.slice(2, info.length);
+
+  const {rutine, addRutine, removeItem} = useContext(RutineContext)
 
 
   return (<>
@@ -22,6 +26,9 @@ const EjerciciosAbdominales = ({info}) => {
           dificulty={info.dificulty}
           estimatedTime={info.estimatedTime}
           calories={info.calories}
+          addItem={addRutine}
+          item={rutine.filter( rutineItem => rutineItem.item.id === info.id)}
+          removeItem={removeItem}
 
           />
      ))}

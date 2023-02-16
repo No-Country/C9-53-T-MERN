@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from '../components/ejercicios/Counter';
 import EjerciciosAbdominales from '../components/ejercicios/EjerciciosAbdominales';
 import EjerciciosBrazos from '../components/ejercicios/EjerciciosBrazos';
 import EjerciciosPiernas from '../components/ejercicios/EjerciciosPiernas';
@@ -30,6 +31,8 @@ const Ejercicios = () => {
 
         }}
       >
+
+        <Counter/>
 
         <EjerciciosAbdominales info={ejerciciosAbdominalesInfo}/>
         <EjerciciosBrazos info={ejerciciosBrazosInfo}/>
