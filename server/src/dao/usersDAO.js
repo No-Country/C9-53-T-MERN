@@ -1,6 +1,10 @@
+const users = require('./schemas/users');
+
 class usersDAO {
-  async save() {
-    return {message: 'aqui recibo el resultado de MongoDB'};
+  async save(userSave) {
+    const user = new users(userSave);
+
+    return await user.save();
   }
 }
 
