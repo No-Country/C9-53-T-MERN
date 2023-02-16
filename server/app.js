@@ -6,6 +6,7 @@ const MongoStore = require('connect-mongo');
 const routeUsuarios = require('./src/routes/routeUsers');
 const strategyGoogle = require('./src/utils/strategyGoogle');
 const routeAuthentication = require('./src/routes/routeAuthentication');
+const strategyLocal = require('./src/utils/strategyLocal');
 
 const app = express();
 
@@ -28,6 +29,7 @@ mongoose
 /* -------------------------------------------------------------------------- */
 
 strategyGoogle();
+strategyLocal();
 
 app.use(
   session({
