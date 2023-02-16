@@ -1,6 +1,7 @@
 const express = require('express');
 const {mongoose} = require('mongoose');
 const routeUsuarios = require('./src/routes/routeUsers');
+const swaggerDocs = require('./swagger');
 
 const app = express();
 
@@ -19,4 +20,7 @@ app.use('/api', routeUsuarios);
 
 
 const port = process.env.PORT || 3030;
-app.listen(port, () => console.log('RUNNING SERVER ON PORT:', port));
+app.listen(port, () => {
+  console.log('RUNNING SERVER ON PORT:', port);
+  swaggerDocs(app, port);
+});

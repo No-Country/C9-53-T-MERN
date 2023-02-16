@@ -13,7 +13,7 @@ const controllerUsers = {
     const isSaved = await service.saveUser(newUser);
 
     if (isSaved) {
-      res.status(201).json(isSaved);
+      res.status(201).json({message: 'User created'});
       await transporter.sendMail({
         to: isSaved.user.email,
         from: 'diegogaraycullas@gmail.com',
