@@ -1,0 +1,13 @@
+.ejsCard{
+    width: 70%;
+    height: 10vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;  
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    margin-top: 1rem;
+    background-color: white;
+}

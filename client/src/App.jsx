@@ -3,18 +3,25 @@ import './App.css';
 import AuthProvider from './context/AuthProvider';
 import EjerciciosAbdominalesProvider from './context/ejercicios/EjerciciosAbdominalesProvider';
 import EjerciciosBrazosProvider from './context/ejercicios/EjerciciosBrazosProvider';
+import EjerciciosPiernasProvider from './context/ejercicios/EjerciciosPiernasProvider';
 import { AppRoutes } from './routes/AppRoutes';
 
 
 function App() {
   return (
-    <EjerciciosBrazosProvider>
-    <EjerciciosAbdominalesProvider>
-      <AuthProvider>
-        <AppRoutes/>
-      </AuthProvider>
-    </EjerciciosAbdominalesProvider>
-    </EjerciciosBrazosProvider>
+    <AuthProvider>
+
+      <EjerciciosPiernasProvider>
+      <EjerciciosBrazosProvider>
+      <EjerciciosAbdominalesProvider>
+        
+          <AppRoutes/>
+        
+      </EjerciciosAbdominalesProvider>
+      </EjerciciosBrazosProvider>
+      </EjerciciosPiernasProvider>
+      
+    </AuthProvider>
   );
 }
 

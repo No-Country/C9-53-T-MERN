@@ -1,8 +1,11 @@
 import React from 'react'
 import EjerciciosAbdominales from '../components/ejercicios/EjerciciosAbdominales';
+import EjerciciosBrazos from '../components/ejercicios/EjerciciosBrazos';
+import EjerciciosPiernas from '../components/ejercicios/EjerciciosPiernas';
 import NavBar from "../components/NavBar/NavBar";
 import { useEjerciciosAbdominales } from '../context/ejercicios/EjerciciosAbdominalesProvider';
 import { useEjerciciosBrazos } from '../context/ejercicios/EjerciciosBrazosProvider';
+import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasProvider';
 
 const Ejercicios = () => {
 
@@ -10,7 +13,7 @@ const Ejercicios = () => {
 
   const ejerciciosBrazosInfo = useEjerciciosBrazos();
 
-
+  const ejerciciosPiernasInfo = useEjerciciosPiernas();
 
 
   return (<>
@@ -29,6 +32,8 @@ const Ejercicios = () => {
       >
 
         <EjerciciosAbdominales info={ejerciciosAbdominalesInfo}/>
+        <EjerciciosBrazos info={ejerciciosBrazosInfo}/>
+        <EjerciciosPiernas info={ejerciciosPiernasInfo}/>
 
 
 

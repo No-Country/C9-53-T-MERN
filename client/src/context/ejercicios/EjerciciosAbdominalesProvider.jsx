@@ -22,7 +22,8 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
         description: "Ejercicio para la parte baja abdominal",
         repetition: 40,
         dificulty: 5,
-        estimatedTime:10
+        estimatedTime:8,
+        calories: 440
         },
         {
         id: 2,
@@ -30,7 +31,8 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
         description: "Ejercicio para el sector superior abdominal",
         repetition:40,
         dificulty: 5,
-        estimatedTime: 10,
+        estimatedTime: 7,
+        calories: 320
         },
         {
           id: 3,
@@ -38,7 +40,8 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
           description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
           repetition: 2,
           dificulty: 5,
-          estimatedTime:2
+          estimatedTime:2,
+          calories: 650
         },
 
   ];

@@ -1,6 +1,6 @@
 import { EjerciciosBrazosContext } from "./EjerciciosBrazosContext";
 import { useContext } from "react";
-import absBanner from '../../components/ejercicios/banner/absBanner.jpeg'
+import armBanner from '../../components/ejercicios/banner/armBanner.jpeg'
 
 
 const EjerciciosBrazosProvider = ({ children }) => {
@@ -8,7 +8,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
     
     // Brazos =   
     {
-      fotoBanner: absBanner,
+      fotoBanner: armBanner,
     },
      {
       D1: 'BRAZOS BÁSICO',
@@ -22,23 +22,26 @@ const EjerciciosBrazosProvider = ({ children }) => {
         description: "Ejercicio para la parte baja abdominal",
         repetition: 40,
         dificulty: 5,
-        estimatedTime:10
+        estimatedTime:7,
+        calories: 440
         },
         {
         id: 2,
-        title: "Espinales",
+        title: "Flexiones",
         description: "Ejercicio para el sector superior abdominal",
         repetition:40,
         dificulty: 5,
-        estimatedTime: 10,
+        estimatedTime: 7,
+        calories: 650
         },
         {
           id: 3,
-          title: 'squat',
+          title: 'Laterales',
           description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los Brazos, los deltoides de los hombros y los cuádriceps de las piernas,",
           repetition: 2,
           dificulty: 5,
-          estimatedTime:2
+          estimatedTime:2,
+          calories: 870
         },
 
   ];
