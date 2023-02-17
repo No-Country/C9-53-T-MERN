@@ -22,6 +22,20 @@ routeAuthentication.get(
   })
 );
 
+/* -------------------------------------------------------------------------- */
+/*                                  FACEBOOK                                  */
+/* -------------------------------------------------------------------------- */
+
+routeAuthentication.get('/auth/facebook', passport.authenticate('facebook'));
+
+routeAuthentication.get(
+  '/auth/facebook/callback',
+  passport.authenticate('facebook', {failureRedirect: '/login'}),
+  (req, res) => {
+    res.redirect('/users');
+  }
+);
+
 routeAuthentication.get('/login/session', (req, res) => {
   console.log(req.user);
   if (req.user) {

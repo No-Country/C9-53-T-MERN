@@ -7,6 +7,7 @@ const routeUsuarios = require('./src/routes/routeUsers');
 const strategyGoogle = require('./src/utils/strategyGoogle');
 const routeAuthentication = require('./src/routes/routeAuthentication');
 const strategyLocal = require('./src/utils/strategyLocal');
+const strategyFacebook = require('./src/utils/strategyFacebook');
 
 const app = express();
 
@@ -29,6 +30,7 @@ mongoose
 /* -------------------------------------------------------------------------- */
 
 strategyGoogle();
+strategyFacebook();
 strategyLocal();
 
 app.use(
