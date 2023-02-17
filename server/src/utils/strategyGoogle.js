@@ -14,11 +14,7 @@ const strategyGoogle = () => {
         // Aquí puedes acceder a la información del perfil de usuario y guardarla en una base de datos.
         // Por ejemplo, puedes buscar el usuario en tu base de datos y si no existe, puedes crear un nuevo registro.
         const user = {
-          id: profile.id,
-          name: profile.name,
-          profile,
           email,
-          accessToken,
         };
         return cb(null, user);
       }
