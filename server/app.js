@@ -41,10 +41,10 @@ app.use(
       },
     }),
     cookie: {
-      maxAge: 1 * 60 * 1000, //1 minuto en milisegundos
+      maxAge: 5 * 60 * 1000, //5 minutos en milisegundos
     },
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
   })
 );
 
