@@ -6,6 +6,7 @@ const schema = mongoose.Schema({
   name: String,
   email: String,
   password: String,
+  id_facebook: String,
 });
 
 module.exports = mongoose.model(collection, schema);
