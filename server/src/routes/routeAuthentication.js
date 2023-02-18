@@ -36,6 +36,18 @@ routeAuthentication.get(
   }
 );
 
+/* -------------------------------------------------------------------------- */
+/*                                    LOCAL                                   */
+/* -------------------------------------------------------------------------- */
+
+routeAuthentication.post(
+  '/auth/local',
+  passport.authenticate('local', {
+    failureRedirect: '/',
+    successRedirect: '/users',
+  })
+);
+
 routeAuthentication.get('/login/session', (req, res) => {
   console.log(req.user);
   if (req.user) {
