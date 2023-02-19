@@ -10,7 +10,7 @@ const BannerEjs = ({info}) => {
     >
 
       <div className={styles.bannerTitle}>
-          {info[1].D1}
+          {info[1].D}
       </div>
 
     </div>

@@ -17,7 +17,7 @@ const NavBar = () => {
     <div className={style.NavBar}>
       <div>
         <NavLink to="/" className={style.logo}>
-          FH
+          FIT HOUSE
         </NavLink>
       </div>
       <div>

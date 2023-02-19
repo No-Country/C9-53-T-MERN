@@ -4,9 +4,18 @@ import profilePic from './profilePic.PNG'
 import { AuthContext } from '../../context/AuthContext'
 import { useContext } from 'react'
 import { useNavigate } from "react-router-dom";
+import { useEjerciciosAbdominales } from '../../context/ejercicios/EjerciciosAbdominalesProvider'
 
 
 const UserProfile = () => {
+
+  const ejerciciosAbdominalesInfo = useEjerciciosAbdominales();
+
+  const logger = () => {
+    // console.log(ejerciciosAbdominalesInfo[0][1])
+     console.log(ejerciciosAbdominalesInfo[0])
+
+  }
 
   const {state, logout} = useContext(AuthContext);
 
@@ -32,7 +41,7 @@ const UserProfile = () => {
 
         <div className={style.rutinasButton} onClick={logout}> Salir </div>
 
-        <div className={style.rutinasButton}> logger </div>
+        <div className={style.rutinasButton} onClick={logger}> logger </div>
 
 
 

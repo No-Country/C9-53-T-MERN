@@ -2,7 +2,7 @@ import React from 'react'
 import { EjsByDayContext } from './EjsByDayContext'
 import { useState } from 'react';
 
-const EjsByDayProvider = () => {
+const EjsByDayProvider = ({children}) => {
 
     const [rutineMon, setRutineMon] = useState([]);
     const [rutineTue, setRutineTue] = useState([]);
@@ -15,7 +15,9 @@ const EjsByDayProvider = () => {
 
     return (
         <EjsByDayContext.Provider value={{setRutineMon, setRutineTue, setRutineWed
-            ,setRutineThu,setRutineFri,setRutineSat,setRutineSun}}>
+            ,setRutineThu,setRutineFri,setRutineSat,setRutineSun,
+            rutineMon,rutineTue,rutineWed,rutineThu,rutineFri,
+            rutineSat,rutineSun}}>
             {children}
         </EjsByDayContext.Provider>
   )

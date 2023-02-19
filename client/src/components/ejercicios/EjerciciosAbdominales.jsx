@@ -14,6 +14,7 @@ const EjerciciosAbdominales = ({info}) => {
   return (<>
 
     <BannerEjs info={info}/>
+    
     {newInfo.map((info) => (
 
         <EjsCard 

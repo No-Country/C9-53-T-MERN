@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RutineContext } from "./RutineContext";
 
 const RutineProvider = ({ children }) => {
+  
   const [rutine, setRutine] = useState([]);
 
   const addRutine = (item, quantity) => {
@@ -44,10 +45,12 @@ const RutineProvider = ({ children }) => {
   const quantityRutine = rutine.reduce((acc, cur) => acc + cur.quantity, 0);
   const caloriesRutine = rutine.reduce((acc, cur) => acc + cur.item.calories * cur.quantity, 0);
   const minutesRutine = rutine.reduce((acc, cur) => acc + cur.item.estimatedTime * cur.quantity, 0);
+  const repetitionRutine = rutine.reduce((acc, cur) => acc + cur.item.repetition * cur.quantity, 0);
+
 
 
   return (
-    <RutineContext.Provider value={{ rutine, addRutine, removeItem, clear, quantityRutine, caloriesRutine, minutesRutine }}>
+    <RutineContext.Provider value={{clear, rutine, addRutine, removeItem, clear, quantityRutine, caloriesRutine, minutesRutine, repetitionRutine }}>
       {children}
     </RutineContext.Provider>
   );

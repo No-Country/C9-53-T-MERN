@@ -14,8 +14,7 @@ const EjerciciosPiernasProvider = ({ children }) => {
     },
      {
       D1: 'PIERNAS BÁSICO',
-      D2: 'PIERNAS INTERMEDIO',
-      D3: 'PIERNAS AVANZADO'
+
      },
 
       {
