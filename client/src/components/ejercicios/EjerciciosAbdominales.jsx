@@ -34,6 +34,8 @@ const EjerciciosAbdominales = ({info}) => {
           addItem={addRutine}
           item={rutine.filter( rutineItem => rutineItem.item.id === info.id)}
           removeItem={removeItem}
+          series={info.series}
+          img={info.img}
 
           />
      ))}

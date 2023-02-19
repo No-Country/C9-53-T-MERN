@@ -1,8 +1,8 @@
 .bannerEjs{
-
+    position: relative;
     width: 80%;
-    height: 20vh;
-    border-radius: 30px;
+    height: 15vh;
+    /* border-radius: 30px; */
     display: flex;
     justify-content: start;
     /* flex-direction: column;
@@ -14,10 +14,16 @@
 
 .bannerTitle{
     color:white;
-    display: flex;
-    padding-left: 1.5rem;
-    padding-top: 1.5rem;
-    font-size: 200%;
+    /* display: flex; */
+    position:absolute;
+    top:10%;
+    left: 8%;
+    width: 40%;
+    text-align:start;
+
+    /* padding-left: 1.5rem;
+    padding-top: 1.5rem; */
+    font-size: 130%;
     font-weight: bolder;
 
 }
