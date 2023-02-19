@@ -9,7 +9,7 @@ const RutineProvider = ({ children }) => {
     if (isInRutine(item.id)) {
       const newRutine = rutine.map((rutineItem) => {
         if (rutineItem.item.id === item.id) {
-          return { item, quantity: rutineItem.quantity + 1 };
+          return { item, quantity: rutineItem.quantity };
         } else {
           return rutineItem;
         }

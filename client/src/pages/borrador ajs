@@ -1,0 +1,186 @@
+import React, { useEffect, useState } from 'react'
+import Counter from '../components/ejercicios/Counter';
+import EjerciciosAbdominales from '../components/ejercicios/EjerciciosAbdominales';
+import EjerciciosBrazos from '../components/ejercicios/EjerciciosBrazos';
+import EjerciciosPiernas from '../components/ejercicios/EjerciciosPiernas';
+import ProgramasUpperDiv from '../components/ejercicios/upperDiv/ProgramasUpperDiv';
+import NavBar from "../components/NavBar/NavBar";
+import { useEjerciciosAbdominales } from '../context/ejercicios/EjerciciosAbdominalesProvider';
+import { useEjerciciosBrazos } from '../context/ejercicios/EjerciciosBrazosProvider';
+import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasProvider';
+
+
+import Select from "react-select";
+
+const Ejercicios = () => {
+
+  const ejerciciosAbdominalesInfo = useEjerciciosAbdominales();
+
+  const ejerciciosBrazosInfo = useEjerciciosBrazos();
+
+  const ejerciciosPiernasInfo = useEjerciciosPiernas();
+
+  // const x = 0;
+
+  // const modifyEjs = () =>{
+
+  // }
+  
+  const [ejs, setEjs] = useState(1);
+  // useEffect(() => setEjs, [ejs]);
+  useEffect(() => {}, [ejs]) 
+  
+  const options = [
+    { value: 1, label: "Blues" },
+    { value: 2, label: "Rock" },
+    { value: 3, label: "Jazz" },
+    { value: 4, label: "Orchestra" },
+  ];
+
+  const [selected, setSelected] = useState([1]);
+
+  const handleChange = (selectedOption) => {
+    setSelected(selectedOption);
+    console.log(typeof(selected.value));
+  };
+
+    // useEffect(() => {}, [ejs]) 
+
+
+
+  return (<>
+
+      <NavBar />
+
+      
+      <div 
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '100%', 
+        }}
+      >
+        <ProgramasUpperDiv/>
+
+        <Counter/>
+
+        <div >
+          <div >
+            <Select options={options} onChange={setEjs}  />
+          </div>
+        </div>
+
+
+        {/* <select
+        style={{
+          background: 'black',
+          color: 'white',
+          borderColor: '#FCBD3C',
+          padding:' 0.35rem',
+          margin: '1rem',
+          cursor:'pointer',
+          display: 'flex',
+          justifyContent: 'start',
+          fontWeight: '200'
+
+        }}
+        >
+          <option>Elige Dificultad</option>
+          <option 
+          value={0} 
+          onClick={() => setEjs(0)
+          }>Básica</option>
+          <option 
+          value={1} 
+          onClick={() => setEjs(1)}
+          >Básica
+          </option>
+        </select>
+
+        */}
+
+
+
+        <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[ejs]}/>
+        {/* <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[0]}/> */}
+        {/* <div>{selected.value}</div> */}
+        {/* {<>You've selected {selected.value}</>} */}
+        <EjerciciosBrazos info={ejerciciosBrazosInfo}/>
+        <EjerciciosPiernas info={ejerciciosPiernasInfo}/> 
+
+
+      </div>
+      
+
+</>
+  );
+}
+
+export default Ejercicios
+
+
+
+---------------------------
+
+rutine provider backup
+
+import React, { useState } from "react";
+import { RutineContext } from "./RutineContext";
+
+const RutineProvider = ({ children }) => {
+  
+  const [rutine, setRutine] = useState([]);
+
+  const addRutine = (item, quantity) => {
+    if (isInRutine(item.id)) {
+      const newRutine = rutine.map((rutineItem) => {
+        if (rutineItem.item.id === item.id) {
+          return { item, quantity: rutineItem.quantity + 1 };
+        } else {
+          return rutineItem;
+        }
+      });
+      setRutine(newRutine);
+    } else {
+      setRutine([...rutine, { item, quantity }]);
+    }
+  };
+
+  const removeItem = (itemId) => {
+    const newRutine = rutine.filter(
+      (rutineItem) => rutineItem.item.id !== itemId || rutineItem.quantity > 1
+    );
+    const newRutine2 = newRutine.map((rutineItem) => {
+      if (rutineItem.item.id === itemId) {
+        return { item: rutineItem.item, quantity: rutineItem.quantity - 1 };
+      } else {
+        return rutineItem;
+      }
+    });
+    setRutine(newRutine2);
+  };
+
+  const clear = () => {
+    setRutine([]);
+  };
+
+  const isInRutine = (itemId) => {
+    return rutine.some((rutineItem) => rutineItem.item.id === itemId);
+  };
+
+  const quantityRutine = rutine.reduce((acc, cur) => acc + cur.quantity, 0);
+  const caloriesRutine = rutine.reduce((acc, cur) => acc + cur.item.calories * cur.quantity, 0);
+  const minutesRutine = rutine.reduce((acc, cur) => acc + cur.item.estimatedTime * cur.quantity, 0);
+  const repetitionRutine = rutine.reduce((acc, cur) => acc + cur.item.repetition * cur.quantity, 0);
+
+
+
+  return (
+    <RutineContext.Provider value={{clear, rutine, addRutine, removeItem, clear, quantityRutine, caloriesRutine, minutesRutine, repetitionRutine }}>
+      {children}
+    </RutineContext.Provider>
+  );
+};
+
+export default RutineProvider;

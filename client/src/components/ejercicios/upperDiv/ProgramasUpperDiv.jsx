@@ -4,8 +4,10 @@ const ProgramasUpperDiv = () => {
   return (
     <div
     style={{
-        color:'white',
-        fontWeight: 'bolder'
+        color:'#FCBD3C',
+        fontWeight: '600',
+        marginRight: '60%'
+        
     }}
     >Programas </div>
   )
