@@ -107,7 +107,7 @@ const Ejercicios = () => {
         />
 
         <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[level]}/>
-        <EjerciciosBrazos info={ejerciciosBrazosInfo}/>
+        <EjerciciosBrazos info={ejerciciosBrazosInfo[level]}/>
         <EjerciciosPiernas info={ejerciciosPiernasInfo}/> 
 
 

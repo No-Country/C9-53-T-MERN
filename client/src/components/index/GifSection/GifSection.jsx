@@ -4,10 +4,10 @@ import UpperGifSection from "./UpperGifSection";
 
 const GifSection = () => {
   return (
-    <div className={style.gifSection}>
+    // <div className={style.gifSection}>
 
       <UpperGifSection/>
-
+/* 
       <div className={style.distribution}>
         <div className={style.gifCards}>
          
@@ -57,8 +57,8 @@ const GifSection = () => {
          <div className={style.cardButton}>Comenzar ahora</div>
        </div>
 
-      </div>
-    </div>
+      </div> */
+    // </div>
   );
 };
 

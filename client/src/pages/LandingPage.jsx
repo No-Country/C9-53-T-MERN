@@ -10,10 +10,11 @@ const LandingPage = () => {
   return (
     <div>
       <NavBar />
-      <Banner/>
+      <Banner/> 
       <GifSection/>
+      {/*
       <Planes/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
