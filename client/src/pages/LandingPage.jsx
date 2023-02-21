@@ -13,9 +13,9 @@ const LandingPage = () => {
       <NavBar />
       <Banner/> 
       <GifSection/>
+      <Planes/>
       {/* <ImageSlider/> */}
       {/*
-      <Planes/>
       <Footer/> */}
     </div>
   );

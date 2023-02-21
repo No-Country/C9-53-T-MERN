@@ -1,6 +1,9 @@
 .planesContainer{
+    position: absolute;
+    top:170vh;
     height: 100vh;
     background-color: var(--color-black);
+    width: 100%;
 
     margin-top: 7.5%;
     background: black;
@@ -76,5 +79,46 @@
 .checkmark{
     height: 5%;
     width: 5%;
+
+}
+
+
+@media (max-width:1000px){
+
+    .planesHeader{
+        padding-top: 5.5rem;
+        color: var(--color-text);
+        padding-left: 5%;
+        font-weight: 900;
+        font-size: 200%;
+        margin-bottom: 3%;
+        margin-left:5%
+    }
+
+    .planesContainer{
+        position: absolute;
+        top: 210vh;
+        height: 160%;
+        width: 100%;
+
+
+    }
+
+    .planesCardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .planesCard{
+        height: 60vh;
+        background-color: var(--color-background-card);
+        width: 70.5%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        margin-top: 3%;
+    
+    }
 
 }
