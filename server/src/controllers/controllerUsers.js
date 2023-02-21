@@ -18,17 +18,10 @@ const controllerUsers = {
 
     const isSaved = await service.saveUser({name, email, password: hash});
 
-    if (isSaved) {
+    if (isSaved.code) {
       res.status(201).json(isSaved);
-
-      await transporter.sendMail({
-        to: isSaved.user.email,
-        from: 'diegogaraycullas@gmail.com',
-        subject: 'Email confirmation',
-        html: "<h1>Bienvenido a la mejor app de fitnes creada por C-5-M</h1> <p>Tienes que confirmar tu email</p><p> Solo haz click en el siguiente <a href='#'' target='new_blank'> enlace </a>",
-      });
     } else {
-      res.status(400).json({message: 'something wrong'});
+      res.status(400).json(isSaved);
     }
   },
 
