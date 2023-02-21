@@ -1,6 +1,9 @@
 import React from 'react'
+import Footer from '../components/footer/Footer';
 import Banner from '../components/index/banner/Banner';
-import GiftSection from '../components/index/GiftSection/GiftSection';
+import GifSection from '../components/index/GifSection/GifSection';
+import Planes from '../components/index/Planes/Planes';
+import ImageSlider from '../components/index/slider/ImageSlider';
 import NavBar from "../components/NavBar/NavBar";
 
 
@@ -8,8 +11,12 @@ const LandingPage = () => {
   return (
     <div>
       <NavBar />
-      <Banner/>
-      <GiftSection/>
+      <Banner/> 
+      <GifSection/>
+      <Planes/>
+      {/* <ImageSlider/> */}
+      {/*
+      <Footer/> */}
     </div>
   );
 }

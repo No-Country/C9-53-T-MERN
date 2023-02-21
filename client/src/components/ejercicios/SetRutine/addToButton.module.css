@@ -1,0 +1,10 @@
+.addToButton
+{margin-top: 10rem;
+padding-top: 0.75rem;
+display: flex;
+justify-content: center;
+height: 3rem;
+width:90%;
+border-radius: 20px;
+
+}

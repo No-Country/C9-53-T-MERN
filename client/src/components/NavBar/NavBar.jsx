@@ -1,31 +1,40 @@
 import React from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
+import User from "../../pages/User";
+import YellowButton from "../buttons/YellowButton";
+import ConditionalNavBar from "./conditionalNav/ConditionalNavBar";
+import LogNavBar from "./conditionalNav/LogNavBar";
+import UserNavBar from "./conditionalNav/UserNavBar";
 import style from "./NavBar.module.css";
 
 const NavBar = () => {
+
+  const {logout} = useContext(AuthContext)
+
   return (
     <div className={style.NavBar}>
       <div>
-        <NavLink to="/" className={style.btn}>
-          FH
+        <NavLink to="/" className={style.logo}>
+          FIT HOUSE
         </NavLink>
       </div>
       <div>
-        <NavLink to="/inicio" className={style.btn}>
-          INICIO
-        </NavLink>
-        <NavLink to="/programas" className={style.btn}>
-          PROGRAMAS
+        <NavLink to="/ejercicios" className={style.ejercicios}>
+          Ejercicios
         </NavLink>
       </div>
-      <div>
-        <NavLink to="/signup" className={style.btn}>
-          REGISTRARSE
-        </NavLink>
-        <NavLink to="/login" className={style.btn}>
-          <button className={style.shape}>INICIAR SESION</button>
-        </NavLink>
+      
+      <div 
+      className={style.logDiv}
+      >
+        {/* <LogNavBar/> */}
+        {/* <UserNavBar/> */}
+        <ConditionalNavBar/>
+
       </div>
+
     </div>
   );
 };

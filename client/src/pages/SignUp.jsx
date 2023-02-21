@@ -1,8 +1,13 @@
 import React from 'react'
+import LoginFormRegister from '../components/login/LoginFormRegister'
+import NavBar from "../components/NavBar/NavBar";
+
 
 const SignUp = () => {
-  return (
-    <div>SignUp</div>
+  return (<>
+    <NavBar/>
+    <LoginFormRegister/>
+    </>
   )
 }
 

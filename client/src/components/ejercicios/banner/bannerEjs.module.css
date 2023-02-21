@@ -1,0 +1,39 @@
+.bannerEjs{
+    position: relative;
+    width: 80%;
+    height: 15vh;
+    /* border-radius: 30px; */
+    display: flex;
+    justify-content: start;
+    /* flex-direction: column;
+    align-items: center;   */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+} 
+
+.bannerTitle{
+    color:white;
+    /* display: flex; */
+    position:absolute;
+    top:10%;
+    left: 8%;
+    width: 40%;
+    text-align:start;
+
+    /* padding-left: 1.5rem;
+    padding-top: 1.5rem; */
+    font-size: 130%;
+    font-weight: bolder;
+
+}
+
+.bannerImage{
+    width: 101%;
+    height: 20vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

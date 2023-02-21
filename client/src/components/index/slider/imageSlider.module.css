@@ -1,0 +1,31 @@
+
+
+    /* Cuando el ancho de la pantalla es mayor a mil pasa esto */
+    
+        .imageSlider{
+            position: absolute;
+            top:30vh;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            background: #181818;
+            ;
+            /* left:7% */
+        }
+    
+    
+
+
+@media (max-width: 1000px){
+    /* Cuando el ancho de la pantalla es menor a mil pasa esto */
+    
+        .imageSlider{
+            position: absolute;
+            top:95vh;
+            width: 90%;
+            left: 0.5%;
+        }
+    
+    }
+
+
