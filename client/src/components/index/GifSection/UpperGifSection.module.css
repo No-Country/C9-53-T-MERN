@@ -22,10 +22,21 @@
     padding-top: 2REM;
     text-align: center;
     font-weight: 100;
-    font-size: 140%;
+    font-size: 120%;
     color: var(--color-text)
   }
+
+
   
+
+  @media (max-height: 1250px){
+    .upperGifSection{
+      left:27%;
+      width: 50%;
+
+    }
+  }
+
   @media (min-width: 1000px){
     .upperGifSection{
       left:27%;
@@ -40,4 +51,6 @@
       font-size: 150%;
       color: var(--color-text)
     }
+
+
   }

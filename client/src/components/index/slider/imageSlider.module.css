@@ -1,0 +1,52 @@
+
+@media (max-width: 11000px){
+    /* Cuando el ancho de la pantalla es menor a mil pasa esto */
+    
+        .imageSlider{
+            position: absolute;
+            top:30vh;
+            width: 90%;
+            /* left: 10%; */
+        }
+    
+    }
+
+
+@media (max-width: 1000px){
+    /* Cuando el ancho de la pantalla es menor a mil pasa esto */
+    
+        .imageSlider{
+            position: absolute;
+            top:70vh;
+            width: 90%;
+            left: 0.5%;
+        }
+    
+    }
+
+
+@media (max-width: 900px){
+    /* Cuando el ancho de la pantalla es menor a mil pasa esto */
+    
+        .imageSlider{
+            position: absolute;
+            top:90vh;
+            width: 90%;
+            /* left: 10%; */
+        }
+    
+    }
+
+
+@media (max-width: 740px){
+/* Cuando el ancho de la pantalla es menor a mil pasa esto */
+
+    .imageSlider{
+        position: absolute;
+        top:100vh;
+        width: 90%;
+        /* left: 10%; */
+    }
+
+}
+

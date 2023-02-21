@@ -1,4 +1,5 @@
 import React from 'react'
+// import ImageSlider from '../slider/ImageSlider'
 import style from './UpperGifSection.module.css'
 
 const UpperGifSection = () => {
@@ -10,7 +11,7 @@ const UpperGifSection = () => {
          la pérdida de peso,la mejora del rendimiento y la condición cardiovascular.</div>
 
         
-        
+        <div className={style.imageSlider}>image</div>
 
 
     </div>

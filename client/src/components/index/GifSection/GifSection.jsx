@@ -1,12 +1,15 @@
 import React from "react";
+import ImageSlider from "../slider/ImageSlider";
 import style from "./GifSection.module.css";
 import UpperGifSection from "./UpperGifSection";
 
 const GifSection = () => {
   return (
     // <div className={style.gifSection}>
-
+<>
       <UpperGifSection/>
+      <ImageSlider/>
+      </>
 /* 
       <div className={style.distribution}>
         <div className={style.gifCards}>
