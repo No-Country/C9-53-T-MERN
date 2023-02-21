@@ -1,5 +1,4 @@
 const bcrypt = require('bcrypt');
-const transporter = require('../../mailer');
 const serviceUsers = require('../services/serviceUsers');
 
 const service = new serviceUsers();

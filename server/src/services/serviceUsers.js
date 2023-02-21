@@ -1,4 +1,5 @@
 const usersDAO = require('../dao/usersDAO');
+const transporter = require('../utils/mailer');
 
 const dao = new usersDAO();
 
