@@ -9,8 +9,8 @@ import BackTestter from './pages/BackTestter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     {/* <App />  */}
-    <BackTestter/>
+     <App /> 
+    {/* <BackTestter/> */}
   </React.StrictMode>
 );
 

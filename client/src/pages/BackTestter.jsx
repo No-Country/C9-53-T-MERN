@@ -30,7 +30,7 @@ const BackTestter = () => {
         height: '200px'
     }}
 
-    // onClick={loger}
+    onClick={loger}
     
     >
 
