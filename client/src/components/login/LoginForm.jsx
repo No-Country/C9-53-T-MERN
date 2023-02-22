@@ -1,8 +1,4 @@
-import React from 'react'
-import LoginBlackButton from './buttons/LoginBlackButton';
 import style from './loginForm.module.css';
-import { useContext, useState } from "react";
-import { TYPES } from "../../reducer/authReducer";
 import useForm from "../../custom hooks/useForm";
 import { AuthContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -11,76 +7,77 @@ import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
 
-    const navigate = useNavigate();
-  
-    const register = () => {
-      navigate('/register')}
+  const navigate = useNavigate();
 
-    const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
+  const register = () => {
+    navigate('/register')
+  }
 
-  return (     
+  const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
+
+  return (
     <div className={style.loginContainer}>
 
-        <div className={style.loginForm}>
+      <div className={style.loginForm}>
 
-            <form 
-            onSubmit={handleSubmit}
-            >
+        <form
+          onSubmit={handleSubmit}
+        >
 
-                <div className={style.logCategory}>
-                    <div className={style.logCategoryType}>Email:</div>
+          <div className={style.logCategory}>
+            <div className={style.logCategoryType}>Email:</div>
 
-                    <input
-                    placeholder="  Ingresa una dirección de email"
-                    type="text"
-                    name="email"
-                    className={style.login_input}
-                    value={userForm.email}
-                    onChange={handleChange}
-                    />
+            <input
+              placeholder="  Ingresa una dirección de email"
+              type="text"
+              name="email"
+              className={style.login_input}
+              value={userForm.email}
+              onChange={handleChange}
+            />
 
-                </div>
+          </div>
 
-                <div className={style.logCategory}>
-                    <div className={style.logCategoryType}>Contraseña:</div>
-                    <input
-                    placeholder="  Ingresa una dirección de email"
-                    type="password"
-                    name="password"
-                    className={style.login_input}
-                    onChange={handleChange}
-                    value={userForm.password}
-                    />
+          <div className={style.logCategory}>
+            <div className={style.logCategoryType}>Contraseña:</div>
+            <input
+              placeholder="  Ingresa una dirección de email"
+              type="password"
+              name="password"
+              className={style.login_input}
+              onChange={handleChange}
+              value={userForm.password}
+            />
 
-                </div>    
+          </div>
 
-            <button type="submit" className={style.blackButton}>
-              Iniciar sesión
-            </button>
+          <button type="submit" className={style.blackButton}>
+            Iniciar sesión
+          </button>
 
-            </form>
+        </form>
 
-            <button className={style.blackButtonCrearCuenta} onClick={register}>
-              Crear cuenta
-            </button>
-            
-
-            <div className={style.logCategory}>
-                <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
-            </div>
+        <button className={style.blackButtonCrearCuenta} onClick={register}>
+          Crear cuenta
+        </button>
 
 
-{/* 
+        <div className={style.logCategory}>
+          <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
+        </div>
+
+
+        {/* 
             <div className={style.logCategory}>
                 <LoginBlackButton/>
             </div> */}
 
 
-            
-        
 
 
-        </div>
+
+
+      </div>
     </div>
   )
 }

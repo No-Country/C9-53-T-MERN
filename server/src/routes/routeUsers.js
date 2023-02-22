@@ -42,13 +42,9 @@ const routeUsuarios = Router();
  *                   example: validation error
  */
 
-routeUsuarios.get('/users', controllerUsers.getAll);
+routeUsuarios.get('/', controllerUsers.getAll);
 
-routeUsuarios.post('/', (req, res) => {
-  schema.find().then((data) => res.json(data));
-});
-
-routeUsuarios.post('/users', controllerUsers.saveUser);
+routeUsuarios.post('/', controllerUsers.saveUser);
 
 routeUsuarios.post('/update', controllerUsers.update);
 
