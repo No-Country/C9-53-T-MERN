@@ -20,60 +20,58 @@ const LoginForm = () => {
 
       <div className={style.loginForm}>
 
-        <form
-          onSubmit={handleSubmit}
-        >
+        <h1 className={style.title}>Iniciar sesión</h1>
 
-          <div className={style.logCategory}>
-            <div className={style.logCategoryType}>Email:</div>
+        <div className={style.container}>
 
-            <input
-              placeholder="  Ingresa una dirección de email"
-              type="text"
-              name="email"
-              className={style.login_input}
-              value={userForm.email}
-              onChange={handleChange}
-            />
+          <form
+            onSubmit={handleSubmit}
+          >
 
-          </div>
+            <div className={style.logCategory}>
 
-          <div className={style.logCategory}>
-            <div className={style.logCategoryType}>Contraseña:</div>
-            <input
-              placeholder="  Ingresa una dirección de email"
-              type="password"
-              name="password"
-              className={style.login_input}
-              onChange={handleChange}
-              value={userForm.password}
-            />
+              <div className={style.logCategoryType}>Dirección de e-mail</div>
 
-          </div>
+              <input
+                placeholder="  Ingresa una dirección de email"
+                type="text"
+                name="email"
+                className={style.login_input}
+                value={userForm.email}
+                onChange={handleChange}
+              />
 
-          <button type="submit" className={style.blackButton}>
-            Iniciar sesión
+            </div>
+
+            <div className={style.logCategory}>
+              <div className={style.logCategoryType}>Contraseña:</div>
+              <input
+                placeholder="  Ingresa una dirección de email"
+                type="password"
+                name="password"
+                className={style.login_input}
+                onChange={handleChange}
+                value={userForm.password}
+              />
+
+            </div>
+
+            <button type="submit" className={style.blackButton}>
+              Iniciar sesión
+            </button>
+
+          </form>
+
+          <button className={style.blackButtonCrearCuenta} onClick={register}>
+            Crear cuenta
           </button>
 
-        </form>
 
-        <button className={style.blackButtonCrearCuenta} onClick={register}>
-          Crear cuenta
-        </button>
+          <div className={style.logCategory}>
+            <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
+          </div>
 
-
-        <div className={style.logCategory}>
-          <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
         </div>
-
-
-        {/* 
-            <div className={style.logCategory}>
-                <LoginBlackButton/>
-            </div> */}
-
-
-
 
 
 
