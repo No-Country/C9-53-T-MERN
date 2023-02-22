@@ -2,33 +2,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ;
+  height: 100vh;
 }
 
 .loginForm {
-  margin-top: 3%;
   border-radius: 20px;
   width: 960px;
   height: 772px;
-  background-color: #feae0c;
+  background-color: #fcbd3c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  /* font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700; */
+  font-size: 1.75rem;
+  line-height: 150%;
+}
+
+.container {
+  margin-top: 39px;
+  width: 560px;
 }
 
 .logCategory {
   font-weight: 500;
-  margin-top: 20px;
-
-  margin-left: 10%;
 }
 
 .logCategoryType {
-  padding-bottom: 15px;
-  margin-left: 10%;
+  padding-bottom: 18px;
 }
 
 .login_input {
-  height: 3rem;
-  width: 90%;
-  border-radius: 20px;
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 25px;
+}
+
+.login_input::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #616161;
 }
 
 .blackButton {
