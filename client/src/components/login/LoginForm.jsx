@@ -44,15 +44,22 @@ const LoginForm = () => {
             </div>
 
             <div className={style.logCategory}>
+
               <div className={style.logCategoryType}>Contraseña:</div>
               <input
-                placeholder="  Ingresa una dirección de email"
+                placeholder="  Ingresa una contraseña"
                 type="password"
                 name="password"
-                className={style.login_input}
+                className={style.login_input2}
                 onChange={handleChange}
                 value={userForm.password}
               />
+
+            </div>
+
+            <div className={style.logCategory}>
+
+              <div className={style.logCategoryType2}>Olvidaste tu contraseña?</div>
 
             </div>
 
@@ -65,11 +72,6 @@ const LoginForm = () => {
           <button className={style.blackButtonCrearCuenta} onClick={register}>
             Crear cuenta
           </button>
-
-
-          <div className={style.logCategory}>
-            <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
-          </div>
 
         </div>
 
