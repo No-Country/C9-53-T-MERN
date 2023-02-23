@@ -39,6 +39,7 @@
 
   @media (min-width: 1000px){
     .upperGifSection{
+      top:110vh;
       left:27%;
       width: 50%;
     }
