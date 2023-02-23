@@ -1,4 +1,8 @@
-.background .loginContainer {
+.background {
+  background-color: #0d0d0e;
+}
+
+.loginContainer {
   display: flex;
   justify-content: center;
   align-items: center;
