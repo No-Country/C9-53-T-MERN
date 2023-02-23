@@ -1,5 +1,5 @@
 const express = require('express');
-const {mongoose} = require('mongoose');
+const { mongoose } = require('mongoose');
 const passport = require('passport');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
@@ -9,10 +9,11 @@ const routeAuthentication = require('./src/routes/routeAuthentication');
 const strategyLocal = require('./src/utils/strategyLocal');
 const strategyFacebook = require('./src/utils/strategyFacebook');
 const swaggerDocs = require('./swagger');
+const routeExercises = require('./src/routes/routeExercises');
 
 const app = express();
 
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 /* -------------------------------------------------------------------------- */
@@ -62,6 +63,7 @@ app.use(passport.session());
 
 app.use('/', routeAuthentication);
 app.use('/users', routeUsuarios);
+app.use('/exercises', routeExercises);
 
 const port = process.env.PORT || 3030;
 app.listen(port, () => {

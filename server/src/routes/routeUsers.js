@@ -44,10 +44,6 @@ const routeUsuarios = Router();
 
 routeUsuarios.get('/users', controllerUsers.getAll);
 
-routeUsuarios.post('/', (req, res) => {
-  schema.find().then((data) => res.json(data));
-});
-
 routeUsuarios.post('/users', controllerUsers.saveUser);
 
 routeUsuarios.post('/update', controllerUsers.update);
