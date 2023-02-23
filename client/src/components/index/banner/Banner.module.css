@@ -116,7 +116,7 @@
     .bannerFooter{
         position:absolute;
          /* margin-top: 20%;  */
-         top:49%;
+         top:51%;
          /* left:10%; */
         font-weight: 300;
         font-size: 110%;
@@ -160,7 +160,7 @@
          display: flex;
          flex-wrap: wrap;
          position:absolute;
-         top:54%;
+         top:49%;
          height: 40vh;
          width: 100%;
          /* background-color: white; */
