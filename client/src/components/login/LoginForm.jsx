@@ -16,7 +16,7 @@ const LoginForm = () => {
   const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
 
   return (
-    <div className={style.background}>
+    <div>
       <div className={style.loginContainer}>
 
         <div className={style.loginForm}>
