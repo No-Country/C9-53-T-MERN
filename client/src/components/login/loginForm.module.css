@@ -8,7 +8,7 @@
 .loginForm {
   border-radius: 20px;
   width: 960px;
-  height: 772px;
+  height: 919px;
   background-color: #fcbd3c;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,8 @@
 }
 
 .title {
-  /* font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 1.75rem;
   line-height: 150%;
 }
@@ -35,10 +34,24 @@
 
 .logCategoryType {
   padding-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #000000;
 }
 
 .logCategoryType2 {
   padding-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #000000;
+}
+
+.logCategoryType2:hover {
+  cursor: pointer;
 }
 
 .login_input {
@@ -49,16 +62,19 @@
   border: none;
   border-radius: 25px;
   margin-bottom: 32px;
+  padding-left: 57px;
 }
 
 .login_input::placeholder {
-  /* font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #616161;
-  padding-left: 57px;
+}
+
+.login_input:focus {
+  outline: none;
 }
 
 .login_input2 {
@@ -69,16 +85,19 @@
   border: none;
   border-radius: 25px;
   margin-bottom: 17px;
+  padding-left: 57px;
 }
 
 .login_input2::placeholder {
-  /* font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #616161;
-  padding-left: 57px;
+}
+
+.login_input2:focus {
+  outline: none;
 }
 
 .blackButton {
@@ -87,11 +106,20 @@
   align-items: center;
   height: 72px;
   width: 100%;
-  background-color: black;
+  background: #0d0d0e;
   border: none;
   border-radius: 20px;
-  color: white;
+  color: #f8f4f4;
   margin-top: 33px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.blackButton:hover {
+  cursor: pointer;
 }
 
 .blackButtonCrearCuenta {
@@ -100,9 +128,56 @@
   align-items: center;
   height: 72px;
   width: 100%;
-  background-color: black;
+  background: #0d0d0e;
   border: none;
   border-radius: 20px;
-  color: white;
+  color: #f8f4f4;
   margin-top: 22px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.blackButtonCrearCuenta:hover {
+  cursor: pointer;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 42px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #000000;
+}
+
+.containerLogos {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
+  margin-bottom: 22px;
+}
+
+.google {
+  background: url('./logos/google.svg');
+  width: 84px;
+  height: 84px;
+}
+
+.google:hover {
+  cursor: pointer;
+}
+
+.facebook {
+  background: url('./logos/facebook.svg');
+  width: 84px;
+  height: 84px;
+  margin-left: 40px;
+}
+
+.facebook:hover {
+  cursor: pointer;
 }
