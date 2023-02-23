@@ -16,67 +16,79 @@ const LoginForm = () => {
   const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
 
   return (
-    <div className={style.loginContainer}>
+    <div className={style.background}>
+      <div className={style.loginContainer}>
 
-      <div className={style.loginForm}>
+        <div className={style.loginForm}>
 
-        <h1 className={style.title}>Iniciar sesión</h1>
+          <h1 className={style.title}>Iniciar sesión</h1>
 
-        <div className={style.container}>
+          <div className={style.container}>
 
-          <form
-            onSubmit={handleSubmit}
-          >
+            <form
+              onSubmit={handleSubmit}
+            >
 
-            <div className={style.logCategory}>
+              <div className={style.logCategory}>
 
-              <div className={style.logCategoryType}>Dirección de e-mail</div>
+                <div className={style.logCategoryType}>Dirección de e-mail</div>
 
-              <input
-                placeholder="  Ingresa una dirección de email"
-                type="text"
-                name="email"
-                className={style.login_input}
-                value={userForm.email}
-                onChange={handleChange}
-              />
+                <input
+                  placeholder="Ingresa una dirección de email"
+                  type="text"
+                  name="email"
+                  className={style.login_input}
+                  value={userForm.email}
+                  onChange={handleChange}
+                />
 
-            </div>
+              </div>
 
-            <div className={style.logCategory}>
-              <div className={style.logCategoryType}>Contraseña:</div>
-              <input
-                placeholder="  Ingresa una dirección de email"
-                type="password"
-                name="password"
-                className={style.login_input}
-                onChange={handleChange}
-                value={userForm.password}
-              />
+              <div className={style.logCategory}>
 
-            </div>
+                <div className={style.logCategoryType}>Contraseña:</div>
+                <input
+                  placeholder="Ingresa una contraseña"
+                  type="password"
+                  name="password"
+                  className={style.login_input2}
+                  onChange={handleChange}
+                  value={userForm.password}
+                />
 
-            <button type="submit" className={style.blackButton}>
-              Iniciar sesión
+              </div>
+
+              <div className={style.logCategory}>
+
+                <div className={style.logCategoryType2}>¿Olvidaste tu contraseña?</div>
+
+              </div>
+
+              <button type="submit" className={style.blackButton}>
+                Iniciar sesión
+              </button>
+
+            </form>
+
+            <button className={style.blackButtonCrearCuenta} onClick={register}>
+              Crear cuenta
             </button>
 
-          </form>
+            <div className={style.subtitle}>O ingresa con</div>
 
-          <button className={style.blackButtonCrearCuenta} onClick={register}>
-            Crear cuenta
-          </button>
+            <div className={style.containerLogos}>
+              <div className={style.google}></div>
+              <div className={style.facebook}></div>
+            </div>
 
-
-          <div className={style.logCategory}>
-            <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
           </div>
 
+
+
         </div>
-
-
-
       </div>
     </div>
+
   )
 }
 
