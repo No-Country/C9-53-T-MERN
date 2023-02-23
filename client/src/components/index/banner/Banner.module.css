@@ -92,7 +92,7 @@
     }
 
     .bannerUpperDiv{
-        top:5%;
+        top:2%;
         position:absolute;
         display: 'flex';
         flex-direction: 'column';
@@ -123,21 +123,22 @@
     }
 
     .yellowButton{
-        position: absolute;
+        display: none;
+        /* position: absolute;
         background: #FCBD3C;
         border-radius: 25px;
-         left:10%; 
+         left:10%;  */
          /* margin-top: 3%;  */
-        top:80%;
-        height: 5%;
+        /* top:80%;
+        height: 5%; */
         /* width: 19vh; */
-        color: black;
+        /* color: black;
         cursor:pointer;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         /* text-align: center; */
-        padding: 15px 15px 15px;
+        /* padding: 15px 15px 15px; */
         }
 
     /* -----Banner Cards---------- */
@@ -159,7 +160,7 @@
          display: flex;
          flex-wrap: wrap;
          position:absolute;
-         top:61%;
+         top:57%;
          height: 40vh;
          width: 100%;
          /* background-color: white; */
