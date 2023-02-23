@@ -41,7 +41,7 @@
 }
 .bannerFooter{
     position:absolute;
-     top: 37%;
+     top: 45%;
      left:10%;
     font-weight: 300;
     font-size: 150%;
@@ -53,7 +53,7 @@
      flex-wrap: center;
      position:absolute;
 
-     top:60%;
+     top:66%;
      height: 50vh;
      width: 100%;
 } 
@@ -92,7 +92,7 @@
     }
 
     .bannerUpperDiv{
-        top:5%;
+        /* top:2%; */
         position:absolute;
         display: 'flex';
         flex-direction: 'column';
@@ -116,28 +116,29 @@
     .bannerFooter{
         position:absolute;
          /* margin-top: 20%;  */
-         top:40%;
+         top:53%;
          /* left:10%; */
         font-weight: 300;
-        font-size: 150%;
+        font-size: 110%;
     }
 
     .yellowButton{
-        position: absolute;
+        display: none;
+        /* position: absolute;
         background: #FCBD3C;
         border-radius: 25px;
-         left:10%; 
+         left:10%;  */
          /* margin-top: 3%;  */
-        top:80%;
-        height: 5%;
+        /* top:80%;
+        height: 5%; */
         /* width: 19vh; */
-        color: black;
+        /* color: black;
         cursor:pointer;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         /* text-align: center; */
-        padding: 15px 15px 15px;
+        /* padding: 15px 15px 15px; */
         }
 
     /* -----Banner Cards---------- */
@@ -159,7 +160,7 @@
          display: flex;
          flex-wrap: wrap;
          position:absolute;
-         top:50%;
+         top:49%;
          height: 40vh;
          width: 100%;
          /* background-color: white; */

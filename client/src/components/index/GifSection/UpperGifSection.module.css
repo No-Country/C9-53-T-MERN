@@ -29,26 +29,20 @@
 
   
 
-  @media (max-height: 1250px){
-    .upperGifSection{
-      left:27%;
-      width: 50%;
-
-    }
-  }
 
   @media (min-width: 1000px){
     .upperGifSection{
-      left:27%;
-      width: 50%;
+      top:110vh;
+      /* left:27%; */
+      width: 80%;
     }
 
     .info{
       padding-bottom: 3rem;
-      padding-top: 2REM;
+      padding-top: 1rem;
       text-align: center;
       font-weight: 100;
-      font-size: 150%;
+      font-size: 120%;
       color: var(--color-text)
     }
 
