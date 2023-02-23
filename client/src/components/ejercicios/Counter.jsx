@@ -40,14 +40,7 @@ const Counter = () => {
 
 </div>
 
-  <SetRutineMon/>
-  <SetRutineTue/>
-  <SetRutineWed/>
-  <SetRutineThu/>
-  <SetRutineFri/>
-  <SetRutineSat/>
-  
-  {/* <Se */}
+
     </>
   )
 }

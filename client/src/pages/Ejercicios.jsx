@@ -11,6 +11,7 @@ import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasPro
 
 
 import Select from "react-select";
+import {NewRutine} from '../components/ejercicios/options/NewRutine';
 
 
 const Ejercicios = () => {
@@ -96,6 +97,7 @@ const Ejercicios = () => {
         <ProgramasUpperDiv/>
 
         <Counter/>
+        <NewRutine/>
 
         <Select
           styles={selectStyles}
