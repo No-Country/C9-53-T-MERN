@@ -33,7 +33,7 @@ const LoginForm = () => {
               <div className={style.logCategoryType}>Dirección de e-mail</div>
 
               <input
-                placeholder="  Ingresa una dirección de email"
+                placeholder="Ingresa una dirección de email"
                 type="text"
                 name="email"
                 className={style.login_input}
@@ -44,15 +44,22 @@ const LoginForm = () => {
             </div>
 
             <div className={style.logCategory}>
+
               <div className={style.logCategoryType}>Contraseña:</div>
               <input
-                placeholder="  Ingresa una dirección de email"
+                placeholder="Ingresa una contraseña"
                 type="password"
                 name="password"
-                className={style.login_input}
+                className={style.login_input2}
                 onChange={handleChange}
                 value={userForm.password}
               />
+
+            </div>
+
+            <div className={style.logCategory}>
+
+              <div className={style.logCategoryType2}>¿Olvidaste tu contraseña?</div>
 
             </div>
 
@@ -66,9 +73,11 @@ const LoginForm = () => {
             Crear cuenta
           </button>
 
+          <div className={style.subtitle}>O ingresa con</div>
 
-          <div className={style.logCategory}>
-            <div className={style.logCategoryType}>Olvidaste tu contraseña?</div>
+          <div className={style.containerLogos}>
+            <div className={style.google}></div>
+            <div className={style.facebook}></div>
           </div>
 
         </div>
