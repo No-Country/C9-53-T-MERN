@@ -60,8 +60,8 @@
 
  .bannerCard{
     background-color: black;
-    width: 50%;
-    height: 40%;
+    width: 53%;
+    height: 50%;
     border: 5px solid #f9f3f3;
     margin: 5%;
 } 
@@ -160,8 +160,8 @@
          display: flex;
          flex-wrap: wrap;
          position:absolute;
-         top:49%;
-         height: 40vh;
+         top:48%;
+         height: 50vh;
          width: 100%;
          /* background-color: white; */
     
@@ -170,11 +170,16 @@
      .bannerCard{
 
         background-color: black;
+        color: white;
         /* border: #FCBD3C;
         border-width: 5px; */
         width: 40%;
         height: 40%;
         border: 5px solid #f9f3f3;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
         /* margin: 5%; */
         /* 
         height: 50%;
@@ -190,15 +195,17 @@
     
     } 
 
-    /* .bannerCardBody{
+    .bannerCardBody{
         font-weight: 100;
         width: 90%;
+        height: 90%;
         text-align: center;
         display:flex;
         justify-content: center;
         color: var(--color-text);
+        font-size: 92%;
     }
-     */
+    
     
     
 

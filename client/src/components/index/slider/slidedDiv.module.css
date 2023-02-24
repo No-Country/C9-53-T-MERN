@@ -32,7 +32,7 @@
     background-color: black;
     left: 20%;
     border-radius: 20px;
-    margin-bottom: 30%;
+    margin-bottom: 44%;
     /* margin-top:5%; */
 
 }
@@ -58,7 +58,7 @@
         width:60vw;
         /* left: 16%; */
 
-@media(max-width:1200px){        
+@media(max-width:1400px){        
     
     .infoDiv{
             position: absolute;
@@ -94,8 +94,8 @@
             background-color: black;
             left: 20%;
             border-radius: 20px;
-            margin-top:5%;
-            margin-bottom: 35%;
+            /* margin-top:5%; */
+            margin-bottom: 25%;
         
         }
         
@@ -134,7 +134,7 @@
 
     .slidedDivImage{
 
-        margin-bottom: 8rem;
+        margin-bottom: 10rem;
         width:40vw;
         border-radius: 20px;
         margin-top:5%;
