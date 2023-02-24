@@ -42,7 +42,7 @@
 @media(min-width:800px){
     .bannerEjs{
         position: relative;
-        width: 60%;
+        width: 45%;
         height: 15vh;
         /* border-radius: 30px; */
         display: flex;

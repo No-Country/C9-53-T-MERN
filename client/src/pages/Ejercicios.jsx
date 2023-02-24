@@ -14,6 +14,7 @@ import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasPro
 import Select from "react-select";
 import {NewRutine} from '../components/ejercicios/options/NewRutine';
 import { ChoosedRutines } from '../components/ejercicios/options/ChoosedRutines';
+import LateralBar from '../components/latearl bar/LateralBar';
 
 
 const Ejercicios = () => {
@@ -87,6 +88,7 @@ const Ejercicios = () => {
   return (<>
 
       <NavBar />
+      <LateralBar/>
 
       <div 
         style={{

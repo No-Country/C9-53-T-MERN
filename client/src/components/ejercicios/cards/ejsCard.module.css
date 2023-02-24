@@ -88,7 +88,7 @@
  @media(min-width:800px){
     .ejsCard{ 
         position: relative;
-        width: 50%;
+        width: 40%;
         height: 22vh;
         border-radius: 30px;
         margin-top: 1rem;

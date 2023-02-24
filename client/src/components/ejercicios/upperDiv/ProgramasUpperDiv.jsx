@@ -6,7 +6,7 @@ const ProgramasUpperDiv = () => {
     style={{
         color:'#FCBD3C',
         fontWeight: '600',
-        marginRight: '60%'
+        marginRight: '40%'
         
     }}
     >Programas </div>

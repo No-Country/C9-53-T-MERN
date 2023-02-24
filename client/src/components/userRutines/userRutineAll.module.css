@@ -2,10 +2,11 @@
     margin-top: 0.5rem;
     position: absolute;
     top:50vh;
-    background-color: black;
+    background-color: var(--);
     height: 150%;
     width: 100%;
-    color:white
+    color:white;
+    border-radius:20px
     /* left: 5%; */
 }
 
