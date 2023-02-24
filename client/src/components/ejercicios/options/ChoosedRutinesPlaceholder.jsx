@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import {useState } from "react";
 
-import UserRutineCard from "../../userRutines/UserRutineCard";
+// import UserRutineCard from "../../userRutines/UserRutineCard";
 import ChoosedRutineCard from "./ChoosedRutineCard";
-import { ChoosedRutines } from "./ChoosedRutines";
+// import { ChoosedRutines } from "./ChoosedRutines";
 
 
 

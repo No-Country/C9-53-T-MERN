@@ -3,7 +3,7 @@ import EjsCard from '../components/ejercicios/cards/EjsCard';
 import NavBar from '../components/NavBar/NavBar'
 import { useContext } from 'react';
 // import {RutineContext} from '../context/counter/RutineContext'
-import UserRutineCard from '../components/userRutines/UserRutineCard';
+import UserRutineCard from '../components/userRutines/accordions/UserRutineCardMonday';
 import { EjsByDayContext } from '../context/ejsByDay/EjsByDayContext';
 
 

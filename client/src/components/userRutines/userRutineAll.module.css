@@ -1,37 +1,137 @@
-.misRutinas{
+.containerDiv{
+    margin-top: 0.5rem;
     position: absolute;
     top:50vh;
-    color: white;
-    left: 15%;
-    font-size: larger;
-    font-weight: bold;
-}
-
-.lunesContainer{
-    position: absolute;
-    top:56vh;
-    color: white;
-    left: 10%;
-    font-size: larger;
-    font-weight: bold;
-}
-
-.diaContainer{
-    position: absolute;
-    top:60vh;
+    background-color: black;
+    height: 150%;
     width: 100%;
-    height: 100%;
-    left: 10%;
-    font-size: 100%;
     color:white
+    /* left: 5%; */
 }
 
 .accordionContainer{
+    position: inherit;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 2rem;
+     
+}
 
-    width: 90%;
+.titleLunes{
+    position: inherit;
     color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.div{
+    margin-right: 4rem;
+    font-size: 120%;
+}
+
+.accordion{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-size: 100%;
+    margin-left: 5%;
 
+}
+
+.titleMartes{
+    position: absolute;
+    top: 15vh;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-top: 10%; */
+}
+
+.titleMiercoles{
+    position: absolute;
+    top: 30vh;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-top: 10%; */
+}
+
+.titleJueves{
+    position: absolute;
+    top: 45vh;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.titleViernes{
+    position: absolute;
+    top: 60vh;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.titleSabado{
+    position: absolute;
+    top: 75vh;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.titleDomingo{
+    position: absolute;
+    top: 90vh;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.comenzar{
+    color:black;
+    background-color: #0055FF;
+border-radius: 25px;
+/* margin-top: 3%; */
+height: 100%;
+width: 30%;
+color: black;
+cursor:pointer;
+display: flex;
+justify-content: center;
+align-content: center;
+text-align: center;
+padding: 10px 10px 10px;
+}
+.borrar{
+    color:black;
+    background-color: #FF0088;
+border-radius: 25px;
+/* margin-top: 3%; */
+height: 100%;
+width: 30%;
+color: black;
+cursor:pointer;
+display: flex;
+justify-content: center;
+align-content: center;
+text-align: center;
+padding: 10px 10px 10px;
 }
