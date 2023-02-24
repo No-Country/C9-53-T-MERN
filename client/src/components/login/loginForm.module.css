@@ -72,7 +72,7 @@
 .login_input::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 16px;
   color: #616161;
 }
@@ -95,7 +95,7 @@
 .login_input2::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 16px;
   color: #616161;
 }
@@ -184,4 +184,53 @@
 
 .facebook:hover {
   cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .loginForm {
+    width: 300px;
+    height: 650px;
+  }
+
+  .container {
+    width: 240px;
+  }
+
+  .login_input {
+    width: 240px;
+    height: 50px;
+    padding-left: 18px;
+  }
+
+  .login_input2 {
+    width: 240px;
+    height: 50px;
+    padding-left: 18px;
+  }
+
+  .blackButton {
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 18px;
+  }
+
+  .blackButtonCrearCuenta {
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .subtitle {
+    margin-top: 27px;
+  }
+
+  .google {
+    background: url('./logos/googleMovil.svg') no-repeat;
+    width: 45px;
+    height: 45px;
+  }
+  .facebook {
+    background: url('./logos/facebookMovil.svg') no-repeat;
+    width: 45px;
+    height: 45px;
+  }
 }
