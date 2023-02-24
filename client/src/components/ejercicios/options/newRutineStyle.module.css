@@ -10,3 +10,18 @@
     color: black;
     font-weight: 700;
 }
+
+@media(min-width: 800px){
+    .newRutineStyle{
+        margin-top: 0.5rem;
+        padding-top: 0.75rem;
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        width:40%;
+        border-radius: 20px;
+        background-color: #FCBD3C;
+        color: black;
+        font-weight: 700;
+    }
+}

@@ -84,3 +84,21 @@
 .middleInfo{
     color: #FCBD3C;
 }
+
+ @media(min-width:800px){
+    .ejsCard{ 
+        position: relative;
+        width: 50%;
+        height: 22vh;
+        border-radius: 30px;
+        margin-top: 1rem;
+        background: #181818;
+        border-color: white;
+        border-style:groove;
+        border-width: 0.01rem;
+    
+    
+        
+    }
+    
+ }
