@@ -10,8 +10,10 @@ import { useEjerciciosBrazos } from '../context/ejercicios/EjerciciosBrazosProvi
 import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasProvider';
 
 
+
 import Select from "react-select";
 import {NewRutine} from '../components/ejercicios/options/NewRutine';
+import { ChoosedRutines } from '../components/ejercicios/options/ChoosedRutines';
 
 
 const Ejercicios = () => {
@@ -98,6 +100,7 @@ const Ejercicios = () => {
 
         <Counter/>
         <NewRutine/>
+        <ChoosedRutines/>
 
         <Select
           styles={selectStyles}

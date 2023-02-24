@@ -1,5 +1,7 @@
 import React from 'react'
 import style from './ejsCard.module.css'
+import { motion } from 'framer-motion'
+
 
 const EjsCard = ({ id, title, description, repetition,series, dificulty, estimatedTime, calories, addItem, removeItem, item, img
 }) => {
@@ -8,7 +10,14 @@ const EjsCard = ({ id, title, description, repetition,series, dificulty, estimat
 
   return (
 
-    <div className={style.ejsCard}>
+    <motion.div 
+    initial={{x: '-10vw'}}
+    animate={{ x: 0 }}
+    // initial={{y: '-5vh'}}
+    // animate={{ y: 0 }}
+    transition={{ ease: "easeOut", duration: 0.75 }}
+
+    className={style.ejsCard}>
 
         <div className={style.botonesContainer}>
 
@@ -42,7 +51,7 @@ const EjsCard = ({ id, title, description, repetition,series, dificulty, estimat
         
         </div>
     
-    </div>
+    </motion.div >
 
   )
 

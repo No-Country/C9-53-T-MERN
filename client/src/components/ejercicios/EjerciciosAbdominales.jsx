@@ -6,8 +6,6 @@ import { useContext } from 'react';
 
 const EjerciciosAbdominales = ({info}) => {
 
-  
-
   const newInfo = info.slice(2, info.length);
 
   const {

@@ -17,8 +17,8 @@ const EjerciciosBrazosProvider = ({ children }) => {
         D: 'BRAZOS BÁSICO',
       },
       {
-        id: 1,
-        title: 'Abdominales',
+        id: 50,
+        title: 'Push ups',
         description: "Ejercicio para la parte baja abdominal",
         repetition: 20,
         dificulty: 5,
@@ -28,7 +28,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
         img: FondosEnBanco,
       },
       {
-        id: 2,
+        id: 51,
         title: "Escalada de Montaña",
         description: "Ejercicio para el sector superior abdominal",
         repetition:15,
@@ -39,7 +39,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
         img: lagartijas
       },
       {
-        id: 3,
+        id: 53,
         title: 'squat',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
         repetition: 2,
@@ -58,7 +58,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
         D: 'BRAZOS INTERMEDIO',
       },
       {
-        id: 4,
+        id: 54,
         title: 'Abdominales',
         description: "Ejercicio para la parte baja abdominal",
         repetition: 30,
@@ -69,7 +69,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
         img: FondosEnBanco,
       },
       {
-        id: 5,
+        id: 55,
         title: "Escalada de Montaña",
         description: "Ejercicio para el sector superior abdominal",
         repetition:30,
@@ -81,7 +81,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
 
       },
       {
-        id: 6,
+        id: 56,
         title: 'Twist Ruso',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
         repetition: 3,
@@ -101,7 +101,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
         D: 'BRAZOS AVANZADO',
       },
       {
-        id: 7,
+        id: 57,
         title: 'Abdominales',
         description: "Ejercicio para la parte baja abdominal",
         repetition: 40,
@@ -112,7 +112,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
         img: FondosEnBanco,
       },
       {
-        id: 8,
+        id:58,
         title: "Escalada de Montaña",
         description: "Ejercicio para el sector superior abdominal",
         repetition:40,
@@ -124,7 +124,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
 
       },
       {
-        id: 9,
+        id: 59,
         title: 'Twist Ruso',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
         repetition: 4,
