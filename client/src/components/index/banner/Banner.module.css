@@ -203,7 +203,16 @@
         display:flex;
         justify-content: center;
         color: var(--color-text);
-        font-size: 92%;
+        font-size: 80%;
+    }
+
+    .bannerCardTitle{
+        font-weight: bold;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        color: var(--color-text);
+        font-size: 70%;
     }
     
     
