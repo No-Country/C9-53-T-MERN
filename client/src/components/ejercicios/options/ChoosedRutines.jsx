@@ -4,13 +4,13 @@ import { RutineContext } from "../../../context/counter/RutineContext";
 import style from './newRutineStyle.module.css'
 import { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
-import ChoosedRutineCard from './ChoosedRutineCard';
 import ContentPlaceholder from './ChoosedRutinesPlaceholder';
-
+import { useContext } from "react";
 
 
 
     const Accordion = ({ i, expanded, setExpanded }) => {
+      const {rutine, removeItem} = useContext(RutineContext);
         const isOpen = i === expanded;
       
         // By using `AnimatePresence` to mount and unmount the contents, we can animate
@@ -39,7 +39,7 @@ import ContentPlaceholder from './ChoosedRutinesPlaceholder';
                   }}
                   transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
                 >
-                      <ContentPlaceholder/>
+                      <ContentPlaceholder rutine={rutine} removeItem={removeItem} />
                 </motion.section>
               )}
             </AnimatePresence>

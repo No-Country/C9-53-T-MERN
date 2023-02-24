@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useContext, useState } from "react";
-import { RutineContext } from "../../../context/counter/RutineContext";
+import {useState } from "react";
+
 import UserRutineCard from "../../userRutines/UserRutineCard";
 import ChoosedRutineCard from "./ChoosedRutineCard";
 import { ChoosedRutines } from "./ChoosedRutines";
@@ -9,9 +9,9 @@ import { ChoosedRutines } from "./ChoosedRutines";
 
 
 
-const ContentPlaceholder = () =>{    
+const ContentPlaceholder = ({rutine, removeItem}) =>{    
 
-    const {rutine, removeItem} = useContext(RutineContext);
+
 
 
 return(

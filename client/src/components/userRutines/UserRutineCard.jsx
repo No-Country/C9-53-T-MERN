@@ -1,18 +1,17 @@
 import React from 'react'
 
-const UserRutineCard = ({title,repetition,estimatedTime}) => {
+const UserRutineCard = ({info}) => {
   return (<>
   <div
   style={{
     display: 'flex',
-    justifyContent: 'space-around',
-    fontSize: '100%',
-    gap: '1rem'
+    justifyContent: 'space-between',
+    width: '60%', 
+    fontSize:'60%'
   }}
   >
-    <div>{title}</div>
-    <div>{repetition} unidades</div>
-    <div>{estimatedTime} minutos</div>
+    <div>{info.item.title}</div>
+
   </div>
 
 </>
