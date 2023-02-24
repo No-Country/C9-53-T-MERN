@@ -16,12 +16,12 @@
     
 
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
     /* Cuando el ancho de la pantalla es menor a mil pasa esto */
     
         .imageSlider{
             position: absolute;
-            top:95vh;
+            top:70vh;
             width: 90%;
             left: 0.5%;
         }

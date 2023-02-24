@@ -16,7 +16,7 @@ const SlidedDiv = () => {
             style={{
                 marginTop:'2px',
                 fontWeight:'bolder',
-                fontSize:'120%'
+                fontSize:'100%'
             }}
 
             >Principiante</div>
