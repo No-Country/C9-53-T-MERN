@@ -17,8 +17,8 @@ const User = () => {
 
 
   <UserUpperDiv/>
-  <CreateRutineButton/>
-  <div className={style.rutinaDelDia}>Rutina del día </div>
+  {/* <CreateRutineButton/> */}
+  <div className={style.rutinaDelDia}>Rutina del día 
   <div className={style.dayContainer}>
     <div>Hola</div>
     <div>hola</div>
@@ -65,6 +65,7 @@ const User = () => {
     <div>Hola</div>
     <div>hola</div>
 
+  </div>
   </div>
 
     </>
