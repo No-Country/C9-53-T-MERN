@@ -1,8 +1,11 @@
 import React from 'react'
 import { useContext } from 'react';
 import NavBar from '../components/NavBar/NavBar'
+import CreateRutineButton from '../components/user profile/buttons/CreateRutineButton';
 import UserProfile from '../components/user profile/UserProfile';
+import UserUpperDiv from '../components/user profile/UserUpperDiv';
 import { AuthContext } from '../context/AuthContext';
+import style from './user.module.css'
 
 const User = () => {
 
@@ -11,17 +14,58 @@ const User = () => {
 
   return (<>
   <NavBar/>
-    {/* <div
-    style={{color:'white'}}
-    >
-      <img  src={}></img>
-      Hola!!!
-      Yo siempre digo {state.username}
-    </div>
-    <img src={state.profilePhoto} style={{display:'flex', justifyContent:'center',
-      borderRadius:'50%'
-  }}/> */}
-  <UserProfile/>
+
+
+  <UserUpperDiv/>
+  <CreateRutineButton/>
+  <div className={style.rutinaDelDia}>Rutina del día </div>
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
+
+  <div className={style.dayContainer}>
+    <div>Hola</div>
+    <div>hola</div>
+
+  </div>
 
     </>
   )

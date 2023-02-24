@@ -1,0 +1,158 @@
+@media (max-width: 1250px){
+
+.pic{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 55%;
+    height: 60vh;
+}
+
+.UserUpperDivContainer{
+    
+    border: none;
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.UserUpperDivLeftConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #0D0D0E;
+    width: 45%;
+    height: 60vh;
+}
+
+.UserUpperDivLeftConteinerHigh{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height:50%;
+    width:100%;
+    color:white
+}
+
+.UserUpperDivLeftConteinerLow{
+    color:white;
+    height:100%;
+    width:100%;
+    background-color: #0D0D0E;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.infoContainerAltura{
+    font-size: larger;
+    margin-top: 35%;
+    border-bottom: solid;
+    border-color: var(--color-yellow);
+}
+
+.infoContainerAlturaInt{
+    font-size: larger;
+    /* margin-top: 38%; */
+
+}
+
+}
+
+/* .UserUpperDivContainer{
+    width: 60%;
+    height: 60vh;
+    background-color: white;
+    justify-content: center;
+
+} */
+
+.pic{
+    margin-top: 5%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 55%;
+    height: 40vh;
+    background-image: url('./humanRunning.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+
+
+.UserUpperDivContainer{
+    border: none;
+    position: absolute;
+    top: 0%;
+    width: 70%;
+    height: 60vh;
+    background-color: #0D0D0E;
+    position:relative;
+    left: 15%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.UserUpperDivLeftConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #0D0D0E;
+    width: 45%;
+    height: 40vh;
+    border: none;
+}
+
+.UserUpperDivLeftConteinerHigh{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height:50%;
+    width:100%;
+    color:white;
+    border: none;
+}
+
+.UserUpperDivLeftConteinerLow{
+    
+    color:white;
+    height:50%;
+    width:100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: none;
+}
+
+.infoContainerAltura{
+    font-size: larger;
+    margin-top: 35%;
+    border-bottom: solid;
+    border-color: var(--color-yellow);
+}
+
+.infoContainerAlturaInt{
+    font-size: larger;
+    /* margin-top: 38%; */
+
+}
+
