@@ -44,7 +44,11 @@ const routeUsuarios = Router();
 
 routeUsuarios.get('/', controllerUsers.getAll);
 
+<<<<<<< HEAD
 routeUsuarios.post('/', controllerUsers.saveUser);
+=======
+routeUsuarios.post('/users', controllerUsers.saveUser);
+>>>>>>> manolo
 
 routeUsuarios.post('/update', controllerUsers.update);
 
