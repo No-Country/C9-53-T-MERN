@@ -1,9 +1,10 @@
-const exercisesServices = require("../services/exercises.services");
+const exercisesServices = require('../services/exercises.services');
 
+const service = new exercisesServices();
 
 const exercisesController = {
   getAllExercises: async (req, res) => {
-    const exercises = await exercisesServices.getAllExercises();
+    const exercises = await service.getAllExercises();
 
     res.json(exercises);
   },
@@ -11,7 +12,7 @@ const exercisesController = {
   createExercises: async (req, res) => {
     // const{}=req.body
     // const newExercise ={}
-    const dataNewExercise = await exercisesServices.createExercises();
+    const dataNewExercise = await service.createExercises();
     res.status(201).json(dataNewExercise);
   },
 
@@ -19,14 +20,14 @@ const exercisesController = {
     // const { id } = req.params
     // const { dates } = req.body
     // const datesExercise = {id, dates}
-    const modifedExercise = await exercisesServices.updateExercise()
+    const modifedExercise = await service.updateExercise();
     res.json(modifedExercise);
   },
 
   deleteExercise: async (req, res) => {
     // const { id } = req.params
-    const exerciseDeleted = await exercisesServices.deleteExercise()
+    const exerciseDeleted = await service.deleteExercise();
     res.json(exerciseDeleted);
-  }
-}
+  },
+};
 module.exports = exercisesController;
