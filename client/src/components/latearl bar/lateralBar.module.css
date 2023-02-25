@@ -1,0 +1,49 @@
+.lateralBarContainer{
+    position: fixed;
+    width: 18%;
+    height: 80%;
+    background-color: #181818;
+    color:#FFE8B8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.lateralBarDiv{
+    height: 11%;
+    width: 100%;
+    background-color: #181818;
+    border: 1px solid #504B4B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.lateralBarHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 28%;
+    width: 50%;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 6rem;
+    /* background-image: ; */
+}
+
+
+@media(max-width:800px){
+
+    .lateralBarContainer{
+        display: none;
+    }
+}

@@ -23,6 +23,7 @@ const EjerciciosAbdominales = ({info}) => {
 
         <EjsCard 
 
+          tester={info.tester}
           key={info.id}
           id={info.id}
           title={info.title}
