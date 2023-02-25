@@ -20,11 +20,13 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
         id: 1,
         title: 'Abdominales',
         description: "Ejercicio para la parte baja abdominal",
+        tester:'tester',
         repetition: 20,
         dificulty: 5,
         estimatedTime:8,
         calories: 440,
         series: 2,
+        checks:['one', 'two'],
         img: crunch,
       },
       {
@@ -32,10 +34,12 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
         title: "Escalada de Montaña",
         description: "Ejercicio para el sector superior abdominal",
         repetition:15,
+        tester:'tester',
         dificulty: 5,
         estimatedTime: 7,
         calories: 320,
         series: 2,
+        checks:['one', 'two'],
         img: escaladaMontaña
       },
       {
@@ -43,10 +47,12 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
         title: 'squat',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
         repetition: 2,
+        tester:'tester',
         dificulty: 5,
         estimatedTime:6,
         calories: 650,
         series: 2,
+        checks:['one', 'two'],
         img:twistRuso
       },
     ],
@@ -66,6 +72,7 @@ const EjerciciosAbdominalesProvider = ({ children }) => {
         estimatedTime:8,
         calories: 440,        
         series: 3,
+        checks:{1:1,2:1,3:1},
         img: crunch,
       },
       {

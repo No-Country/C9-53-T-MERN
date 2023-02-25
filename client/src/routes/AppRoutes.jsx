@@ -35,6 +35,7 @@ import User from "../pages/User";
 import UserRoutines from "../pages/UserRoutines";
 import SignUp from "../pages/SignUp";
 import Ejercicios from "../pages/Ejercicios";
+import MondayExcercise from "../pages/ejsPages/MondayExcercise";
 
 
 export const AppRoutes = () => {
@@ -86,6 +87,7 @@ export const AppRoutes = () => {
         <Route element={<ProtectedRoutes/>}>
           <Route element={<User/>} path='user'/>
           <Route element={<UserRoutines/>} path='userRoutines'/>
+          <Route element={<MondayExcercise/>} path='monday' />
         </Route>
 
         <Route path='/' element={<LandingPage/>}/>
