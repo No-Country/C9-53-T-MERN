@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js"
-
   },
   "keywords": [],
   "author": "C9-53-FITHOUSE",
@@ -30,5 +29,4 @@
   "devDependencies": {
     "nodemon": "^2.0.20"
   }
-
 }

@@ -9,15 +9,18 @@ const routeAuthentication = require('./src/routes/routeAuthentication');
 const strategyLocal = require('./src/utils/strategyLocal');
 const strategyFacebook = require('./src/utils/strategyFacebook');
 const swaggerDocs = require('./swagger');
-const cors = require('cors')
+const cors = require('cors');
+const routeExercises = require('./src/routes/routeExercises');
 
 const app = express();
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-app.use(cors({
-  origin: 'http://localhost:3000'
-}));
+app.use(
+  cors({
+    origin: 'http://localhost:3000',
+  })
+);
 
 /* -------------------------------------------------------------------------- */
 /*                                   MONGODB                                  */
@@ -66,7 +69,7 @@ app.use(passport.session());
 
 app.use('/', routeAuthentication);
 app.use('/users', routeUsuarios);
-
+app.use('/exercises', routeExercises);
 
 const port = process.env.PORT || 3030;
 app.listen(port, () => {
