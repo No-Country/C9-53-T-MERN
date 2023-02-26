@@ -49,9 +49,10 @@ routeAuthentication.post(
 );
 
 routeAuthentication.get('/login/session', (req, res) => {
-  console.log(req.user);
   if (req.user) {
     res.status(200).json({user: req.user, cookies: req.session.cookie});
+  } else {
+    res.status(200).json({user: null});
   }
 });
 

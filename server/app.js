@@ -54,9 +54,9 @@ app.use(
         useUnifiedTopology: true,
       },
     }),
-    cookie: {
-      maxAge: 5 * 60 * 1000, //5 minutos en milisegundos
-    },
+    // cookie: {
+    //   maxAge: 5 * 60 * 1000, //5 minutos en milisegundos
+    // },
     resave: false,
     saveUninitialized: false,
   })
