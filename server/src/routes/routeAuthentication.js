@@ -3,7 +3,7 @@ const passport = require('passport');
 
 const routeAuthentication = Router();
 
-const CLIENT_URL = 'http://localhost:3000';
+const url_client = process.env.URL_CLIENT || 'http://localhost:3000';
 
 /* -------------------------------------------------------------------------- */
 /*                                   GOOGLE                                   */
@@ -18,7 +18,7 @@ routeAuthentication.get(
   '/auth/google/callback',
   passport.authenticate('google', {
     failureRedirect: '/',
-    successRedirect: CLIENT_URL,
+    successRedirect: `${url_client}/user`,
   })
 );
 

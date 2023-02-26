@@ -15,6 +15,11 @@ const LoginForm = () => {
 
   const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
 
+  const urlGoogle = process.env.URL_GOOGLE || "http://localhost:3030/auth/google"
+  const clickGoogle = () => {
+    window.open(urlGoogle, "_self")
+  }
+
   return (
     <div className={style.background}>
       <div className={style.loginContainer}>
@@ -77,7 +82,7 @@ const LoginForm = () => {
             <div className={style.subtitle}>O ingresa con</div>
 
             <div className={style.containerLogos}>
-              <div className={style.google}></div>
+              <div className={style.google} onClick={clickGoogle}></div>
               <div className={style.facebook}></div>
             </div>
 
