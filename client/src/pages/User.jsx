@@ -1,5 +1,6 @@
 import React from 'react'
 import { useContext } from 'react';
+import LateralBar from '../components/latearl bar/LateralBar';
 import NavBar from '../components/NavBar/NavBar'
 import CreateRutineButton from '../components/user profile/buttons/CreateRutineButton';
 import UserProfile from '../components/user profile/UserProfile';
@@ -15,6 +16,7 @@ const User = () => {
 
   return (<>
   <NavBar/>
+  <LateralBar/>
 
 
   <UserUpperDiv/>

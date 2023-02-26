@@ -36,6 +36,7 @@ const EjerciciosAbdominales = ({info}) => {
           removeItem={removeItem}
           series={info.series}
           img={info.img}
+          checks={info.checks}
 
           />
      ))}

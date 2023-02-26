@@ -3,7 +3,7 @@ import style from './ejsCard.module.css'
 import { motion } from 'framer-motion'
 
 
-const EjsCard = ({ id, title, description, repetition,series, dificulty, estimatedTime, calories, addItem, removeItem, item, img
+const EjsCard = ({ id, title, description,checks ,repetition,series, dificulty, estimatedTime, calories, addItem, removeItem, item, img
 }) => {
 
   const quantity = item.length > 0 ? item[0].quantity: 0;
@@ -27,7 +27,8 @@ const EjsCard = ({ id, title, description, repetition,series, dificulty, estimat
           >
             Quitar
           </div>
-          <div className={style.buttons} onClick={() => addItem({id, title,repetition, description, calories, estimatedTime, series}, quantity+1)}>
+          <div className={style.buttons} onClick={() => addItem({id,checks, title,repetition, description, calories,
+             estimatedTime, series, img}, quantity+1)}>
             Añadir
           </div>
          

@@ -8,6 +8,8 @@ import UserRutineCardThu from './accordions/UserRutineCardThu'
 import UserRutineCardFri from './accordions/UserRutineCardFri'
 import UserRutineCardSat from './accordions/UserRutineCardSat'
 import { EjsByDayContext } from '../../context/ejsByDay/EjsByDayContext'
+import { useNavigate } from "react-router-dom";
+
 
 const UserRutinesAll = () => {
 
@@ -15,6 +17,28 @@ const UserRutinesAll = () => {
             setRutineWed,setRutineThu,setRutineFri,
             setRutineSat,setRutineSun} =  useContext(EjsByDayContext)
 
+            const navigate = useNavigate();
+  
+            const MondayNavigate = () => {
+              navigate('/userRoutines/monday')}
+
+            const TuesdayNavigate = () => {
+            navigate('/userRoutines/Tuesday')}
+
+            const WednesdayNavigate = () => {
+            navigate('/userRoutines/Wednesday')}
+
+            const ThursdayNavigate = () => {
+            navigate('/userRoutines/Thursday')}
+
+            const FridayNavigate = () => {
+            navigate('/userRoutines/Friday')}
+
+            const SaturdayNavigate = () => {
+            navigate('/userRoutines/Saturday')}
+
+            const SundayNavigate = () => {
+            navigate('/userRoutines/Sunday')}
 
   return (<>
 
@@ -29,7 +53,7 @@ const UserRutinesAll = () => {
                 <UserRutineCardMon/>
                 </div>
 
-                <div className={style.comenzar}>Comenzar</div>
+                <div className={style.comenzar} onClick={MondayNavigate}>Comenzar</div>
                 
                 <div className={style.borrar} onClick={()=>setRutineMon([])}>Borrar</div>
 
@@ -44,7 +68,7 @@ const UserRutinesAll = () => {
                 <UserRutineCardTue/>
                 </div>
 
-                <div className={style.comenzar}>Comenzar</div>
+                <div className={style.comenzar} onClick={TuesdayNavigate}>Comenzar</div>
                 
                 <div className={style.borrar} onClick={()=>setRutineTue([])}>Borrar</div>
 
@@ -59,7 +83,7 @@ const UserRutinesAll = () => {
                 <UserRutineCardWed/>
                 </div>
 
-                <div className={style.comenzar}>Comenzar</div>
+                <div className={style.comenzar} onClick={WednesdayNavigate}>Comenzar</div>
                 
                 <div className={style.borrar} onClick={()=>setRutineWed([])}>Borrar</div>
 
@@ -74,7 +98,7 @@ const UserRutinesAll = () => {
                 <UserRutineCardThu/>
                 </div>
 
-                <div className={style.comenzar}>Comenzar</div>
+                <div className={style.comenzar} onClick={ThursdayNavigate}>Comenzar</div>
                 
                 <div className={style.borrar} onClick={()=>setRutineThu([])}>Borrar</div>
 
@@ -90,7 +114,7 @@ const UserRutinesAll = () => {
                 <UserRutineCardFri/>
                 </div>
 
-                <div className={style.comenzar}>Comenzar</div>
+                <div className={style.comenzar} onClick={FridayNavigate}>Comenzar</div>
                 
                 <div className={style.borrar} onClick={()=>setRutineFri([])}>Borrar</div>
 
@@ -105,7 +129,7 @@ const UserRutinesAll = () => {
                 <UserRutineCardSat/>
                 </div>
 
-                <div className={style.comenzar}>Comenzar</div>
+                <div className={style.comenzar} onClick={SaturdayNavigate}>Comenzar</div>
                 
                 <div className={style.borrar} onClick={()=>setRutineSat([])}>Borrar</div>
 
