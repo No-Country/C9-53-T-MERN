@@ -10,7 +10,9 @@ const strategyLocal = require('./src/utils/strategyLocal');
 const strategyFacebook = require('./src/utils/strategyFacebook');
 const swaggerDocs = require('./swagger');
 const cors = require('cors');
-const routeExercises = require('./src/routes/routeExercises');
+const routeExercisesAbs = require('./src/routes/routeExercisesAbs');
+const routeExercisesArms = require('./src/routes/routeExercisesArms');
+const routeExercisesLegs = require('./src/routes/routeExercisesLegs');
 
 const app = express();
 
@@ -69,7 +71,9 @@ app.use(passport.session());
 
 app.use('/', routeAuthentication);
 app.use('/users', routeUsuarios);
-app.use('/exercises', routeExercises);
+app.use('/exercisesAbs', routeExercisesAbs);
+app.use('/exercisesArms', routeExercisesArms);
+app.use('/exercisesLegs', routeExercisesLegs);
 
 const port = process.env.PORT || 3030;
 app.listen(port, () => {
