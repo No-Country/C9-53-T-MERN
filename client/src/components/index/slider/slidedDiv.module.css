@@ -1,8 +1,3 @@
-.infoDiv{
-    position: absolute;
-    top: 60%;
-    
-}
 
 
 .slidedDiv{
@@ -24,6 +19,14 @@
     align-items: center;
     text-align: center;
 }
+
+.infoDiv{
+    position: absolute;
+    top: 70%;
+    color: yellow;
+    
+}
+
 
 .slidedDivImage{
     position: absolute;
