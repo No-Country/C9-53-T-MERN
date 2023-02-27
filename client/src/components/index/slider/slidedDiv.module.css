@@ -37,13 +37,14 @@
     top: 5%;
   
     height: 25vh;
-    width:80%;
+    width:90%;
     background-color: black;
     left: 1%;
     border-radius: 20px;
     /* margin-top:90%; */
     margin-bottom: 35%;
-    /* left: 15%; */
+    left: 5%;
+
 
 }
 
