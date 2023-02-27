@@ -63,7 +63,7 @@
     
     .infoDiv{
             position: absolute;
-            top: 70%;
+            top: 60%;
             
         }
         
@@ -71,11 +71,11 @@
         .slidedDiv{
             margin-top: 2%;
             height: 50vh;
-            width:60%;
+            width:50%;
             background-color: rgba(252, 250, 247, 0.13);
             border: 1px solid #0d0d0e;
             position:relative;
-            left:20%;
+            left:30%;
             border-radius: 20px;
             color:white;
             /* display: flex; 
@@ -117,7 +117,7 @@
         }
         }
 
-        @media(max-width:1400px){        
+        @media(max-width:900px){        
     
             .infoDiv{
                     position: absolute;
