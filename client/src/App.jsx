@@ -1,4 +1,5 @@
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from 'react';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
 import RutineProvider from './context/counter/RutineProvider';
@@ -10,40 +11,59 @@ import { AppRoutes } from './routes/AppRoutes';
 
 
 function App() {
+
+  const [user, setUser] = useState(null)
+
+  const url_api = process.env.URL_API || "http://localhost:3030"
+  useEffect(() => {
+    fetch(`${url_api}/login/session`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': true
+      }
+    })
+      .then(res => res.json())
+      .then(res => setUser(res))
+
+  }, [])
+
   return (
-  
-  
+
+
 
     <AuthProvider>
-      
-      
+
+
       <EjsByDayProvider>
-      <RutineProvider>
+        <RutineProvider>
 
 
-        <EjerciciosPiernasProvider>
-        <EjerciciosBrazosProvider>
-        <EjerciciosAbdominalesProvider>
+          <EjerciciosPiernasProvider>
+            <EjerciciosBrazosProvider>
+              <EjerciciosAbdominalesProvider>
 
-          
-            <AppRoutes/>
-         
 
-        </EjerciciosAbdominalesProvider>
-        </EjerciciosBrazosProvider>
-        </EjerciciosPiernasProvider>
-        
-      
-      </RutineProvider> 
+                <AppRoutes user={user} />
+
+
+              </EjerciciosAbdominalesProvider>
+            </EjerciciosBrazosProvider>
+          </EjerciciosPiernasProvider>
+
+
+        </RutineProvider>
       </EjsByDayProvider>
-      
-      
-      
-    </AuthProvider>
-    
-    
 
-    
+
+
+    </AuthProvider>
+
+
+
+
   );
 }
 

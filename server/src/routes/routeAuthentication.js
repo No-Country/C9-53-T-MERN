@@ -18,7 +18,7 @@ routeAuthentication.get(
   '/auth/google/callback',
   passport.authenticate('google', {
     failureRedirect: '/',
-    successRedirect: `${url_client}/user`,
+    successRedirect: `${url_client}`,
   })
 );
 
@@ -50,9 +50,12 @@ routeAuthentication.post(
 
 routeAuthentication.get('/login/session', (req, res) => {
   if (req.user) {
-    res.status(200).json({user: req.user, cookies: req.session.cookie});
-  } else {
-    res.status(200).json({user: null});
+    res.status(200).json({
+      success: true,
+      message: 'successfull',
+      user: req.user,
+      cookies: req.cookies,
+    });
   }
 });
 

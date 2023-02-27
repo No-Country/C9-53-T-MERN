@@ -32,7 +32,7 @@ const strategyGoogle = () => {
           dao.save({
             name: user.given_name,
             email: user.email,
-            password: '987654321',
+            password: '',
           });
         }
 
