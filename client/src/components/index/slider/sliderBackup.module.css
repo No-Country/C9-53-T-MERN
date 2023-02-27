@@ -1,3 +1,54 @@
+@media (max-width: 600px){
+
+    .slidedDiv{
+        
+        height: 50vh;
+        width:75%;
+        background-color: rgba(252, 250, 247, 0.13);
+        border: 1px solid #0d0d0e;
+        position:relative;
+        
+        display: flex; 
+        justify-content:center ;
+        left:12.5%
+    }
+    
+
+    .slidedDivImage{
+
+        margin-bottom: 10rem;
+        width:40vw;
+        border-radius: 20px;
+        margin-top:5%;
+
+    }
+    .infoDiv{
+        position: absolute;
+        top: 60%;
+        left: 3%;
+    }
+
+    .yellowButton{
+        position: absolute;
+        background: #FCBD3C;
+        border-radius: 25px;
+        margin-top: 3%;
+        height: 15%;
+        width: 19vh;
+        color: black;
+        cursor:pointer;
+        padding: 5px 5px 5px;
+        text-align: center;
+        justify-content: center;
+        top:80%;
+        left:23%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
 
 .infoDiv{
     position: absolute;
@@ -53,4 +104,67 @@
     top:80%;
     left:26%
 }
+
+/* @media (max-width: 1000px){
+    .slidedDivImage{
+        width:60vw;
+        /* left: 16%; */
+
+@media(max-width:1400px){        
+    
+    .infoDiv{
+            position: absolute;
+            top: 70%;
+            
+        }
+        
+        
+        .slidedDiv{
+            margin-top: 2%;
+            height: 50vh;
+            width:60%;
+            background-color: rgba(252, 250, 247, 0.13);
+            border: 1px solid #0d0d0e;
+            position:relative;
+            left:20%;
+            border-radius: 20px;
+            color:white;
+            /* display: flex; 
+            justify-content:center ; */
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .slidedDivImage{
+          
+            height: 25vh;
+            width:40%;
+            background-color: black;
+            left: 20%;
+            border-radius: 20px;
+            /* margin-top:5%; */
+            margin-bottom: 25%;
+        
+        }
+        
+        .yellowButton{
+            position: absolute;
+            background: #FCBD3C;
+            border-radius: 25px;
+            margin-top: 3%;
+            height: 14%;
+            width: 19vh;
+            color: black;
+            cursor:pointer;
+            padding: 5px 5px 5px;
+            text-align: center;
+            justify-content: center;
+            top:80%;
+            left:26%
+        }
+        }
 
