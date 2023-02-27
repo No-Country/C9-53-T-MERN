@@ -129,7 +129,7 @@
                 .slidedDiv{
                     margin-top: 2%;
                     height: 50vh;
-                    width:60%;
+                    width:80%;
                     background-color: rgba(252, 250, 247, 0.13);
                     border: 1px solid #0d0d0e;
                     position:relative;
@@ -173,7 +173,7 @@
                     text-align: center;
                     justify-content: center;
                     top:80%;
-                    left:26%
+                    left:16%
                 }
                 }
         
