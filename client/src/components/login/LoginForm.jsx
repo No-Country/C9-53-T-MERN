@@ -2,18 +2,29 @@ import style from './loginForm.module.css';
 import useForm from "../../custom hooks/useForm";
 import { AuthContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 
 
 const LoginForm = () => {
 
   const navigate = useNavigate();
+  const [session, setSession] = useState(null)
 
   const register = () => {
     navigate('/register')
   }
 
   const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
+
+  const url_api = process.env.URL_API || "http://localhost:3030"
+  const clickGoogle = () => {
+    window.open(`${url_api}/auth/google`, "_self")
+  }
+
+  const clickFacebook = () => {
+    window.open(`${url_api}/auth/facebook`, "_self")
+  }
 
   return (
     <div className={style.background}>
@@ -77,8 +88,8 @@ const LoginForm = () => {
             <div className={style.subtitle}>O ingresa con</div>
 
             <div className={style.containerLogos}>
-              <div className={style.google}></div>
-              <div className={style.facebook}></div>
+              <div className={style.google} onClick={clickGoogle} />
+              <div className={style.facebook} onClick={clickFacebook} />
             </div>
 
           </div>

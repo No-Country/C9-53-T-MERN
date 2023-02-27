@@ -1,8 +1,8 @@
-const exercisesDAO = require('../dao/exercisesDAO');
+const ExercisesLegsDAO = require('../dao/exercisesLegsDAO');
 
-const dao = new exercisesDAO();
+const dao = new ExercisesLegsDAO();
 
-class exercisesServices {
+class ServiceExercisesLegs {
   async getAllExercises() {
     const listExercises = await dao.getAll();
 
@@ -21,4 +21,4 @@ class exercisesServices {
     return 'esperando esquema';
   }
 }
-module.exports = exercisesServices;
+module.exports = ServiceExercisesLegs;

@@ -1,8 +1,8 @@
-const exercisesServices = require('../services/exercises.services');
+const ServiceExercisesLegs = require('../services/serviceExercisesLegs');
 
-const service = new exercisesServices();
+const service = new ServiceExercisesLegs();
 
-const exercisesController = {
+const controllerExercisesLegs = {
   getAllExercises: async (req, res) => {
     const exercises = await service.getAllExercises();
 
@@ -30,4 +30,4 @@ const exercisesController = {
     res.json(exerciseDeleted);
   },
 };
-module.exports = exercisesController;
+module.exports = controllerExercisesLegs;

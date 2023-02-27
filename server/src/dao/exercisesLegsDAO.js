@@ -1,8 +1,8 @@
-const exercises = require('./schemas/exercises');
+const exercisesLegs = require('./schemas/exercisesLegs');
 
-class ExercisesAbsDAO {
+class ExercisesLegsDAO {
   async getAll() {
-    return await exercises.find();
+    return await exercisesLegs.find();
   }
 
   // async save(exerciseSave) {
@@ -26,4 +26,4 @@ class ExercisesAbsDAO {
   // }
 }
 
-module.exports = ExercisesAbsDAO;
+module.exports = ExercisesLegsDAO;
