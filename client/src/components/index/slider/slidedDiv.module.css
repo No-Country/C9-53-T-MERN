@@ -133,7 +133,7 @@
                     background-color: rgba(252, 250, 247, 0.13);
                     border: 1px solid #0d0d0e;
                     position:relative;
-                    left:20%;
+                    left:10%;
                     border-radius: 20px;
                     color:white;
                     /* display: flex; 
@@ -173,7 +173,7 @@
                     text-align: center;
                     justify-content: center;
                     top:80%;
-                    left:16%
+                    left:21%
                 }
                 }
         
