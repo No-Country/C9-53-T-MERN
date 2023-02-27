@@ -1,6 +1,6 @@
 .infoDiv{
     position: absolute;
-    top: 65%;
+    top: 75%;
     
 }
 
@@ -52,7 +52,7 @@
     text-align: center;
     justify-content: center;
     top:80%;
-    left:21%
+    left:31%
 }
 
 /* @media (max-width: 1000px){
