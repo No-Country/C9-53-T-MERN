@@ -5,6 +5,11 @@ import { useContext } from 'react';
 // import {RutineContext} from '../context/counter/RutineContext'
 import UserRutineCard from '../components/userRutines/accordions/UserRutineCardMonday';
 import { EjsByDayContext } from '../context/ejsByDay/EjsByDayContext';
+import { useNavigate } from "react-router-dom";
+
+
+  
+
 
 
 const UserRoutines = () => {
@@ -12,7 +17,12 @@ const UserRoutines = () => {
 
   const {rutineMon, rutineTue, rutineWed, rutineThu,
   rutineFri, rutineSat, rutineSun} = useContext(EjsByDayContext)
-  // const { rutine } = useContext(RutineContext);
+  // const { rutine } = useContext(RutineContext);  
+  
+  const navigate = useNavigate();
+  
+  const MondayNavigate = () => {
+    navigate('/login')}
   
 
   return (<>
