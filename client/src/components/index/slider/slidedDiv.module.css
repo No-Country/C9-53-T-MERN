@@ -29,12 +29,14 @@
 .slidedDivImage{
   
     height: 25vh;
-    width:50%;
+    width:60%;
     background-color: black;
     left: 20%;
     border-radius: 20px;
-    margin-bottom: 44%;
+    /* margin-bottom: 44%; */
     /* margin-top:5%; */
+    position: absolute;
+    top: 5%;
 
 }
 
