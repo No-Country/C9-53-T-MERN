@@ -41,6 +41,11 @@ const ImageSlider = () => {
         navigation:false
 
       },
+      8000: {
+        slidesPerView: 3,
+        navigation:false
+
+      },
     }}
             >
             <SwiperSlide>

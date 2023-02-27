@@ -11,15 +11,8 @@ const SlidedDiv = () => {
             
         </div>
 
-        <div className={style.infoDiv}>
-            <div 
-            style={{
-                marginTop:'2px',
-                fontWeight:'bolder',
-                fontSize:'100%'
-            }}
-
-            >Principiante</div>
+        <div className={style.infoDivv}>
+            <div>Principiante</div>
             <div>Realiza ejercicios de dificultad inicial</div>
         </div>
 
