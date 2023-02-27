@@ -1,10 +1,4 @@
-.infoDiv{
-    position: absolute;
-    top: 75%;
-    color: yellow;
-    margin-top: 65%;
-    
-}
+
 
 
 .slidedDiv{
@@ -39,6 +33,13 @@
     /* margin-top:90%; */
     margin-bottom: 25%;
 
+}
+.infoDiv{
+    position: absolute;
+    top: 75%;
+    color: yellow;
+    margin-top: 65%;
+    
 }
 
 .yellowButton{
