@@ -1,4 +1,4 @@
-@media(max-width:4000px){
+
     .infoDivv{
     text-align: center;
     justify-content: center;
@@ -37,13 +37,13 @@
     top: 5%;
   
     height: 25vh;
-    width:70%;
+    width:80%;
     background-color: black;
     left: 1%;
     border-radius: 20px;
     /* margin-top:90%; */
     margin-bottom: 35%;
-    left: 15%;
+    /* left: 15%; */
 
 }
 
@@ -61,7 +61,7 @@
     justify-content: center;
     top:80%;
     left:31%
-}}
+}
 
 /* @media (max-width: 1000px){
     .slidedDivImage{
