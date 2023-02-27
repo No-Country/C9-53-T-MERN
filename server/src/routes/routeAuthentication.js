@@ -3,7 +3,7 @@ const passport = require('passport');
 
 const routeAuthentication = Router();
 
-const url_client = process.env.URL_CLIENT || 'http://localhost:3000';
+const url_client = process.env.URL_CLIENT || 'https://fit-house.onrender.com/';
 
 /* -------------------------------------------------------------------------- */
 /*                                   GOOGLE                                   */
