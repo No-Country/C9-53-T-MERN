@@ -1,6 +1,6 @@
 .infoDiv{
     position: absolute;
-    top: 60%;
+    top: 30%;
     
 }
 
@@ -77,8 +77,8 @@
             left:20%;
             border-radius: 20px;
             color:white;
-            /* display: flex; 
-            justify-content:center ; */
+            display: flex; 
+            justify-content:center ;
             text-align: center;
             justify-content: center;
             display: flex;
