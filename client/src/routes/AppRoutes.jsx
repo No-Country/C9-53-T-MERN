@@ -18,9 +18,6 @@ import SundayExcercise from "../pages/ejsPages/SundayExcercise";
 
 export const AppRoutes = ({ user }) => {
 
-  console.log('Desde AppRoutes');
-  console.log(user);
-
   return (
     <BrowserRouter>
       <Routes>
@@ -43,8 +40,8 @@ export const AppRoutes = ({ user }) => {
 
         <Route path='/' element={<LandingPage />} />
         <Route path='login' element={user ? <Navigate to={'/'} /> : <Login />} />
-        <Route path='register' element={<SignUp />} />
-        <Route path='ejercicios' element={<Ejercicios />} />
+        <Route path='register' element={user ? <Navigate to={'/'} /> : <SignUp />} />
+        <Route path='ejercicios' element={user ? <Navigate to={'/'} /> : <Ejercicios />} />
 
       </Routes>
     </BrowserRouter>
