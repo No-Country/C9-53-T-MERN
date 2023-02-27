@@ -11,7 +11,7 @@ const SlidedDiv = () => {
             
         </div>
 
-        <div className={style.infoDiv}>
+        <div className={style.infoDivv}>
             <div 
             // style={{
             //     marginTop:'2px',
