@@ -1,4 +1,4 @@
-.infoDivv{
+@media(max-width:4000px){.infoDivv{
     text-align: center;
     justify-content: center;
     display: flex;
@@ -42,7 +42,7 @@
     border-radius: 20px;
     /* margin-top:90%; */
     margin-bottom: 35%;
-    left: 25%;
+    left: 15%;
 
 }
 
@@ -60,7 +60,7 @@
     justify-content: center;
     top:80%;
     left:31%
-}
+}}
 
 /* @media (max-width: 1000px){
     .slidedDivImage{
