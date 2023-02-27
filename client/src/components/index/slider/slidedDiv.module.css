@@ -1,4 +1,5 @@
-@media(max-width:4000px){.infoDivv{
+@media(max-width:4000px){
+    .infoDivv{
     text-align: center;
     justify-content: center;
     display: flex;
