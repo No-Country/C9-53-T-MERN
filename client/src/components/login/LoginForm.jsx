@@ -11,7 +11,7 @@ const LoginForm = () => {
     navigate('/register')
   }
 
-  const url_api = process.env.URL_API || "http://localhost:3030"
+  const url_api = process.env.URL_API || "https://fit-house.onrender.com"
   const clickGoogle = () => {
     window.open(`${url_api}/auth/google`, "_self")
   }
