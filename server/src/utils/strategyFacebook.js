@@ -29,8 +29,8 @@ const strategyFacebook = () => {
         if (!isUser) {
           dao.save({
             name: user.name,
-            email: 'facebook@gmail.com',
-            password: '987654321',
+            email: '',
+            password: '',
             id_facebook: user.id,
           });
         }

@@ -1,0 +1,214 @@
+.background {
+  background-color: #0d0d0e;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginForm {
+  border-radius: 20px;
+  width: 960px;
+  height: 919px;
+  background-color: #fcbd3c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 150%;
+}
+
+.container {
+  margin-top: 39px;
+  width: 560px;
+}
+
+.logCategory {
+  font-weight: 500;
+}
+
+.logCategoryType {
+  padding-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #000000;
+}
+
+/* .logCategoryType2 {
+  padding-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #000000;
+} */
+
+/* .logCategoryType2:hover {
+  cursor: pointer;
+} */
+
+.login_input {
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 25px;
+  padding-left: 57px;
+  margin-bottom: 31px;
+}
+
+.login_input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 16px;
+  color: #616161;
+}
+
+.login_input:focus {
+  outline: none;
+}
+
+.login_input2 {
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 17px;
+  padding-left: 57px;
+}
+
+.login_input2::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 16px;
+  color: #616161;
+}
+
+.login_input2:focus {
+  outline: none;
+}
+
+.blackButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 100%;
+  background: #0d0d0e;
+  border: none;
+  border-radius: 20px;
+  color: #f8f4f4;
+  margin-top: 21px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.blackButton:hover {
+  cursor: pointer;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 42px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #000000;
+}
+
+.containerLogos {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
+  margin-bottom: 22px;
+}
+
+.google {
+  background: url('../logos/google.svg');
+  width: 84px;
+  height: 84px;
+}
+
+.google:hover {
+  cursor: pointer;
+}
+
+.facebook {
+  background: url('../logos/facebook.svg');
+  width: 84px;
+  height: 84px;
+  margin-left: 40px;
+}
+
+.facebook:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .loginForm {
+    width: 300px;
+    height: 650px;
+  }
+
+  .container {
+    width: 240px;
+  }
+
+  .login_input {
+    width: 240px;
+    height: 50px;
+    padding-left: 18px;
+  }
+
+  .login_input2 {
+    width: 240px;
+    height: 50px;
+    padding-left: 18px;
+  }
+
+  .blackButton {
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 18px;
+  }
+
+  .blackButtonCrearCuenta {
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .subtitle {
+    margin-top: 27px;
+  }
+
+  .google {
+    background: url('../logos/googleMovil.svg') no-repeat;
+    width: 45px;
+    height: 45px;
+  }
+  .facebook {
+    background: url('../logos/facebookMovil.svg') no-repeat;
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -40,7 +40,7 @@ export const AppRoutes = ({ user }) => {
 
         <Route path='/' element={<LandingPage />} />
         <Route path='login' element={user ? <Navigate to={'/'} /> : <Login />} />
-        <Route path='register' element={user ? <Navigate to={'/'} /> : <SignUp />} />
+        <Route path='register' element={<SignUp />} />
         <Route path='ejercicios' element={user ? <Navigate to={'/'} /> : <Ejercicios />} />
 
       </Routes>
