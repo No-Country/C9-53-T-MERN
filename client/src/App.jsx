@@ -14,7 +14,7 @@ function App() {
 
   const [user, setUser] = useState(null)
 
-  const url_api = process.env.URL_API || "http://localhost:3030"
+  const url_api = process.env.URL_API || "https://fit-house.onrender.com"
   useEffect(() => {
     fetch(`${url_api}/login/session`, {
       method: 'GET',
