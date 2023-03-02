@@ -1,12 +1,10 @@
-import React from 'react'
-import LoginFormRegister from '../components/login/LoginFormRegister'
-import NavBar from "../components/NavBar/NavBar";
+import LoginFormRegister from '../components/login/register/LoginFormRegister'
 
 
 const SignUp = () => {
-  return (<>
-    <NavBar/>
-    <LoginFormRegister/>
+  return (
+    <>
+      <LoginFormRegister />
     </>
   )
 }

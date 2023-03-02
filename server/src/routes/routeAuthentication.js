@@ -3,7 +3,9 @@ const passport = require('passport');
 
 const routeAuthentication = Router();
 
-const url_client = process.env.URL_CLIENT || 'http://localhost:3000';
+const url_client =
+  process.env.URL_CLIENT || 'https://c9-53-fithouse-tkgv.vercel.app/';
+// const url_client = process.env.URL_CLIENT || 'http://localhost:3000';
 
 /* -------------------------------------------------------------------------- */
 /*                                   GOOGLE                                   */
@@ -44,8 +46,10 @@ routeAuthentication.post(
   '/auth/local',
   passport.authenticate('local', {
     failureRedirect: `${url_client}/login`,
-    successRedirect: `${url_client}`,
-  })
+  }),
+  (req, res) => {
+    res.redirect(`${url_client}`);
+  }
 );
 
 routeAuthentication.get('/login/session', (req, res) => {

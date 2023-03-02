@@ -14,8 +14,10 @@ function App() {
 
   const [user, setUser] = useState(null)
 
-  const url_api = process.env.URL_API || "http://localhost:3030"
+  const url_api = process.env.URL_API || "https://fit-house.onrender.com"
   useEffect(() => {
+
+    console.log('Peticion /login/session');
     fetch(`${url_api}/login/session`, {
       method: 'GET',
       credentials: 'include',
@@ -25,10 +27,23 @@ function App() {
         'Access-Control-Allow-Credentials': true
       }
     })
-      .then(res => res.json())
-      .then(res => setUser(res))
+      .then(res => {
+        console.log('respuesta de la peticion')
+        res.json()
+      })
+      .then(res => {
+        console.log('respuesta de la peticion');
+        setUser(res)
+        console.log(res)
+      })
+      .catch(
+        err => console.log(err)
+      )
 
+    console.log('termina petición');
   }, [])
+
+
 
   return (
 

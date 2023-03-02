@@ -11,16 +11,16 @@ const controllerUsers = {
   },
 
   saveUser: async (req, res) => {
-    const {name, email, password} = req.body;
+    const {email, password} = req.body;
 
     const hash = bcrypt.hashSync(password, 10);
 
-    const isSaved = await service.saveUser({name, email, password: hash});
+    const isSaved = await service.saveUser({email, password: hash});
 
-    if (isSaved.code) {
+    if (isSaved.code === 1) {
       res.status(201).json(isSaved);
     } else {
-      res.status(400).json(isSaved);
+      res.status(406).json(isSaved);
     }
   },
 
@@ -39,8 +39,6 @@ const controllerUsers = {
 
     res.json(isDeleted);
   },
-
-  saveUser: async (req, res) => {},
 };
 
 module.exports = controllerUsers;

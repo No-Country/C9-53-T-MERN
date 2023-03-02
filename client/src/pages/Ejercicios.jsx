@@ -12,12 +12,12 @@ import { useEjerciciosBrazos } from '../context/ejercicios/EjerciciosBrazosProvi
 
 
 import Select from "react-select";
-import {NewRutine} from '../components/ejercicios/options/NewRutine';
+import { NewRutine } from '../components/ejercicios/options/NewRutine';
 import { ChoosedRutines } from '../components/ejercicios/options/ChoosedRutines';
 import LateralBar from '../components/latearl bar/LateralBar';
 
 
-const Ejercicios = () => {
+const Ejercicios = ({ user }) => {
 
   const ejerciciosAbdominalesInfo = useEjerciciosAbdominales();
 
@@ -37,8 +37,8 @@ const Ejercicios = () => {
       backgroundColor: '#FCBD3C',
       padding: 2,
       borderRadius: 2,
-      margin:7
-      
+      margin: 7
+
     }),
     singleValue: (base) => ({
       ...base,
@@ -78,50 +78,48 @@ const Ejercicios = () => {
 
   const [level, setLevel] = useState(1)
 
-  const handleChange = ({value}) => {
+  const handleChange = ({ value }) => {
     setLevel(value);
     console.log(`Option selected:`, value);
   };
 
-  
+
 
   return (<>
 
-      <NavBar />
-      <LateralBar/>
+    <NavBar user={user} />
+    <LateralBar />
 
-      <div 
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          width: '100%', 
-        }}
-      >
-        <ProgramasUpperDiv/>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+      }}
+    >
+      <ProgramasUpperDiv />
 
-        <Counter/>
-        <NewRutine/>
-        <ChoosedRutines/>
+      <Counter />
+      <NewRutine />
+      <ChoosedRutines />
 
-        <Select
-          styles={selectStyles}
-          options={options}
-          defaultValue={options[0]}
-          onChange={handleChange}
-          captureMenuScroll= {true}
-          
-        />
-
-        <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[level]}/>
-        <EjerciciosBrazos info={ejerciciosBrazosInfo[level]}/>
-        {/* <EjerciciosPiernas info={ejerciciosPiernasInfo}/>  */}
+      <Select
+        styles={selectStyles}
+        options={options}
+        defaultValue={options[0]}
+        onChange={handleChange}
+        captureMenuScroll={true}
+      />
+      <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[level]} />
+      <EjerciciosBrazos info={ejerciciosBrazosInfo[level]} />
+      {/* <EjerciciosPiernas info={ejerciciosPiernasInfo}/>  */}
 
 
-      </div>
-      
+    </div>
 
-</>
+
+  </>
   );
 }
 

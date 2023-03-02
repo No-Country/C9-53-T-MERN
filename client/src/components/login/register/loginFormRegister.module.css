@@ -45,18 +45,18 @@
   color: #000000;
 }
 
-.logCategoryType2 {
+/* .logCategoryType2 {
   padding-bottom: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 22px;
   color: #000000;
-}
+} */
 
-.logCategoryType2:hover {
+/* .logCategoryType2:hover {
   cursor: pointer;
-}
+} */
 
 .login_input {
   width: 100%;
@@ -65,8 +65,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 25px;
-  margin-bottom: 32px;
   padding-left: 57px;
+  margin-bottom: 31px;
 }
 
 .login_input::placeholder {
@@ -114,7 +114,7 @@
   border: none;
   border-radius: 20px;
   color: #f8f4f4;
-  margin-top: 33px;
+  margin-top: 21px;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -123,28 +123,6 @@
 }
 
 .blackButton:hover {
-  cursor: pointer;
-}
-
-.blackButtonCrearCuenta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 72px;
-  width: 100%;
-  background: #0d0d0e;
-  border: none;
-  border-radius: 20px;
-  color: #f8f4f4;
-  margin-top: 22px;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 150%;
-}
-
-.blackButtonCrearCuenta:hover {
   cursor: pointer;
 }
 
@@ -166,7 +144,7 @@
 }
 
 .google {
-  background: url('./logos/google.svg');
+  background: url('../logos/google.svg');
   width: 84px;
   height: 84px;
 }
@@ -176,7 +154,7 @@
 }
 
 .facebook {
-  background: url('./logos/facebook.svg');
+  background: url('../logos/facebook.svg');
   width: 84px;
   height: 84px;
   margin-left: 40px;
@@ -224,12 +202,12 @@
   }
 
   .google {
-    background: url('./logos/googleMovil.svg') no-repeat;
+    background: url('../logos/googleMovil.svg') no-repeat;
     width: 45px;
     height: 45px;
   }
   .facebook {
-    background: url('./logos/facebookMovil.svg') no-repeat;
+    background: url('../logos/facebookMovil.svg') no-repeat;
     width: 45px;
     height: 45px;
   }

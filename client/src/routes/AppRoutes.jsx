@@ -40,10 +40,10 @@ export const AppRoutes = ({ user }) => {
           <Route path='backTester' element={<BackTestter />} />
         </Route>
 
-        <Route path='/' element={<LandingPage />} />
+        <Route path='/' element={<LandingPage user={user} />} />
         <Route path='login' element={user ? <Navigate to={'/'} /> : <Login />} />
-        <Route path='register' element={user ? <Navigate to={'/'} /> : <SignUp />} />
-        <Route path='ejercicios' element={user ? <Navigate to={'/'} /> : <Ejercicios />} />
+        <Route path='register' element={<SignUp />} />
+        <Route path='ejercicios' element={!user ? <Navigate to={'/'} /> : <Ejercicios user={user} />} />
 
       </Routes>
     </BrowserRouter>

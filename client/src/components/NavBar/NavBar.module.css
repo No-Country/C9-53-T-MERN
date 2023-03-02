@@ -1,64 +1,81 @@
 body {
-  background: #0D0D0E;
+  background: #0d0d0e;
 }
-
 
 .NavBar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: white;
-  height: 11vh;
- 
+  height: 80px;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fbf6f6;
 }
 
 .ejercicios {
-  
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 120%;
-  font-weight:500;
-  color: var(--color-text);
-}
-
-.logDiv{
-  display: flex;
-  justify-content: space-around;
-}
-
-.logo{
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
-  font-weight:bolder;
+  font-weight: 500;
   color: var(--color-text);
+  margin-left: 44px;
+  text-transform: uppercase;
 }
 
-@media only screen and (max-width:768px){
+.logDiv {
+  display: flex;
+  justify-content: space-around;
+}
 
-  .ejercicios {
-  
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 70%;
-    font-weight:500;
-    color: var(--color-text);
-    margin:0.2rem
-  }
-  
+.btnRegister {
+  background: none;
+  color: #fbf6f6;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 20px;
+  cursor: pointer;
+  border: none;
+}
 
-  .NavBar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    height: 11vh;
-    width: 80%;
-    margin-left: 10%
-   
-  }
+.btnSession {
+  background: none;
+  background: #fcbd3c;
+  border-radius: 25px;
+  width: 127px;
+  height: 30px;
+  margin-left: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #181818;
+  border: none;
+  cursor: pointer;
+}
 
-};
+.container_user {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+} ;
