@@ -22,10 +22,10 @@ routeAuthentication.get(
     failureRedirect: `${url_client}/login`,
     // successRedirect: `${url_client}`,
   }),
-  (req, res) {
+  (req, res) => {
     console.log('Desde acceso a Google');
     console.log(req.user);
-    res.redirect(`${url_client}`)
+    res.redirect(`${url_client}`);
   }
 );
 
