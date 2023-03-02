@@ -27,7 +27,10 @@ function App() {
         'Access-Control-Allow-Credentials': true
       }
     })
-      .then(res => res.json())
+      .then(res => {
+        console.log('respuesta de la peticion')
+        res.json()
+      })
       .then(res => {
         console.log('respuesta de la peticion');
         setUser(res)
