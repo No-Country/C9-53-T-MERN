@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(
   cors({
-    origin: 'https://c9-53-fithouse-tkgv.vercel.app/',
+    origin: 'https://c9-53-fithouse-tkgv.vercel.app',
     credentials: true,
   })
 );
