@@ -3,6 +3,7 @@ import LateralBar from '../latearl bar/LateralBar';
 import NavBar from '../NavBar/NavBar'
 import ParticipantesCardHomero from './cards/ParticipantesCardHomero';
 import PCardMartin from './cards/PCardMartin';
+import PCardMartina from './cards/PCardMartina';
 import style from './questions.module.css'
 
 const Questions = () => {
@@ -84,6 +85,7 @@ const Questions = () => {
         <div className={style.cardContainer}>
         <ParticipantesCardHomero/>
         <PCardMartin/>
+        <PCardMartina/>
         {/* <ParticipantesCard/> */}
         </div>
     </>
