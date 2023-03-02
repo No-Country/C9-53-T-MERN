@@ -1,23 +1,17 @@
 import style from './loginForm.module.css';
-import useForm from "../../custom hooks/useForm";
-import { AuthContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 
 
 const LoginForm = () => {
 
   const navigate = useNavigate();
-  const [session, setSession] = useState(null)
 
   const register = () => {
     navigate('/register')
   }
 
-  const { userForm, handleChange, handleSubmit } = useForm(AuthContext);
-
-  const url_api = process.env.URL_API || "http://localhost:3030"
+  const url_api = process.env.URL_API || "https://fit-house.onrender.com"
   const clickGoogle = () => {
     window.open(`${url_api}/auth/google`, "_self")
   }
@@ -37,7 +31,7 @@ const LoginForm = () => {
           <div className={style.container}>
 
             <form
-              onSubmit={handleSubmit}
+              method='POST' action={`${url_api}/auth/local`}
             >
 
               <div className={style.logCategory}>
@@ -47,10 +41,9 @@ const LoginForm = () => {
                 <input
                   placeholder="Ingresa una dirección de email"
                   type="text"
-                  name="email"
+                  id="username"
+                  name="username"
                   className={style.login_input}
-                  value={userForm.email}
-                  onChange={handleChange}
                 />
 
               </div>
@@ -61,10 +54,9 @@ const LoginForm = () => {
                 <input
                   placeholder="Ingresa una contraseña"
                   type="password"
+                  id="password"
                   name="password"
                   className={style.login_input2}
-                  onChange={handleChange}
-                  value={userForm.password}
                 />
 
               </div>

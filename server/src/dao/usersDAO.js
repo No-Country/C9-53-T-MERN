@@ -1,6 +1,6 @@
 const users = require('./schemas/users');
 
-class usersDAO {
+class UsersDAO {
   async getAll() {
     return await users.find();
   }
@@ -26,4 +26,4 @@ class usersDAO {
   }
 }
 
-module.exports = usersDAO;
+module.exports = UsersDAO;

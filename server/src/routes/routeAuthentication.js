@@ -17,7 +17,7 @@ routeAuthentication.get(
 routeAuthentication.get(
   '/auth/google/callback',
   passport.authenticate('google', {
-    failureRedirect: '/',
+    failureRedirect: `${url_client}/login`,
     successRedirect: `${url_client}`,
   })
 );
@@ -30,10 +30,10 @@ routeAuthentication.get('/auth/facebook', passport.authenticate('facebook'));
 
 routeAuthentication.get(
   '/auth/facebook/callback',
-  passport.authenticate('facebook', {failureRedirect: '/login'}),
-  (req, res) => {
-    res.redirect('/users');
-  }
+  passport.authenticate('facebook', {
+    failureRedirect: `${url_client}/login`,
+    successRedirect: `${url_client}`,
+  })
 );
 
 /* -------------------------------------------------------------------------- */
@@ -43,8 +43,8 @@ routeAuthentication.get(
 routeAuthentication.post(
   '/auth/local',
   passport.authenticate('local', {
-    failureRedirect: '/',
-    successRedirect: '/users',
+    failureRedirect: `${url_client}/login`,
+    successRedirect: `${url_client}`,
   })
 );
 
@@ -54,7 +54,6 @@ routeAuthentication.get('/login/session', (req, res) => {
       success: true,
       message: 'successfull',
       user: req.user,
-      cookies: req.cookies,
     });
   }
 });
