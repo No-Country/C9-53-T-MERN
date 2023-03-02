@@ -25,6 +25,8 @@ routeAuthentication.get(
   (req, res) => {
     console.log('Desde acceso a Google');
     console.log(req.user);
+    res.cookie('user', req.user);
+    console.log('user guardado en cookie');
     res.redirect(`${url_client}`);
   }
 );

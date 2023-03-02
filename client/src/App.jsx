@@ -8,6 +8,7 @@ import EjerciciosBrazosProvider from './context/ejercicios/EjerciciosBrazosProvi
 import EjerciciosPiernasProvider from './context/ejercicios/EjerciciosPiernasProvider';
 import EjsByDayProvider from './context/ejsByDay/EjsByDayProvider';
 import { AppRoutes } from './routes/AppRoutes';
+import Cookies from 'universal-cookie';
 
 
 function App() {
@@ -41,6 +42,12 @@ function App() {
       )
 
     console.log('termina petición');
+
+    console.log('Obtengo cookie');
+    const cookies = new Cookies()
+    const userCookie = cookies.get('user')
+    console.log(`Cookie user: ${userCookie}`);
+
   }, [])
 
 

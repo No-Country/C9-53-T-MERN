@@ -24,7 +24,8 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^4.6.0"
+    "swagger-ui-express": "^4.6.0",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
