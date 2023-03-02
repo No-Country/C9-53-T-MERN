@@ -16,6 +16,8 @@ function App() {
 
   const url_api = process.env.URL_API || "https://fit-house.onrender.com"
   useEffect(() => {
+
+    console.log('Peticion /login/session');
     fetch(`${url_api}/login/session`, {
       method: 'GET',
       credentials: 'include',
@@ -27,10 +29,15 @@ function App() {
     })
       .then(res => res.json())
       .then(res => {
+        console.log('respuesta de la peticion');
         setUser(res)
         console.log(res)
       })
+      .catch(
+        err => console.log(err)
+      )
 
+    console.log('termina petición');
   }, [])
 
 
