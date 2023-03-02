@@ -5,7 +5,7 @@ export const initialAuthReducer = () => {
   export const initialState = {
     email: null,
     token: null,
-    isAuth: false,
+    isAuth: true,
     profileMoto: null,
     profilePhoto: null,
     username: null
