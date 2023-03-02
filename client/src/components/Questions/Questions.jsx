@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import LateralBar from '../latearl bar/LateralBar';
 import NavBar from '../NavBar/NavBar'
+import ParticipantesCard from './cards/ParticipantesCard';
 import style from './questions.module.css'
 
 const Questions = () => {
@@ -77,6 +78,12 @@ const Questions = () => {
 
         </form>
         </div>
+        </div>
+
+        <div className={style.cardContainer}>
+        <ParticipantesCard/>
+        <ParticipantesCard/>
+        <ParticipantesCard/>
         </div>
     </>
   )
