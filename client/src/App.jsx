@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
 
     console.log('Peticion /login/session');
-    fetch(`${url_api}/login/session`, {
+    fetch(`https://fit-house.onrender.com/login/session`, {
       method: 'GET',
       credentials: 'include',
       headers: {
@@ -33,7 +33,7 @@ function App() {
         res.json()
       })
       .then(res => {
-        console.log('respuesta de la peticion');
+        console.log('*****respuesta de la peticion');
         setUser(res)
         console.log(res)
       })
