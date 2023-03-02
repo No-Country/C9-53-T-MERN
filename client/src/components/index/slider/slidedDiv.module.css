@@ -39,13 +39,13 @@
     position: absolute;
     top: 5%;
     /* display: none; */
-    height: 14vh;
-    width:20%;
+    height: 17vh;
+    width:26%;
     background-color: white;
-    right: 42%;
+    right: 38%;
     border-radius: 20px;
     /* margin-top:90%; */
-    margin-bottom: 35%;
+    /* margin-bottom: 35%; */
     /* left: 15%; */
 
 
@@ -58,15 +58,17 @@
     background: #FCBD3C;
     border-radius: 25px;
     /* margin-top: 3%; */
-    height: 14%;
-    width: 19vh;
+    height: 11%;
+    width: 20vh;
     color: black;
     cursor:pointer;
+    display:flex;
     /* padding: 5px 5px 5px; */
     text-align: center;
     justify-content: center;
-    top:80%;
-    left:31%
+    top:85%;
+    left:31%;
+    /* padding-top:10px */
 }
 
 

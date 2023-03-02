@@ -17,7 +17,7 @@ import SundayExcercise from "../pages/ejsPages/SundayExcercise";
 import BackTestter from "../pages/BackTestter";
 
 
-export const AppRoutes = ({ user }) => {
+export const AppRoutes = () => {
 
   return (
     <BrowserRouter>
@@ -34,18 +34,30 @@ export const AppRoutes = ({ user }) => {
         <Route element={<Questions />} path='questions' />
 
 
-        <Route element={<ProtectedRoutes />}>
-          <Route element={<User />} path='user' />
-          <Route element={<UserRoutines />} path='userRoutines' />
-          <Route path='backTester' element={<BackTestter />} />
+      </Routes>
+      <Routes>
+        <Route element={<ProtectedRoutes/>}>
+          <Route element={<User/>} path='user'/>
+          <Route element={<UserRoutines/>} path='userRoutines'/>
+          <Route element={<MondayExcercise/>} path='monday' />
         </Route>
 
-        <Route path='/' element={<LandingPage user={user} />} />
-        <Route path='login' element={user ? <Navigate to={'/'} /> : <Login />} />
-        <Route path='register' element={<SignUp />} />
-        <Route path='ejercicios' element={!user ? <Navigate to={'/'} /> : <Ejercicios user={user} />} />
+        <Route path='/' element={<LandingPage/>}/>
+        <Route path='login' element={<Login/>}/>
+        <Route path='register' element={<SignUp/>}/>
+        <Route path='ejercicios' element={<Ejercicios/>}/>
 
-      </Routes>
+        </Routes>
     </BrowserRouter>
   );
 };
+
+/* <Route element={<MondayExcercise />} path='userRoutines/Monday' />
+<Route element={<TuesdayExcercise />} path='userRoutines/Tuesday' />
+<Route element={<WednesdayExcercise />} path='userRoutines/Wednesday' />
+<Route element={<ThursdayExcercise />} path='userRoutines/Thursday' />
+<Route element={<FridayExcercise />} path='userRoutines/Friday' />
+<Route element={<SaturdayExcercise />} path='userRoutines/Saturday' />
+<Route element={<SundayExcercise />} path='userRoutines/Sunday' />
+
+<Route element={<Questions />} path='questions' /> */
