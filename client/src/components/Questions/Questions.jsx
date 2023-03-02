@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import LateralBar from '../latearl bar/LateralBar';
 import NavBar from '../NavBar/NavBar'
 import ParticipantesCardHomero from './cards/ParticipantesCardHomero';
+import PCardManuel from './cards/PCardManuel';
 import PCardMartin from './cards/PCardMartin';
 import PCardMartina from './cards/PCardMartina';
+import PCardRodolfo from './cards/PCardRodolfo';
 import style from './questions.module.css'
 
 const Questions = () => {
@@ -86,6 +88,8 @@ const Questions = () => {
         <ParticipantesCardHomero/>
         <PCardMartin/>
         <PCardMartina/>
+        <PCardRodolfo/>
+        <PCardManuel/>
         {/* <ParticipantesCard/> */}
         </div>
     </>
