@@ -46,13 +46,14 @@ body {
     font-size: 70%;
     font-weight:500;
     color: var(--color-text);
+    margin:0.2rem
   }
   
 
   .NavBar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     height: 11vh;
     width: 80%;
