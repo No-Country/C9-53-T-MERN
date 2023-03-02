@@ -320,7 +320,7 @@
         display:flex;
         justify-content: center;
         color: var(--color-text);
-        font-size: 85%;
+        font-size: 80%;
     }
 
     .bannerCardTitle{
