@@ -27,7 +27,8 @@ routeAuthentication.get(
     console.log(req.user);
     res.cookie('user', req.user);
     console.log('user guardado en cookie');
-    res.redirect(`${url_client}`);
+    console.log('ENVIO REQ.USER A TRAVES DE JSON');
+    res.json(req.user);
   }
 );
 
