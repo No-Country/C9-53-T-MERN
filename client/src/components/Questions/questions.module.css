@@ -9,5 +9,16 @@
         top:50vh;
         display: flex;
         flex-wrap: wrap;
-        left:40%
+        left:25%;
+        width:60%
+}
+
+@media(max-width:1000px){
+    .cardContainer{
+        position: absolute;
+        top:50vh;
+        display: flex;
+        flex-wrap: wrap;
+        left:25%
+}
 }
