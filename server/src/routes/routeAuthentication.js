@@ -53,6 +53,8 @@ routeAuthentication.post(
 );
 
 routeAuthentication.get('/login/session', (req, res) => {
+  console.log('Recibe la petición /login/session');
+  console.log(req.user);
   if (req.user) {
     res.status(200).json({
       success: true,
