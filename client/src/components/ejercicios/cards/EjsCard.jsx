@@ -22,15 +22,21 @@ const EjsCard = ({ id, title, description,checks ,repetition,series, dificulty, 
         <div className={style.botonesContainer}>
 
           {/* <div>{title}</div> */}
-           <div className={style.buttons} 
+           <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+            className={style.buttons} 
           onClick={() => removeItem(id, quantity-1)}
           >
             Quitar
-          </div>
-          <div className={style.buttons} onClick={() => addItem({id,checks, title,repetition, description, calories,
+          </motion.div>
+          <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className={style.buttons} onClick={() => addItem({id,checks, title,repetition, description, calories,
              estimatedTime, series, img}, quantity+1)}>
             Añadir
-          </div>
+          </motion.div>
          
 
         </div>

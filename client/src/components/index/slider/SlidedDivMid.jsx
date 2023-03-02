@@ -1,20 +1,20 @@
 import React from 'react'
 import YellowButton from '../../buttons/YellowButton'
 import style from './slidedDiv.module.css'
-import easy from './Easy.png'
+import Mid from './Mid.png'
 
-const SlidedDiv = () => {
+const SlidedDivMid = () => {
   return (
     <div 
     className={style.slidedDiv}
     >
-        <img src={easy} className={style.slidedDivImage}>
+        <img src={Mid} className={style.slidedDivImage}>
             
         </img>
 
         <div className={style.infoDivv}>
-            <div>Principiante</div>
-            <div>Realiza ejercicios de dificultad inicial</div>
+            <div>Intermedio</div>
+            <div>Realiza ejercicios de dificultad Intermedia</div>
         </div>
 
         <div className={style.yellowButton}>
@@ -29,4 +29,4 @@ const SlidedDiv = () => {
   )
 }
 
-export default SlidedDiv
+export default SlidedDivMid

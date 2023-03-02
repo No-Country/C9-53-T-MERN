@@ -1,4 +1,86 @@
-.background {
+.loginContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.loginForm{
+  padding-top: 5%;
+  border-radius: 20px;
+  width: 55%;
+  height: 75vh;
+  background-color: #FEAE0C;
+
+
+}
+
+.logCategory{
+  font-weight: 500;
+  margin-top: 20px;
+
+  margin-left: 10%;
+
+}
+
+.logCategoryType{
+  padding-bottom: 15px;
+  margin-left: 10%;
+
+}
+
+.login_input{
+  height: 3rem;
+  width:90%;
+  border-radius: 20px;
+}
+
+.blackButton{
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width:80%;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  margin-left: 10%;
+  margin-top: 5rem;
+  padding-top: 1.5vh;
+}
+
+.blackButtonCrearCuenta{
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width:80%;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  margin-left: 10%;
+  padding-top: 1.5vh;
+  margin-top: 1rem;
+}
+
+@media(max-width:1200){
+  .loginContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .loginForm{
+    padding-top: 5%;
+    border-radius: 20px;
+    width: 105%;
+    height: 55vh;
+    background-color: #FEAE0C;
+  
+  
+  }
+
+}
+
+
+/* .background {
   background-color: #0d0d0e;
 }
 
@@ -6,7 +88,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  position: absolute;
+  left: 25%;
+
 }
 
 .loginForm {
@@ -186,10 +270,25 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 320px) and (max-width: 426px) {
+@media(max-width: 1200px) {
+
+
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20%;
+    height: 80%;
+    width: 60%;
+    margin-top:10%
+  
+  }
+
   .loginForm {
     width: 300px;
     height: 650px;
+    top:10%
+
   }
 
   .container {
@@ -233,4 +332,4 @@
     width: 45px;
     height: 45px;
   }
-}
+} */

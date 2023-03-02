@@ -82,12 +82,15 @@
             /* margin-top:5%; */
             margin-bottom: 25%;
         
-        }  }
+        } 
+    
+    
+    }
 
 
 
 
-@media(max-width:1400px){        
+@media(max-width:1300px){        
     
     .infoDivv{
             position: absolute;
@@ -131,7 +134,7 @@
         
         .yellowButton{
             position: absolute;
-            background: #FCBD3C;
+            /* background: #FCBD3C; */
             border-radius: 25px;
             margin-top: 3%;
             height: 14%;
@@ -142,11 +145,12 @@
             text-align: center;
             justify-content: center;
             top:75%;
-            /* left:40% */
+            left:35%
         }
         }
 
-        @media(max-width:850px){        
+
+        @media(max-width:750px){        
     
             .infoDivv{
                     position: absolute;

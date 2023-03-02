@@ -57,16 +57,17 @@
      height: 50vh;
      width: 100%;
 } 
-.bannerCardImg{ width:80.16px;
-    height: 70px;
+.bannerCardImg{ width:45.16px;
+    height: 35px;
     /* background-image: url(./img_pesa.jpg); */
-    background-image: url(./img_pesa.jpg);
-    background-size:110% 110%;
+    /* background-image: url(./img_pesa.svg); */
+    /* background-size:98% 98%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
+    background-position: center; */
+    /* background-color: black; */
     margin-top: 0.5rem;
     /* padding-top: 15%; */
+    /* border:0; */
 
 }
 
@@ -134,6 +135,7 @@
     align-items: center; 
      text-align: center; 
      padding: 15px 15px 15px; 
+     font-weight: bolder;
     }
     @media (max-width: 1500px) {
         .bannerCardBody{

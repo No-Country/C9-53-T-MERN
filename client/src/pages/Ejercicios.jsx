@@ -115,7 +115,7 @@ const Ejercicios = () => {
 
         <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[level]}/>
         <EjerciciosBrazos info={ejerciciosBrazosInfo[level]}/>
-        <EjerciciosPiernas info={ejerciciosPiernasInfo}/> 
+        {/* <EjerciciosPiernas info={ejerciciosPiernasInfo}/>  */}
 
 
       </div>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import LateralBar from '../latearl bar/LateralBar';
 import NavBar from '../NavBar/NavBar'
+import style from './questions.module.css'
 
 const Questions = () => {
 
@@ -13,6 +15,8 @@ const Questions = () => {
   return (
     <>
         <NavBar/>
+        <LateralBar></LateralBar>
+        <div className={style.formContainer}>
         <div
         style={{
             color:'white',
@@ -73,7 +77,7 @@ const Questions = () => {
 
         </form>
         </div>
-
+        </div>
     </>
   )
 }

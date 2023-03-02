@@ -182,7 +182,7 @@ padding: 10px 10px 10px;
 
 }
 
-@media(min-width:1600px){
+@media(min-width:800px){
     .containerDiv{
         margin-top: 0.5rem;
         position: absolute;

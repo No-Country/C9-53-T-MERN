@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import SlidedDivMid from './SlidedDivMid';
+import SlidedDivAdv from './SlidedDivAdv';
 // import {Navigation, EffectFade} from 'swiper'
 
 
@@ -58,11 +60,11 @@ const ImageSlider = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-                <SlidedDiv/>
+                <SlidedDivMid/>
             </SwiperSlide>
 
             <SwiperSlide>
-                <SlidedDiv/>
+                <SlidedDivAdv/>
             </SwiperSlide>
             
         </Swiper>

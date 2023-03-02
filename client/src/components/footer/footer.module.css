@@ -14,10 +14,12 @@
 }
 
 .footerContainer{
-    position: relative;
+    position: absolute;
+    top:40%;
     color: black;
     font-size: 300%;
     height: 10vh;
+    font-weight: bolder;
 
     
 }

@@ -9,7 +9,7 @@ import UserRutineCardFri from './accordions/UserRutineCardFri'
 import UserRutineCardSat from './accordions/UserRutineCardSat'
 import { EjsByDayContext } from '../../context/ejsByDay/EjsByDayContext'
 import { useNavigate } from "react-router-dom";
-
+import { motion } from 'framer-motion'
 
 const UserRutinesAll = () => {
 
@@ -44,7 +44,12 @@ const UserRutinesAll = () => {
 
     
 
-    <div className={style.containerDiv}>
+    < motion.div 
+    initial={{x: '10vh'}}
+    animate={{ x: 0 }}
+    // initial={{y: '-5vh'}}
+    // animate={{ y: 0 }}
+    transition={{ ease: "easeOut", duration: 0.75 }} className={style.containerDiv}>
 
         <div  className={style.titleLunes}>Lunes
             <div className={style.accordionContainer}>
@@ -137,7 +142,7 @@ const UserRutinesAll = () => {
 
         </div>
 
-    </div>
+    </motion.div>
 </>)
 }
 
