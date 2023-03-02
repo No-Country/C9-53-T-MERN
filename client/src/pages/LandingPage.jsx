@@ -17,6 +17,7 @@ const LandingPage = () => {
       {/* <ImageSlider/> */}
       {/*
       <Footer/> */}
+      <Footer/> 
     </div>
   );
 }

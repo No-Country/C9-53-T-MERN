@@ -2,9 +2,9 @@ import React from 'react'
 import style from './imageSlider.module.css'
 import SlidedDiv from './SlidedDiv';
 
-
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { sliderProps } from "./props/sliderProps.js"
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
@@ -26,11 +26,14 @@ const ImageSlider = () => {
     className={style.imageSlider}
     slidesPerView= {1}
     navigation={true}
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
+
     breakpoints={{
       1240: {
         slidesPerView: 1,
         spaceBetween:60,
-        navigation:false
+        navigation:true,
+
       },
     //   800: {
     //     slidesPerView: 2,
@@ -43,7 +46,9 @@ const ImageSlider = () => {
       },
       8000: {
         slidesPerView: 3,
-        navigation:false
+        navigation:false,
+
+
 
       },
     }}
