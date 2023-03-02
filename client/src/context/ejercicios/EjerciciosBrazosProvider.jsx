@@ -1,6 +1,6 @@
 import { EjerciciosBrazosContext } from "./EjerciciosBrazosContext";
 import { useContext } from "react";
-import armBanner from './bannerPhotos/abdominalesBanner.png'
+import armBanner from './bannerPhotos/brazosBanner.png'
 import FondosEnBanco from './armPhotos/FondosEnBanco.jpg'
 import lagartijas from './armPhotos/lagartijas.jpg'
 import mancuernas from './armPhotos/mancuernas.jpg'

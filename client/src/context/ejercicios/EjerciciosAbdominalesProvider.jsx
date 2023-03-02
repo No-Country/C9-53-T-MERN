@@ -8,6 +8,22 @@ import twistRuso from './absPhotos/twistRuso.jpg'
 
 
 const EjerciciosAbdominalesProvider = ({ children }) => {
+
+  // const [backendData, setBackendData] = useState([{}])
+
+  // useEffect(() => {
+  //         response => response.json()
+  //     ).then(
+  //         data => {
+  //             setBackendData(data)
+  //             // console.log(data)
+  //         }
+  //     )
+  //     backendData;
+  // }, [])
+  
+  // const {ejerciciosAbdominales} = 
+  
   const ejerciciosAbdominales = [
     [
       {

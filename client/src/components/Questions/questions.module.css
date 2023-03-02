@@ -1,0 +1,13 @@
+.formContainer{
+    position: absolute;
+    width: 60%;
+    right:20%
+}
+
+.cardContainer{
+        position: absolute;
+        top:50vh;
+        display: flex;
+        flex-wrap: wrap;
+        left:40%
+}

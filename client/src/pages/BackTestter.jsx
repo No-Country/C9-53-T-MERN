@@ -7,7 +7,7 @@ const BackTestter = () => {
     const [backendData, setBackendData] = useState([{}])
 
     useEffect(() => {
-        fetch('http://localhost:3030/users').then(
+        fetch('http://localhost:3030/ExercisesAbs').then(
             response => response.json()
         ).then(
             data => {

@@ -1,4 +1,6 @@
 .footerBody{
+     position:absolute;
+    top:280vh; 
     height: 50vh;
     width: 100%;
     background-image: url(./footer-image.png);
@@ -12,10 +14,40 @@
 }
 
 .footerContainer{
-    position: relative;
+    position: absolute;
+    top:40%;
     color: black;
     font-size: 300%;
     height: 10vh;
+    font-weight: bolder;
 
     
+}
+
+@media(max-width:1600px){
+    .footerBody{
+        position:absolute;
+       top:265vh; }}
+
+/* @media(max-width:1100px){
+    .footerBody{
+        position:absolute;
+       top:245vh; }} */
+
+@media(max-width:1000px){
+    .footerBody{
+        position:absolute;
+       top:375vh; 
+       height: 50vh;
+       width: 100%;
+       background-image: url(./footer-image.png);
+       background-size: 100% 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       background-color: black;
+       padding-top: 20%;
+   }
+   
 }

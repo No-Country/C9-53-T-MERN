@@ -23,6 +23,7 @@ const NavBar = ({ user }) => {
   }
 
 
+
   return (
     <div className={style.NavBar}>
       <div>

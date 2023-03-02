@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Counter from '../components/ejercicios/Counter';
 import EjerciciosAbdominales from '../components/ejercicios/EjerciciosAbdominales';
 import EjerciciosBrazos from '../components/ejercicios/EjerciciosBrazos';
-import EjerciciosPiernas from '../components/ejercicios/EjerciciosPiernas';
+// import EjerciciosPiernas from '../components/ejercicios/EjerciciosPiernas';
 import ProgramasUpperDiv from '../components/ejercicios/upperDiv/ProgramasUpperDiv';
 import NavBar from "../components/NavBar/NavBar";
 import { useEjerciciosAbdominales } from '../context/ejercicios/EjerciciosAbdominalesProvider';
 import { useEjerciciosBrazos } from '../context/ejercicios/EjerciciosBrazosProvider';
-import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasProvider';
+// import { useEjerciciosPiernas } from '../context/ejercicios/EjerciciosPiernasProvider';
 
 
 
@@ -23,7 +23,7 @@ const Ejercicios = ({ user }) => {
 
   const ejerciciosBrazosInfo = useEjerciciosBrazos();
 
-  const ejerciciosPiernasInfo = useEjerciciosPiernas();
+  // const ejerciciosPiernasInfo = useEjerciciosPiernas();
 
   const selectStyles = {
     option: (base, { data, isDisabled, isFocused, isSelected }) => {
@@ -110,12 +110,10 @@ const Ejercicios = ({ user }) => {
         defaultValue={options[0]}
         onChange={handleChange}
         captureMenuScroll={true}
-
       />
-
       <EjerciciosAbdominales info={ejerciciosAbdominalesInfo[level]} />
       <EjerciciosBrazos info={ejerciciosBrazosInfo[level]} />
-      <EjerciciosPiernas info={ejerciciosPiernasInfo} />
+      {/* <EjerciciosPiernas info={ejerciciosPiernasInfo}/>  */}
 
 
     </div>

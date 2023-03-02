@@ -18,6 +18,7 @@ const LandingPage = ({ user }) => {
       {/* <ImageSlider/> */}
       {/*
       <Footer/> */}
+      <Footer/> 
     </div>
   );
 }

@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={style.footerBody}>
 
       <div className={style.footerContainer}>
-        Footer
+        FitHouse©
 
       </div>
 
