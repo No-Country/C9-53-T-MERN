@@ -24,9 +24,9 @@ routeAuthentication.get(
   }),
   (req, res) => {
     console.log('Desde acceso a Google');
-    console.log(req.user);
-    res.cookie('user', req.user);
-    console.log('user guardado en cookie');
+    // console.log(req.user);
+    // res.cookie('user', req.user);
+    // console.log('user guardado en cookie');
     console.log('ENVIO REQ.USER A TRAVES DE JSON');
     res.json(req.user);
   }
