@@ -20,8 +20,13 @@ routeAuthentication.get(
   '/auth/google/callback',
   passport.authenticate('google', {
     failureRedirect: `${url_client}/login`,
-    successRedirect: `${url_client}`,
-  })
+    // successRedirect: `${url_client}`,
+  }),
+  (req, res) {
+    console.log('Desde acceso a Google');
+    console.log(req.user);
+    res.redirect(`${url_client}`)
+  }
 );
 
 /* -------------------------------------------------------------------------- */
