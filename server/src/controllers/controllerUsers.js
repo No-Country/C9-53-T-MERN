@@ -17,10 +17,10 @@ const controllerUsers = {
 
     const isSaved = await service.saveUser({email, password: hash});
 
-    if (isSaved.code) {
+    if (isSaved.code === 1) {
       res.status(201).json(isSaved);
     } else {
-      res.status(400).json(isSaved);
+      res.status(406).json(isSaved);
     }
   },
 

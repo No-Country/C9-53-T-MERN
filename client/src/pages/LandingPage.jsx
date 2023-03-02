@@ -7,13 +7,14 @@ import ImageSlider from '../components/index/slider/ImageSlider';
 import NavBar from "../components/NavBar/NavBar";
 
 
-const LandingPage = () => {
+const LandingPage = ({ user }) => {
+
   return (
     <div>
-      <NavBar />
-      <Banner/> 
-      <GifSection/>
-      <Planes/>
+      <NavBar user={user} />
+      <Banner />
+      <GifSection />
+      <Planes />
       {/* <ImageSlider/> */}
       {/*
       <Footer/> */}

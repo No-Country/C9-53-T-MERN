@@ -37,6 +37,8 @@ const LoginFormRegister = () => {
         if (res.code === 1) {
           alert('Ya puede iniciar sesión')
           navigate('/login')
+        } else if (res.code === 2) {
+          alert('Ya existe el correo')
         }
       })
   }

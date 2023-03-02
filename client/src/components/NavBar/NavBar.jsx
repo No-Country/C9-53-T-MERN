@@ -1,24 +1,27 @@
-import React from "react";
-import { useContext } from "react";
-import { NavLink } from "react-router-dom";
-import { AuthContext } from "../../context/AuthContext";
-import { EjsByDayContext } from "../../context/ejsByDay/EjsByDayContext";
-import User from "../../pages/User";
-import YellowButton from "../buttons/YellowButton";
-import ConditionalNavBar from "./conditionalNav/ConditionalNavBar";
-import LogNavBar from "./conditionalNav/LogNavBar";
-import UserNavBar from "./conditionalNav/UserNavBar";
+import { NavLink, useNavigate } from "react-router-dom";
 import style from "./NavBar.module.css";
 
-const NavBar = () => {
+const NavBar = ({ user }) => {
 
-  const {logout} = useContext(AuthContext);
+  const navigate = useNavigate()
 
-  // const {rutineMon} = useContext(EjsByDayContext)
+  const url_api = process.env.URL_API || "http://localhost:3030"
+  const clickLogout = () => {
+    fetch(`${url_api}/logout`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': true
+      }
+    })
+      .then(res => res.json())
+      .then(res => console.log(res))
+    window.location.reload()
 
-  // const logger= () =>{
-  //     console.log(rutineMon[0].item)
-  // }
+  }
+
 
   return (
     <div className={style.NavBar}>
@@ -28,25 +31,42 @@ const NavBar = () => {
         </NavLink>
       </div>
       <div>
-        <NavLink to="/ejercicios" className={style.ejercicios}>
-          Ejercicios
-        </NavLink>
-      </div>
-      <div>
+        {
+          user &&
+          <NavLink to="/ejercicios" className={style.ejercicios}>
+            Ejercicios
+          </NavLink>
+        }
         <NavLink to="/questions" className={style.ejercicios}>
           Consultar
         </NavLink>
       </div>
 
-      
-      <div 
-      className={style.logDiv}
-      >
-        {/* <LogNavBar/> */}
-        {/* <UserNavBar/> */}
-        <ConditionalNavBar/>
+      {
+        !user
+          ?
+          <div>
+            <button className={style.btnRegister} onClick={() => navigate("/register")}>Registrarse</button>
+            <button className={style.btnSession} onClick={() => navigate("/login")}>Iniciar sesión</button>
+          </div>
+          :
+          <div className={style.container_user}>
+            {
+              user.user.picture ?
+                <>
+                  <img className={style.avatar} src={user.user.picture} alt="Foto del perfil" />
+                  <div>{user.user.given_name}</div>
+                </>
+                :
+                user.user.name ?
+                  <div>{user.user.name}</div>
+                  :
+                  <div>{user.user.email}</div>
+            }
+            <button className={style.btnSession} onClick={clickLogout}>Cerrar sesión</button>
+          </div>
+      }
 
-      </div>
 
     </div>
   );

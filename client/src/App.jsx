@@ -26,9 +26,14 @@ function App() {
       }
     })
       .then(res => res.json())
-      .then(res => setUser(res))
+      .then(res => {
+        setUser(res)
+        console.log(res)
+      })
 
   }, [])
+
+
 
   return (
 

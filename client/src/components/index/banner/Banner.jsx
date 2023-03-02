@@ -3,7 +3,7 @@ import style from './Banner.module.css'
 // import BannerCard from './banner cards/BannerCard'
 import foto from './img_pesa.jpg'
 import { useNavigate } from 'react-router-dom'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 
 
@@ -26,8 +26,6 @@ const Banner = () => {
             a tu casa </div>
           <div className={style.bannerFooter}>La mejor Plataforma para
             trabajadores remotos</div>
-          <div className={style.yellowButton} onClick={myListNavigate}>
-            iniciar sesion</div>
 
 
         </div>
@@ -38,18 +36,20 @@ const Banner = () => {
 
     <div className={style.bannerCardContainer}>
 
-      <motion.div 
-      initial={{ scale: 0 }}
-      animate={{ rotate: 360, scale: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 20
-      }}
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20
+        }}
 
-      className={style.bannerCard}>
-        <img src={foto} style={{ width: '85.16px',
-                    height: '37.77px'}}/>
+        className={style.bannerCard}>
+        <img src={foto} style={{
+          width: '85.16px',
+          height: '37.77px'
+        }} />
         <span className={style.bannerCardTitle}>Fuerza</span>
         <div className={style.bannerCardBody}>Alcanza tus objetivos con entrenamiento guiado</div>
       </motion.div>

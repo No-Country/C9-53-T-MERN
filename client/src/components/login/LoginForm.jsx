@@ -7,10 +7,6 @@ const LoginForm = () => {
 
   const navigate = useNavigate();
 
-  const clickRegister = () => {
-    navigate('/register')
-  }
-
   // const url_api = process.env.URL_API || "https://fit-house.onrender.com"
   const url_api = process.env.URL_API || "http://localhost:3030"
 
@@ -42,10 +38,11 @@ const LoginForm = () => {
 
                 <input
                   placeholder="Ingresa una dirección de email"
-                  type="text"
+                  type="email"
                   id="username"
                   name="username"
                   className={style.login_input}
+                  required
                 />
 
               </div>
@@ -59,6 +56,7 @@ const LoginForm = () => {
                   id="password"
                   name="password"
                   className={style.login_input2}
+                  required
                 />
 
               </div>
@@ -75,7 +73,9 @@ const LoginForm = () => {
 
             </form>
 
-            <button className={style.blackButtonCrearCuenta} onClick={clickRegister}>
+            <button className={style.blackButtonCrearCuenta} onClick={() => {
+              navigate('/register')
+            }}>
               Crear cuenta
             </button>
 

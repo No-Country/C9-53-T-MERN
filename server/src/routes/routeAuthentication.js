@@ -45,8 +45,10 @@ routeAuthentication.post(
   '/auth/local',
   passport.authenticate('local', {
     failureRedirect: `${url_client}/login`,
-    successRedirect: `${url_client}`,
-  })
+  }),
+  (req, res) => {
+    res.redirect(`${url_client}`);
+  }
 );
 
 routeAuthentication.get('/login/session', (req, res) => {
