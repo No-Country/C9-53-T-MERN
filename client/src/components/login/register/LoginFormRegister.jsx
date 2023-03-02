@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import style from './loginFormRegister.module.css';
 
 const LoginFormRegister = () => {
-  // const url_api = process.env.URL_API || "https://fit-house.onrender.com"
-  const url_api = process.env.URL_API || "http://localhost:3030"
+  const url_api = process.env.URL_API || "https://fit-house.onrender.com"
+  // const url_api = process.env.URL_API || "http://localhost:3030"
 
   const [hidden, setHidden] = useState(false)
 
