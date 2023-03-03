@@ -20,13 +20,13 @@ adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se a
 
 
 
-*Seleccionar Rutina:
+<li>Seleccionar Rutina:</li>
 
 
-En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos
-
-
-se dividen 3 niveles de dificultad (de fácil a avanzado), lo cual determina la cantidad de series y repeticiones que las mismas
+<dd>En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos se dividen 3 niveles
+	
+	
+de dificultad (de fácil a avanzado), lo cual determina la cantidad de series y repeticiones que las mismas
 
 
 implican, además de la cantidad estimada de tiempo necesario para realizarlo. Es posible ver en dicha página de seleccion a su vez
@@ -35,7 +35,7 @@ implican, además de la cantidad estimada de tiempo necesario para realizarlo. E
 un contador, el cual determina la cantidad de tiempo total elegido, cantidad de ejercicios y calorias (estimadas) necesarias;  
 
 
-también el usuario se podra ayudar viendo un display que indica que es lo quea seleccionado por el momento.
+también el usuario se podra ayudar viendo un display que indica que es lo quea seleccionado por el momento.</dd>
 
 
 
