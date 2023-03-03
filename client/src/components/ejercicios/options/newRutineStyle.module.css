@@ -9,6 +9,7 @@
     background-color: #FCBD3C;
     color: black;
     font-weight: 700;
+    cursor: pointer
 }
 
 @media(min-width: 800px){
