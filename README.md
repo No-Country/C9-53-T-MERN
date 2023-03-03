@@ -4,9 +4,11 @@
 	
 	
 	
-	A través de esta aplicación vas a poder crear rutinas personalizadas de ejercicio físico y agendarlas por dia. 
+A través de esta aplicación vas a poder crear rutinas personalizadas de ejercicio físico y agendarlas por dia. 
+	
 	
 La aplicación se adapta al nivel de capacidad física inicial del usuario, a través de diferentes niveles de dificultad permitiendole
+
 
 adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se adapta con el usuario, para que el mismo se adapte a su entorno cotidiano.
 
