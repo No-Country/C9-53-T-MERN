@@ -13,10 +13,14 @@ La aplicación se adapta al nivel de capacidad física inicial del usuario, a tr
 adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se adapta con el usuario, para que el mismo se adapte a su entorno cotidiano.
 
 
+
+
 **Features:**
 
 
-***Seleccionar Rutina: ***
+
+
+*Seleccionar Rutina:
 
 
 En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos
@@ -34,7 +38,9 @@ un contador, el cual determina la cantidad de tiempo total elegido, cantidad de 
 también el usuario se podra ayudar viendo un display que indica que es lo quea seleccionado por el momento.
 
 
-***Crear Rutina: ***
+
+
+*Crear Rutina: 
 
 
 Una vez elegido el total de ejercicios que uno quiere realizar en un determinado día,  a través del boton "Crear Rutina" es posible agendar
@@ -43,7 +49,9 @@ Una vez elegido el total de ejercicios que uno quiere realizar en un determinado
 dicha selección.
 
 
-***Realizar Rutina: ***
+
+
+*Realizar Rutina: 
 
 
 Una vez realizada la rutina, en la página del perfil del usuario es posible seleccionar el rutina de ejercicios previamente calendarizada
@@ -52,7 +60,9 @@ Una vez realizada la rutina, en la página del perfil del usuario es posible sel
 y realizarla. A la vez el usuario se ve apoyado por un botón que indica las repeticiones, para que pueda llevar cuenta de lo realizado.
 
 
-***Hablar con un profesional: ***
+
+
+*Hablar con un profesional: 
 
 
 A través de diferentes contactos seleccionados y asignados para tu usuario, es posible realizar consultas a través de whatsapp a tu coach
