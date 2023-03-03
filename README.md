@@ -1,7 +1,12 @@
 
-	Stack:
+	Deploy: c9-53-fithouse-mern.vercel.app/
+	
+	
+	
+	
+	<b>Stack:</b>
 
-	Diseño: Figma
+	Diseño: Figma (https://www.figma.com/file/eatQksmjmvOowvImE9pTQW/Fit-House?node-id=1%3A138&t=h7O0iM9RwqbNFSyS-0)
 	
 	Front-end: React ({Librerías utilizadas: framer-motion, react-confetti, react-router-dom, react-select,
 	styled-components, swiper})
