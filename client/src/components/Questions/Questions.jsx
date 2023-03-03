@@ -85,11 +85,11 @@ const Questions = () => {
         </div>
 
         <div className={style.cardContainer}>
-        <ParticipantesCardHomero/>
         <PCardMartin/>
         <PCardMartina/>
         <PCardRodolfo/>
         <PCardManuel/>
+        <ParticipantesCardHomero/>
         {/* <ParticipantesCard/> */}
         </div>
     </>
