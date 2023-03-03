@@ -15,18 +15,18 @@ adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se a
 
 
 
-**Features:**
+Features:
 
 
 
 
-<li>Seleccionar Rutina:</li>
+<b>Seleccionar Rutina:</b>
 
 
-<dd>En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos se dividen 3 niveles
-	
-	
-de dificultad (de fácil a avanzado), lo cual determina la cantidad de series y repeticiones que las mismas
+<li>En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos se dividen 3 niveles de
+
+
+dificultad (de fácil a avanzado), lo cual determina la cantidad de series y repeticiones que las mismas
 
 
 implican, además de la cantidad estimada de tiempo necesario para realizarlo. Es posible ver en dicha página de seleccion a su vez
@@ -35,7 +35,7 @@ implican, además de la cantidad estimada de tiempo necesario para realizarlo. E
 un contador, el cual determina la cantidad de tiempo total elegido, cantidad de ejercicios y calorias (estimadas) necesarias;  
 
 
-también el usuario se podra ayudar viendo un display que indica que es lo quea seleccionado por el momento.</dd>
+también el usuario se podra ayudar viendo un display que indica que es lo quea seleccionado por el momento.</li>
 
 
 
@@ -43,15 +43,15 @@ también el usuario se podra ayudar viendo un display que indica que es lo quea 
 <b>Crear Rutina: </b>
 
 
-Una vez elegido el total de ejercicios que uno quiere realizar en un determinado día,  a través del boton "Crear Rutina" es posible agendar
+<li>Una vez elegido el total de ejercicios que uno quiere realizar en un determinado día,  a través del boton "Crear Rutina" es posible agendar
 
 
-dicha selección.
+dicha selección.</li>
 
 
 
 
-*Realizar Rutina: 
+<b>Realizar Rutina: </b>
 
 
 Una vez realizada la rutina, en la página del perfil del usuario es posible seleccionar el rutina de ejercicios previamente calendarizada
@@ -62,11 +62,11 @@ y realizarla. A la vez el usuario se ve apoyado por un botón que indica las rep
 
 
 
-*Hablar con un profesional: 
+<b>Hablar con un profesional: </b>
 
 
-A través de diferentes contactos seleccionados y asignados para tu usuario, es posible realizar consultas a través de whatsapp a tu coach
+<li>A través de diferentes contactos seleccionados y asignados para tu usuario, es posible realizar consultas a través de whatsapp a tu coach
 
 
-para que te indique como realizar un ejercicio, como complementar tu rutina y demás información útil.
+para que te indique como realizar un ejercicio, como complementar tu rutina y demás información útil.</li>
   
