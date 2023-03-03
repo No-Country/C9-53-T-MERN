@@ -3,11 +3,10 @@
     position: absolute;
     top:50vh;
     background-color: var(--);
-    height: 40%;
+    height: 150%;
     width: 100%;
     color:white;
-    border-radius:20px;
-    margin-bottom: 1rem;
+    border-radius:20px
     /* left: 5%; */
 }
 
@@ -138,15 +137,59 @@ text-align: center;
 padding: 10px 10px 10px;
 }
 
-
 @media(min-width:800px){
     .containerDiv{
         margin-top: 0.5rem;
         position: absolute;
         top:50vh;
         background-color: black;
-        height: 100%;
-        width: 52%;
+        height: 150%;
+        width: 70%;
+        left:15%;
+        color:white
+        /* left: 5%; */
+    }
+    .comenzar{
+        color:black;
+        background-color: #0055FF;
+    border-radius: 25px;
+    /* margin-top: 3%; */
+    height: 100%;
+    width: 20%;
+    color: black;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px 10px 10px;
+    }
+    .borrar{
+        color:black;
+        background-color: #FF0088;
+    border-radius: 25px;
+    /* margin-top: 3%; */
+    height: 100%;
+    width: 20%;
+    color: black;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px 10px 10px;
+    }
+
+}
+
+@media(min-width:1600px){
+    .containerDiv{
+        margin-top: 0.5rem;
+        position: absolute;
+        top:50vh;
+        background-color: black;
+        height: 150%;
+        width: 50%;
         left:23%;
         color:white
         /* left: 5%; */

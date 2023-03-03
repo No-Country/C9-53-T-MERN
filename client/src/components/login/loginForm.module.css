@@ -1,12 +1,14 @@
 .loginContainer{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 4rem;
 }
 
 .loginForm{
   margin-top: 3%;
   border-radius: 20px;
+  position: absolute;
+  left: 32%;
   width: 30%;
   height: 75vh;
   background-color: #FEAE0C;
@@ -67,5 +69,7 @@
   width: 70%;
   height: 75vh;
   background-color: #FEAE0C;
+  position: absolute;
+  left: 12.5%;
 
 }}

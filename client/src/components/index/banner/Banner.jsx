@@ -67,7 +67,7 @@ const Banner = () => {
         className={style.bannerCard}>
         <img alt="imagen de reloj" src={imgReloj} className={style.bannerCardImg} />
         <span className={style.bannerCardTitle}>Personalización</span>
-        <div className={style.bannerCardBody}>Alcanza tus objetivos con entrenamiento guiado</div>
+        <div className={style.bannerCardBody}>Encuentra una rutina a tu propio ritmo</div>
       </motion.div>
 
       <motion.div
@@ -81,8 +81,8 @@ const Banner = () => {
 
         className={style.bannerCard}>
         <img alt="imagen de una balanza" src={imgBalance} className={style.bannerCardImg} />
-        <span className={style.bannerCardTitle}>Fuerza</span>
-        <div className={style.bannerCardBody}>Alcanza tus objetivos con entrenamiento guiado</div>
+        <span className={style.bannerCardTitle}>Salud</span>
+        <div className={style.bannerCardBody}>Acompaña el fitness con una vida saludable</div>
       </motion.div>
 
       <motion.div
@@ -96,8 +96,8 @@ const Banner = () => {
 
         className={style.bannerCard}>
         <img alt="imagen de piramide" src={imgPiramide} className={style.bannerCardImg} />
-        <span className={style.bannerCardTitle}>Fuerza</span>
-        <div className={style.bannerCardBody}>Alcanza tus objetivos con entrenamiento guiado</div>
+        <span className={style.bannerCardTitle}>Balance</span>
+        <div className={style.bannerCardBody}>Ejercita siguiendo pasos a tu medida.</div>
       </motion.div>
 
     </div>

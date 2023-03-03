@@ -18,7 +18,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 50,
-        title: 'Push ups',
+        title: 'Fondo en Banco',
         description: "Ejercicio para la parte baja abdominal",
         repetition: 20,
         dificulty: 5,
@@ -29,7 +29,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 51,
-        title: "Escalada de Montaña",
+        title: "Lagartijas",
         description: "Ejercicio para el sector superior abdominal",
         repetition:15,
         dificulty: 5,
@@ -40,9 +40,9 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 53,
-        title: 'squat',
+        title: 'Mancuernas',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
-        repetition: 2,
+        repetition: 30,
         dificulty: 5,
         estimatedTime:6,
         calories: 650,
@@ -59,7 +59,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 54,
-        title: 'Abdominales',
+        title: 'Fondo en Banco',
         description: "Ejercicio para la parte baja abdominal",
         repetition: 30,
         dificulty: 5,
@@ -70,7 +70,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 55,
-        title: "Escalada de Montaña",
+        title: "Lagartijas",
         description: "Ejercicio para el sector superior abdominal",
         repetition:30,
         dificulty: 5,
@@ -82,9 +82,9 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 56,
-        title: 'Twist Ruso',
+        title: 'Mancuernas',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
-        repetition: 3,
+        repetition: 30,
         dificulty: 5,
         estimatedTime:5,
         calories: 650,
@@ -102,7 +102,7 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 57,
-        title: 'Abdominales',
+        title: 'Fondo en Banco',
         description: "Ejercicio para la parte baja abdominal",
         repetition: 40,
         dificulty: 5,
@@ -113,9 +113,9 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id:58,
-        title: "Escalada de Montaña",
+        title: "Lagartijas",
         description: "Ejercicio para el sector superior abdominal",
-        repetition:40,
+        repetition:30,
         dificulty: 5,
         estimatedTime: 7,
         calories: 320,
@@ -125,13 +125,13 @@ const EjerciciosBrazosProvider = ({ children }) => {
       },
       {
         id: 59,
-        title: 'Twist Ruso',
+        title: 'Mancuernas',
         description: "músculos de la espalda, los bíceps y tríceps de los brazos, los glúteos, los abdominales, los deltoides de los hombros y los cuádriceps de las piernas,",
-        repetition: 4,
+        repetition: 30,
         dificulty: 5,
         estimatedTime:8,
         calories: 650,
-        series: 4,
+        series: 8,
         img:mancuernas
 
       },

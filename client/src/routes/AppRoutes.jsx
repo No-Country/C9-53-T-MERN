@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoutes";
 import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
@@ -14,7 +14,7 @@ import ThursdayExcercise from "../pages/ejsPages/ThursdayExcercise";
 import FridayExcercise from "../pages/ejsPages/FridayExcercise";
 import SaturdayExcercise from "../pages/ejsPages/SaturdayExcercise";
 import SundayExcercise from "../pages/ejsPages/SundayExcercise";
-import BackTestter from "../pages/BackTestter";
+// import BackTestter from "../pages/BackTestter";
 
 
 export const AppRoutes = () => {

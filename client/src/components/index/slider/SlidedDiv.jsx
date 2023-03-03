@@ -2,8 +2,16 @@ import React from 'react'
 import YellowButton from '../../buttons/YellowButton'
 import style from './slidedDiv.module.css'
 import easy from './Easy.png'
+import { useNavigate } from 'react-router-dom'
 
 const SlidedDiv = () => {
+
+
+  const navigate = useNavigate();
+  
+  const ejerciciosNavigate = () => {
+    navigate('/ejercicios')}
+
   return (
     <div 
     className={style.slidedDiv}
@@ -17,9 +25,10 @@ const SlidedDiv = () => {
             <div>Realiza ejercicios de dificultad inicial</div>
         </div>
 
-        <div className={style.yellowButton}>
+        <div 
+        onClick={ejerciciosNavigate}
+        className={style.yellowButton}>
             Comenzar Ahora
-
         </div>
     
     
