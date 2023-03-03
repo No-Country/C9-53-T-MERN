@@ -1,4 +1,22 @@
-**FITHOUSE** {Cargando Readme...%}
+
+	Stack:
+
+	Diseño: Figma
+	
+	Front-end: React ({Librerías utilizadas: framer-motion, react-confetti, react-router-dom, react-select,
+	styled-components, swiper})
+	
+	Back-end: Mongo, Node.js ({bcrypt, connect-mongo, cors, express, express-session, mongoose,
+	
+	passport-local", swagger-jsdoc,  swagger-ui-express})
+
+
+	
+
+
+
+
+**FITHOUSE**
 	
 	LA MEJOR APLICACION PARA TRABAJADORES REMOTOS
 	
@@ -15,7 +33,7 @@ adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se a
 
 
 
-Features:
+**Features:**
 
 
 
