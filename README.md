@@ -33,7 +33,10 @@ A través de esta aplicación vas a poder crear rutinas personalizadas de ejerci
 La aplicación se adapta al nivel de capacidad física inicial del usuario, a través de diferentes niveles de dificultad permitiendole
 
 
-adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se adapta con el usuario, para que el mismo se adapte a su entorno cotidiano.
+adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se adapta con el usuario, para que el mismo se adapte a su entorno 
+
+
+cotidiano.
 
 
 
@@ -46,7 +49,7 @@ adaptar su capacidad horaria diaria para realizarlos. De esta manera la app se a
 <b>Seleccionar Rutina:</b>
 
 
-<li>En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos se dividen 3 niveles de
+<li>En la página de "Ejercicios" es posible elegir ejercicios para crear tu rutina personalizada; los mismos se dividen en 3 niveles de
 
 
 dificultad (de fácil a avanzado), lo cual determina la cantidad de series y repeticiones que las mismas
@@ -77,10 +80,10 @@ dicha selección.</li>
 <b>Realizar Rutina: </b>
 
 
-Una vez realizada la rutina, en la página del perfil del usuario es posible seleccionar el rutina de ejercicios previamente calendarizada
+<li>Una vez realizada la rutina, en la página del perfil del usuario es posible seleccionar el rutina de ejercicios previamente calendarizada
 
 
-y realizarla. A la vez el usuario se ve apoyado por un botón que indica las repeticiones, para que pueda llevar cuenta de lo realizado.
+y realizarla. A la vez el usuario se ve apoyado por un botón que indica las repeticiones, para que pueda llevar cuenta de lo realizado.</li>
 
 
 
