@@ -1,12 +1,12 @@
-import LoginFormRegister from '../components/login/register/LoginFormRegister'
+// import LoginFormRegister from '../components/login/register -Google-Facebook-auth-nonfunctional/LoginFormRegister'
 
 
-const SignUp = () => {
-  return (
-    <>
-      <LoginFormRegister />
-    </>
-  )
-}
+// const SignUp = () => {
+//   return (
+//     <>
+//       <LoginFormRegister />
+//     </>
+//   )
+// }
 
-export default SignUp
+// export default SignUp

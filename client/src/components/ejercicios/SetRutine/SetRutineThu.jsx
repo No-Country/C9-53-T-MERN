@@ -35,7 +35,8 @@ const SetRutineThu = () => {
       width:'100%',
       borderRadius: '20px',
       backgroundColor: '#FCBD3C',
-      color: 'black'
+      color: 'black',
+      cursor:'pointer'
     }}
     onClick={postThu}
 

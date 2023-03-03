@@ -34,7 +34,8 @@ const SetRutineSat = () => {
       width:'100%',
       borderRadius: '20px',
       backgroundColor: '#FCBD3C',
-      color: 'black'
+      color: 'black',
+      cursor:'pointer'
     }}
 
     onClick={postSat}

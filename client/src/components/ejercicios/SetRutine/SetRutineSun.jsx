@@ -26,7 +26,8 @@ const SetRutineSun = () => {
       width:'90%',
       borderRadius: '20px',
       backgroundColor: '#FCBD3C',
-      color: 'black'
+      color: 'black',
+      cursor:'pointer'
     }}
 
     onClick={postSun}
