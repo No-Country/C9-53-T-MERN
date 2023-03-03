@@ -40,7 +40,7 @@ también el usuario se podra ayudar viendo un display que indica que es lo quea 
 
 
 
-*Crear Rutina: 
+<b>Crear Rutina: </b>
 
 
 Una vez elegido el total de ejercicios que uno quiere realizar en un determinado día,  a través del boton "Crear Rutina" es posible agendar
