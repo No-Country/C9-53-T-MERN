@@ -1,19 +1,19 @@
 
-	Deploy: c9-53-fithouse-mern.vercel.app/
+Deploy: c9-53-fithouse-mern.vercel.app/
 	
 	
 	
 	
-	<b>Stack:</b>
+Stack:
 
-	Diseño: Figma (https://www.figma.com/file/eatQksmjmvOowvImE9pTQW/Fit-House?node-id=1%3A138&t=h7O0iM9RwqbNFSyS-0)
+Diseño: Figma (https://www.figma.com/file/eatQksmjmvOowvImE9pTQW/Fit-House?node-id=1%3A138&t=h7O0iM9RwqbNFSyS-0)
 	
-	Front-end: React ({Librerías utilizadas: framer-motion, react-confetti, react-router-dom, react-select,
-	styled-components, swiper})
+Front-end: React ({Librerías utilizadas: framer-motion, react-confetti, react-router-dom, react-select,
+styled-components, swiper})
 	
-	Back-end: Mongo, Node.js ({bcrypt, connect-mongo, cors, express, express-session, mongoose,
+Back-end: Mongo, Node.js ({bcrypt, connect-mongo, cors, express, express-session, mongoose,
 	
-	passport-local", swagger-jsdoc,  swagger-ui-express})
+passport-local", swagger-jsdoc,  swagger-ui-express})
 
 
 	
